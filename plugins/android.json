@@ -9,6 +9,9 @@
   "installed_plugins": {
     "cordova-plugin-splashscreen": {
       "PACKAGE_NAME": "com.phonegap.giriasestadosbrasileiros"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "com.phonegap.giriasestadosbrasileiros"
     }
   },
   "dependent_plugins": {}

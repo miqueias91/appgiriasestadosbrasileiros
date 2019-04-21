@@ -15,6 +15,7 @@
     <preference name="android-build-tool" value="gradle" />
     <preference name="android-minSdkVersion" value="16" />
     <plugin name="cordova-plugin-splashscreen" source="npm"/>
+    <plugin name="cordova-plugin-whitelist" source="npm" spec="~1.2.1" />
 
     <splash src="./www/img/Default@2x~universal~anyany.png" />
     <splash src="./www/img/Default@2x~universal~comany.png" />
