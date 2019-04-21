@@ -1,11 +1,3 @@
-/*$('#aguarde').dialog({
-    modal: true,
-    autoOpen: false,
-    resizable: false,
-    draggable: false,
-    dialogClass: "no-close",
-});*/
-
 function buscaGiriaEstado(estado) {
 	$.ajax({
 	    url: "https://miqueiasmcaetano.000webhostapp.com/webservice/giriasestadosbrasileiros/buscaGiriaEstado.php",
@@ -58,6 +50,7 @@ function pesquisaGiriaEstado(pesquisa) {
 	    },
 	});	
 }
+
 function cadastraGiria(giria_input, significado_giria, select_estado){
 	$.ajax({
 	    url: "https://miqueiasmcaetano.000webhostapp.com/webservice/giriasestadosbrasileiros/cadastraGiriaEstado.php",
@@ -69,11 +62,11 @@ function cadastraGiria(giria_input, significado_giria, select_estado){
 	      'estado': select_estado
 	    },
 	    error: function(a) {
-	    	ons.notification.alert("Não foi possível cadastrar a gíria.");
+	    	ons.notification.alert("Não foi possível enviar sua gíria.");
 	    },
 	    success: function(valorRetornado) {
 	    	console.log(valorRetornado)
-	      	ons.notification.alert("Gíria cadastrada com sucesso.");
+	      	ons.notification.alert("Sua gíria foi enviada com sucesso. Em breve ela estará disponível no estado brasileiro selecionado.");
 	    },
 	});	
 }

@@ -30,7 +30,7 @@
         <ons-tabbar swipeable id="appTabbar" position="auto">
           <ons-tab label="Home" icon="ion-home" page="home.html" active></ons-tab>
           <ons-tab label="Buscador de Gírias" icon="ion-search" page="forms.html"></ons-tab>
-          <ons-tab label="Nova Gíria" icon="ion-plus" page="animations.html"></ons-tab>
+          <ons-tab label="Enviar Gíria" icon="ion-plus" page="animations.html"></ons-tab>
         </ons-tabbar>
 
         <script>
@@ -46,7 +46,7 @@
     <template id="home.html">
       <ons-page>
         <p class="intro">
-          Selecione um Estado Brasileira antes de procurar a gíria ou se preferir utilize o Buscador de Gírias.<br><br>
+          Selecione um Estado Brasileira e veja as gíria ou se preferir utilize o Buscador de Gírias.<br><br>
         </p>
 
         <ons-card onclick="fn.pushPage({'id': 'listaGiriasEstado.html', 'title': 'AC'})">
@@ -195,7 +195,7 @@
     <template id="animations.html">
       <ons-page>
         <ons-list>
-          <ons-list-header>Cadastrar uma Gíria</ons-list-header>
+          <ons-list-header>Nos envie uma gíria, estaremos analisando e em breve ela estará disponível no estado que você selecionar.</ons-list-header>
           <ons-list-item class="input-items" style="width: 100%">
             <label class="center">
             <ons-input id="giria_input" placeholder="Gíria" style="width: 100%"></ons-input>
@@ -244,7 +244,7 @@
           </ons-list-item>
 
           <section style="margin: 16px">
-            <ons-button type='button' id="cadastrar_giria" modifier="large" class="button-margin">Cadastrar</ons-button>
+            <ons-button type='button' id="cadastrar_giria" modifier="large" class="button-margin">Enviar</ons-button>
           </section>
 
         </ons-list>
