@@ -15,10 +15,6 @@ body {
     padding:0px;
     width:100%;
 }
-
-.list--material {
-    height: 100%!important;
-}
 .toolbar--material {
     background-color: #006400!important;
 }
@@ -32,5 +28,15 @@ body {
 }
 .button--material {
     background-color: #006400!important;
-    color: #ffffff;
+    color: #fff!important;
+}
+ons-fab.fab--material{
+    background-color: #006400!important;
+    color: #fff!important;
+}
+.page--material__background {
+    background-color: #fff!important;
+}
+.tabbar--material__border {
+    background-color: #006400!important;
 }
