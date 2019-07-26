@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version='1.1' encoding='utf-8'?>
 <widget id="com.phonegap.giriasestadosbrasileiros" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>Gírias dos Estados Brasileiros</name>
     <description>
@@ -11,6 +11,9 @@
     <access origin="*" />
     <preference name="Orientation" value="portrait" />
     <preference name="DisallowOverscroll" value="true" />
+    <preference name="StatusBarOverlaysWebView" value="false" />
+    <preference name="StatusBarBackgroundColor" value="#006400" />
+    <preference name="StatusBarStyle" value="blacktranslucent" />
     <preference name="phonegap-version" value="cli-8.0.0" />
     <preference name="android-build-tool" value="gradle" />
     <preference name="android-minSdkVersion" value="16" />
