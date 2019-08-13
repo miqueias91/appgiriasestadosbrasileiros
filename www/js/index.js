@@ -57,7 +57,15 @@ var app = {
   },
   //FUNÇÃO DE BUSCA
   onSearchKeyDown: function(id) {
-    ons.notification.alert('Searched for: ' + id,{title: 'onSearchKeyDown!'});
+    if (id === '') {
+      // ons.notification.alert("Informe o nome da gíria.",{title: 'Ops!'});
+      return false;
+    }
+    else{
+      $('#resultado_girias').html("");
+      fn.showDialog('modal-aguarde');
+      app.pesquisaGiriaEstado(id);
+    }
   },
   buscaGiriaEstado: function(estado) {
     $.ajax({

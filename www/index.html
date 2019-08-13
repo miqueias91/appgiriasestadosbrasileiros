@@ -327,36 +327,15 @@
         <br>
           <ons-list-item class="input-items">
             <label class="center">
-            <ons-input style="width: 100%" id="pesquisa" placeholder="Digite o nome da gíria..."></ons-input>
+            <p style="text-align: center; margin: auto;">
+              <ons-search-input 
+                placeholder="Digite o nome da gíria..."
+                onchange="app.onSearchKeyDown(this.value);"
+              ></ons-search-input>
+            </p>
           </label>
           </ons-list-item>
-          <section style="margin: 16px">
-            <ons-button type='button' id="buscar_giria" modifier="large" class="button-margin">Buscar</ons-button>
-          </section>
-
-  <p style="text-align: center; margin-top: 10px;">
-    <ons-search-input
-      placeholder="Digite o nome da gíria..."
-      onclick="app.onSearchKeyDown('Searched for: ' + this.value);"
-    ></ons-search-input>
-  </p>
- 
           <div id='resultado_girias'></div>
-
-        <script>
-          $( "#buscar_giria" ).click(function() {
-            if ($( "#pesquisa" ).val() === '') {
-              ons.notification.alert("Informe o nome da gíria.",{title: 'Ops!'});
-              return false;
-            }
-            else{
-              $('#resultado_girias').html("");
-              fn.showDialog('modal-aguarde');
-              app.pesquisaGiriaEstado($( "#pesquisa" ).val());
-            }
-          });
-        </script>
-
         <style>
           .right-icon {
             margin-left: 10px;
