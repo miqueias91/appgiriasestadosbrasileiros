@@ -46,7 +46,7 @@ var app = {
   onDeviceReady: function() {
     console.log('onDeviceReady');
     this.receivedEvent('deviceready');
-    this.onSearchKeyDown('searchbutton');
+    // this.onSearchKeyDown('searchbutton');
     this.buscaGiriaEstado(estado);
     this.pesquisaGiriaEstado(pesquisa);
     this.cadastraGiria(giria_input, significado_giria, select_estado);
@@ -57,7 +57,7 @@ var app = {
   },
   //FUNÇÃO DE BUSCA
   onSearchKeyDown: function(id) {
-    ons.notification.alert("Buscando...",{title: 'onSearchKeyDown!'});
+    ons.notification.alert('Searched for: ' + id,{title: 'onSearchKeyDown!'});
   },
   buscaGiriaEstado: function(estado) {
     $.ajax({
