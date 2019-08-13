@@ -40,3 +40,12 @@ ons-fab.fab--material{
 .tabbar--material__border {
     background-color: #006400!important;
 }
+.alert-dialog-button--material {
+    color: #006400!important;
+}
+.alert-dialog-title--material {
+    color: #006400!important;
+}
+.modal__content {
+    font-size: 30px!important;
+}
