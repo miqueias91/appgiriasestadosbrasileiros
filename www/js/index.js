@@ -1,3 +1,5 @@
+let timeout = 5000;
+
 window.fn = {};
 
 window.fn.toggleMenu = function () {
@@ -55,28 +57,29 @@ var app = {
   },
   //FUNÇÃO DE BUSCA
   onSearchKeyDown: function(id) {
-    console.log(id);
+    ons.notification.alert("Buscando...",{title: 'onSearchKeyDown!'});
   },
   buscaGiriaEstado: function(estado) {
     $.ajax({
         url: "https://miqueiasmcaetano.000webhostapp.com/webservice/giriasestadosbrasileiros/buscaGiriaEstado.php",
         dataType: 'json',
         type: 'GET',
+        timeout: parseInt(timeout),
         data: {
           'uf': estado
         },
         error: function(a) {
           var timeoutID = 0;
-              clearTimeout(timeoutID);
-              timeoutID = setTimeout(function() { fn.hideDialog('modal-aguarde') }, 1);
-          ons.notification.alert("Não foi possível buscar as gírias desse estado.");
+          clearTimeout(timeoutID);
+          timeoutID = setTimeout(function() { fn.hideDialog('modal-aguarde') }, 1);
+          ons.notification.alert("Não foi possível buscar as gírias desse estado.",{title: 'Ops!'});
         },
         success: function(valorRetornado) {
         var timeoutID = 0;
         clearTimeout(timeoutID);
         timeoutID = setTimeout(function() { fn.hideDialog('modal-aguarde') }, 1);
         if (valorRetornado == "ERROR") {
-          ons.notification.alert("Não foi possível buscar as gírias desse estado.");
+          ons.notification.alert("Não foi possível buscar as gírias desse estado.",{title: 'Ops!'});
         }
         else{  
           var obj = valorRetornado;
@@ -94,34 +97,34 @@ var app = {
         url: "https://miqueiasmcaetano.000webhostapp.com/webservice/giriasestadosbrasileiros/buscaGiriaEstado.php",
         dataType: 'json',
         type: 'GET',
+        timeout: parseInt(timeout),
         data: {
           'pesquisa': pesquisa
         },
         error: function(a) {
           var timeoutID = 0;
-        clearTimeout(timeoutID);
-        timeoutID = setTimeout(function() { fn.hideDialog('modal-aguarde') }, 1);
-            $('#resultado_girias').append("<ons-card><div class='title'>Desculpe</div><div class='content'>Não encontramos nada parecido com essa gíria</div></ons-card>");
+          clearTimeout(timeoutID);
+          timeoutID = setTimeout(function() { fn.hideDialog('modal-aguarde') }, 1);
+          $('#resultado_girias').append("<ons-card><div class='title'>Desculpe</div><div class='content'>Não encontramos nada parecido com essa gíria</div></ons-card>");
         },
         success: function(valorRetornado) { 
-            var obj = valorRetornado;
-            var timeoutID = 0;
-        clearTimeout(timeoutID);
-        timeoutID = setTimeout(function() { fn.hideDialog('modal-aguarde') }, 1);
-          console.log(valorRetornado)
-            if (obj) {
-              for(var i in obj) {
-            $('#resultado_girias').append(
-              "<ons-card>"+
-                "<div class='title'>"+obj[i]['giria']+"</div>"+
-                "<div class='content'>"+obj[i]['significado']+"</div>"+
-                "<div class='content' style='text-align:right'>"+obj[i]['estado']+"</div>"+
-              "</ons-card>");
+          var obj = valorRetornado;
+          var timeoutID = 0;
+          clearTimeout(timeoutID);
+          timeoutID = setTimeout(function() { fn.hideDialog('modal-aguarde') }, 1);
+          if (obj) {
+            for(var i in obj) {
+              $('#resultado_girias').append(
+                "<ons-card>"+
+                  "<div class='title'>"+obj[i]['giria']+"</div>"+
+                  "<div class='content'>"+obj[i]['significado']+"</div>"+
+                  "<div class='content' style='text-align:right'>"+obj[i]['estado']+"</div>"+
+                "</ons-card>");
+            }
           }
-            }
-            else{
-              $('#resultado_girias').append("<ons-card><div class='title'>Desculpe</div><div class='content'>Não encontramos nada parecido com essa gíria</div></ons-card>");
-            }
+          else{
+            $('#resultado_girias').append("<ons-card><div class='title'>Desculpe</div><div class='content'>Não encontramos nada parecido com essa gíria</div></ons-card>");
+          }
         },
     }); 
   },
@@ -130,6 +133,7 @@ var app = {
         url: "https://miqueiasmcaetano.000webhostapp.com/webservice/giriasestadosbrasileiros/cadastraGiriaEstado.php",
         dataType: 'html',
         type: 'POST',
+        timeout: parseInt(timeout),
         data: {
           'giria': giria_input,
           'significado': significado_giria,
@@ -137,15 +141,15 @@ var app = {
         },
         error: function(a) {
           var timeoutID = 0;
-        clearTimeout(timeoutID);
-        timeoutID = setTimeout(function() { fn.hideDialog('modal-aguarde') }, 1);
-          ons.notification.alert("Não foi possível enviar sua gíria.");
+          clearTimeout(timeoutID);
+          timeoutID = setTimeout(function() { fn.hideDialog('modal-aguarde') }, 1);
+          ons.notification.alert("Não foi possível enviar sua gíria.",{title: 'Ops!'});
         },
         success: function(valorRetornado) {
           var timeoutID = 0;
-        clearTimeout(timeoutID);
-        timeoutID = setTimeout(function() { fn.hideDialog('modal-aguarde') }, 1);
-            ons.notification.alert("Sua gíria foi enviada com sucesso. Em breve ela estará disponível no estado brasileiro selecionado.");
+          clearTimeout(timeoutID);
+          timeoutID = setTimeout(function() { fn.hideDialog('modal-aguarde') }, 1);
+          ons.notification.alert("Sua gíria foi enviada com sucesso. Em breve ela estará disponível no estado brasileiro selecionado.",{title: 'Parabéns!'});
         },
     }); 
   }
