@@ -324,27 +324,12 @@
 
     <template id="buscar.html">
       <ons-page id="forms-page">
-        <br>
-          <ons-list-item class="input-items">
-            <label class="center">
-            <p style="text-align: center; margin: auto;">
-              <ons-search-input 
-                placeholder="Digite o nome da gíria..."
-                onchange="app.onSearchKeyDown(this.value);"
-              ></ons-search-input>
-            </p>
-          </label>
-          </ons-list-item>
+        <ons-search-input 
+          style="width: 100%"
+          placeholder="Digite o nome da gíria..."
+          onchange="app.onSearchKeyDown(this.value);"
+        ></ons-search-input>
           <div id='resultado_girias'></div>
-        <style>
-          .right-icon {
-            margin-left: 10px;
-          }
-
-          .right-label {
-            color: #666;
-          }
-        </style>
       </ons-page>
     </template>
 
