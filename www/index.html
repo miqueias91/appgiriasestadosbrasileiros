@@ -433,8 +433,26 @@
     <script type="text/javascript" src="cordova.js"></script>
     <script src="js/jquery.3.3.1.js"></script>
     <script src="lib/onsen/js/onsenui.js"></script>
-    <script src="js/onesignal.js"></script>
     <script src="js/index.js"></script>
+    <script>
+      document.addEventListener('deviceready', function () {
+        // Enable to debug issues.
+        // window.plugins.OneSignal.setLogLevel({logLevel: 4, visualLevel: 4});
+        alert('OneSignal')
+        window.plugins.OneSignal.getUserId(function(id){
+          alert(id)
+        });
+
+        var notificationOpenedCallback = function(jsonData) {
+          alert(JSON.stringify(jsonData));
+        };
+
+        window.plugins.OneSignal
+        .startInit('a03d77a5-4edf-4618-ab1b-020123f9fb22')
+        .handleNotificationOpened(notificationOpenedCallback  )
+        .endInit();
+      }, false);
+    </script>
     
 </body>
 

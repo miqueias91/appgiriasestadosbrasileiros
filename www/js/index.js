@@ -45,18 +45,6 @@ var app = {
   // 'pause', 'resume', etc.
   onDeviceReady: function() {
 
-  alert('initialize')
-  window.plugins.OneSignal.getUserId(function(id){
-    alert(id)
-  });
-  var notificationOpenedCallback = function(jsonData) {
-    ons.notification.alert(JSON.stringify(jsonData));
-  };
-  window.plugins.OneSignal
-  .startInit('a03d77a5-4edf-4618-ab1b-020123f9fb22')
-  .handleNotificationOpened(notificationOpenedCallback  )
-  .endInit();
-
     this.receivedEvent('deviceready');
     this.buscaGiriaEstado(estado);
     this.pesquisaGiriaEstado(pesquisa);
