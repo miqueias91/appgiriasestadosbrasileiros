@@ -15,6 +15,9 @@
     },
     "onesignal-cordova-plugin": {
       "PACKAGE_NAME": "com.phonegap.giriasestadosbrasileiros"
+    },
+    "cordova-plugin-dialogs": {
+      "PACKAGE_NAME": "com.phonegap.giriasestadosbrasileiros"
     }
   },
   "dependent_plugins": {}
