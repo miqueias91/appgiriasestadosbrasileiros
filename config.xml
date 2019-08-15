@@ -8,9 +8,7 @@
         Innovate Soft
     </author>
     <content src="index.html" />
-    <vs:features>
-        <vs:feature>onesignal-cordova-plugin</vs:feature>
-    </vs:features>
+    <gap:plugin name="onesignal-cordova-plugin" spec="^2.4.1" source="npm" />
     <plugin name="cordova-plugin-whitelist" spec="1" />
     <plugin name="cordova-plugin-splashscreen" source="npm"/>
     <plugin name="cordova-plugin-statusbar" source="npm" spec="~2.1.3" />
