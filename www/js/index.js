@@ -1,4 +1,4 @@
-let timeout = 5000;
+var timeout = 5000;
 
 window.fn = {};
 
@@ -113,7 +113,7 @@ var app = {
           var timeoutID = 0;
           clearTimeout(timeoutID);
           timeoutID = setTimeout(function() { fn.hideDialog('modal-aguarde') }, 1);
-          $('#resultado_girias').append("<ons-card><div class='title'>Desculpe</div><div class='content'>Não encontramos nada parecido com essa gíria</div></ons-card>");
+          $('#resultado_girias').append("<ons-card><div class='title'>Ops!</div><div class='content'>Não encontramos nada parecido com essa gíria</div></ons-card>");
         },
         success: function(valorRetornado) { 
           var obj = valorRetornado;
@@ -131,7 +131,7 @@ var app = {
             }
           }
           else{
-            $('#resultado_girias').append("<ons-card><div class='title'>Desculpe</div><div class='content'>Não encontramos nada parecido com essa gíria</div></ons-card>");
+            $('#resultado_girias').append("<ons-card><div class='title'>Ops!</div><div class='content'>Não encontramos nada parecido com essa gíria</div></ons-card>");
           }
         },
     }); 
