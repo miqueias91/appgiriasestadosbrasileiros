@@ -438,9 +438,9 @@
         // Enable to debug issues.
         // window.plugins.OneSignal.setLogLevel({logLevel: 4, visualLevel: 4});
         alert('OneSignal')
-        window.plugins.OneSignal.getUserId(function(id){
+        /*window.plugins.OneSignal.getUserId(function(id){
           alert(id)
-        });
+        });*/
 
         var notificationOpenedCallback = function(jsonData) {
           alert(JSON.stringify(jsonData));
