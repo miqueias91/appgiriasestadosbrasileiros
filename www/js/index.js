@@ -44,23 +44,7 @@ var app = {
   // Bind any cordova events here. Common events are:
   // 'pause', 'resume', etc.
   onDeviceReady: function() {
-  // Enable to debug issues.
-  // window.plugins.OneSignal.setLogLevel({logLevel: 4, visualLevel: 4});
-  window.plugins.OneSignal.getUserId(function(id){
-    alert(id)
-  });
-  var notificationOpenedCallback = function(jsonData) {
-    ons.notification.alert(JSON.stringify(jsonData));
-  };
-  window.plugins.OneSignal
-  .startInit('a03d77a5-4edf-4618-ab1b-020123f9fb22')
-  .handleNotificationOpened(notificationOpenedCallback  )
-  .endInit();
-
-
-
     this.receivedEvent('deviceready');
-    // this.onSearchKeyDown('searchbutton');
     this.buscaGiriaEstado(estado);
     this.pesquisaGiriaEstado(pesquisa);
     this.cadastraGiria(giria_input, significado_giria, select_estado);
