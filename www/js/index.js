@@ -46,9 +46,9 @@ var app = {
   onDeviceReady: function() {
 
     this.receivedEvent('deviceready');
-    this.buscaGiriaEstado(estado);
-    this.pesquisaGiriaEstado(pesquisa);
-    this.cadastraGiria(giria_input, significado_giria, select_estado);
+    //this.buscaGiriaEstado(estado);
+    //this.pesquisaGiriaEstado(pesquisa);
+    //this.cadastraGiria(giria_input, significado_giria, select_estado);
   },
   // Update DOM on a Received Event
   receivedEvent: function(id) {
