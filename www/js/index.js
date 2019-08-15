@@ -44,14 +44,13 @@ var app = {
   // Bind any cordova events here. Common events are:
   // 'pause', 'resume', etc.
   onDeviceReady: function() {
-    
-
-  alert('OneSignal');
   // Enable to debug issues.
   // window.plugins.OneSignal.setLogLevel({logLevel: 4, visualLevel: 4});
-  // window.plugins.OneSignal.getUserId(function(id){alert(id)});
+  window.plugins.OneSignal.getUserId(function(id){
+    alert(id)
+  });
   var notificationOpenedCallback = function(jsonData) {
-    alert(jsonData);
+    ons.notification.alert(JSON.stringify(jsonData));
   };
   window.plugins.OneSignal
   .startInit('a03d77a5-4edf-4618-ab1b-020123f9fb22')

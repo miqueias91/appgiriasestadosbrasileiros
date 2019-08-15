@@ -8,15 +8,13 @@
         Innovate Soft
     </author>
     <content src="index.html" />
-    <gap:plugin name="onesignal-cordova-plugin" spec="^2.4.1" source="npm" />
+    <vs:features>
+        <vs:feature>onesignal-cordova-plugin</vs:feature>
+    </vs:features>
     <plugin name="cordova-plugin-whitelist" spec="1" />
     <plugin name="cordova-plugin-splashscreen" source="npm"/>
     <plugin name="cordova-plugin-statusbar" source="npm" spec="~2.1.3" />
     <plugin name="cordova-plugin-dialogs" source="npm" spec="~2.0.2" />
-
-<!-- Can omit if not targetting Windows Phone -->
-<preference name="windows-appx-target" value="8.1-phone" />
-<preference name="WindowsToastCapable" value="true" />
 
     <access origin="*" />
     <preference name="Orientation" value="portrait" />
