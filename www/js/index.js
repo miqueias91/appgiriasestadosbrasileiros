@@ -135,6 +135,40 @@ var app = {
         },
     }); 
   },
+  ultimasGiriasCadastradas: function() {
+    $.ajax({
+        url: "https://miqueiasmcaetano.000webhostapp.com/webservice/giriasestadosbrasileiros/ultimasGiriasCadastradas.php",
+        dataType: 'json',
+        type: 'GET',
+        timeout: parseInt(timeout),
+        data: {
+          'ultimasGiriasCadastradas': 'sim'
+        },
+        error: function(a) {    
+          console.log(a)      
+          $('#ultimas_girias').append("<ons-card><div class='title'>Ops!</div><div class='content'>Nenhuma gíria cadastrada nos últimos dias.</div></ons-card>");
+        },
+        success: function(valorRetornado) { 
+          var obj = valorRetornado;
+          var timeoutID = 0;
+          clearTimeout(timeoutID);
+          timeoutID = setTimeout(function() { fn.hideDialog('modal-aguarde') }, 1);
+          if (obj) {
+            for(var i in obj) {
+              $('#ultimas_girias').append(
+                "<ons-card>"+
+                  "<div class='title'>"+obj[i]['giria']+"</div>"+
+                  "<div class='content'>"+obj[i]['significado']+"</div>"+
+                  "<div class='content' style='text-align:right'>"+obj[i]['estado']+"</div>"+
+                "</ons-card>");
+            }
+          }
+          else{
+            $('#ultimas_girias').append("<ons-card><div class='title'>Ops!</div><div class='content'>Nenhuma gíria cadastrada nos últimos dias.</div></ons-card>");
+          }
+        },
+    }); 
+  },
   cadastraGiria: function(giria_input, significado_giria, select_estado){
     $.ajax({
         url: "https://miqueiasmcaetano.000webhostapp.com/webservice/giriasestadosbrasileiros/cadastraGiriaEstado.php",

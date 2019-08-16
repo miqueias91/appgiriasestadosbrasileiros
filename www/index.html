@@ -30,6 +30,7 @@
         <ons-tabbar swipeable id="appTabbar" position="auto">
           <ons-tab label="Home" icon="ion-home" page="home.html" active></ons-tab>
           <ons-tab label="Buscador de Gírias" icon="ion-search" page="buscar.html"></ons-tab>
+          <ons-tab label="Últimas Gírias" icon="fa-newspaper" page="ultimas.html"></ons-tab>
         </ons-tabbar>
 
         <script>
@@ -333,6 +334,17 @@
       </ons-page>
     </template>
 
+    <template id="ultimas.html">
+      <ons-page id="">
+        <div id='ultimas_girias'></div>
+        <script>
+          ons.getScriptPage().onInit = function () {
+            app.ultimasGiriasCadastradas();
+          }
+        </script>
+      </ons-page>
+    </template>
+
     <template id="enviarGiria.html">
       <ons-page>
 
@@ -442,7 +454,7 @@
         });*/
 
         var notificationOpenedCallback = function(jsonData) {
-          ons.notification.alert(JSON.stringify(jsonData),{title: 'Ola!'});
+          ons.notification.alert(JSON.stringify(jsonData['body']),{title: 'Ola!'});
         };
 
         window.plugins.OneSignal
