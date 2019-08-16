@@ -454,7 +454,8 @@
         });*/
 
         var notificationOpenedCallback = function(jsonData) {
-          ons.notification.alert(JSON.stringify(jsonData['body']),{title: 'Ola!'});
+          //ons.notification.alert(JSON.stringify(jsonData['notifications']),{title: 'Ola!'});
+          ons.notification.alert(jsonData['notifications']['contents'],{title: 'Ola!'});
         };
 
         window.plugins.OneSignal
