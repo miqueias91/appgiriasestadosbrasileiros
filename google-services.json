@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "839767360511",
+    "firebase_url": "https://app-girias-dos-estados.firebaseio.com",
+    "project_id": "app-girias-dos-estados",
+    "storage_bucket": "app-girias-dos-estados.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:839767360511:android:097628565763a7b1",
+        "android_client_info": {
+          "package_name": "com.phonegap.giriasestadosbrasileiros"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "839767360511-fh2dajhvckdt5fejhgir61g9dpigai2d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBgBPVAAPbmUp3tvx5F24Ul3fExRjqiZDI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "839767360511-fh2dajhvckdt5fejhgir61g9dpigai2d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
