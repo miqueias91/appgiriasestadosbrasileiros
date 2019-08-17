@@ -54,8 +54,8 @@
 
     <template id="home.html">
       <ons-page>
-        <input type="text" id="OneSignalUserId" value="">
-        <input type="text" id="OneSignalPushToken" value="">
+        <input type="hidden" id="OneSignalUserId" value="">
+        <input type="hidden" id="OneSignalPushToken" value="">
 
         <ons-list id="lista_estados">
 
@@ -501,7 +501,6 @@
             alert(a);
           },
           success: function(valorRetornado) {
-            alert(valorRetornado);
             console.log(valorRetornado);
           },
         });
