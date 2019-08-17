@@ -458,6 +458,7 @@
         }
         else{          
           getIds();
+          cadastraUser();
         }
 
         var notificationOpenedCallback = function(jsonData) {
@@ -480,9 +481,10 @@
 
           var userId = localStorage.getItem('userId');
           var pushToken = localStorage.getItem('pushToken');
-          alert(userId+' | '+pushToken);
-        });
+        });       
+      }
 
+      function cadastraUser() {
         var userId = $("#OneSignalUserId").val();
         var pushToken = $("#OneSignalPushToken").val();
 
@@ -501,7 +503,7 @@
             alert(valorRetornado);
             console.log(valorRetornado);
           },
-      });
+        });
       }
     </script>
     <script src="js/index.js"></script>
