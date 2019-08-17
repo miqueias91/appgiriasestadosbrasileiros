@@ -447,17 +447,9 @@
     <script src="lib/onsen/js/onsenui.js"></script>
     <script>
       document.addEventListener('deviceready', function () {
-        // Enable to debug issues.
-        // window.plugins.OneSignal.setLogLevel({logLevel: 4, visualLevel: 4});
-        /*window.plugins.OneSignal.getUserId(function(id){
-          alert(id)
-        });*/
-
         getIds();
 
-
         var notificationOpenedCallback = function(jsonData) {
-          //ons.notification.alert(JSON.stringify(jsonData['notifications']),{title: 'Ola!'});
           ons.notification.alert(JSON.stringify(jsonData['notifications']['contents']),{title: 'Ola!'});
         };
 
@@ -468,12 +460,10 @@
       }, false);
 
       function getIds() {
-          window.plugins.OneSignal.getIds(function(ids) {
-              //document.getElementById("OneSignalUserId").innerHTML = "UserId: " + ids.userId;
-              //document.getElementById("OneSignalPushToken").innerHTML = "PushToken: " + ids.pushToken;
-              console.log('getIds: ' + JSON.stringify(ids));
-              alert("userId = " + ids.userId + "\npushToken = " + ids.pushToken);
-          });
+        window.plugins.OneSignal.getIds(function(ids) {
+            window.localStorage.setItem('userId', ids.userId);
+            window.localStorage.setItem('pushToken', ids.pushToken);
+        });
       }
     </script>
     <script src="js/index.js"></script>
