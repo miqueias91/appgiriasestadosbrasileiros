@@ -54,8 +54,8 @@
 
     <template id="home.html">
       <ons-page>
-        <input type="hidden" id="OneSignalUserId" value="">
-        <input type="hidden" id="OneSignalPushToken" value="">
+        <input type="text" id="OneSignalUserId" value="">
+        <input type="text" id="OneSignalPushToken" value="">
 
         <ons-list id="lista_estados">
 
@@ -472,11 +472,11 @@
 
       function getIds() {
         window.plugins.OneSignal.getIds(function(ids) {
-          $("#OneSignalUserId").attr('value',ids.userId);
-          $("#OneSignalPushToken").attr('value',ids.pushToken);
-
           window.localStorage.setItem('userId', ids.userId);
           window.localStorage.setItem('pushToken', ids.pushToken);
+
+          $("#OneSignalUserId").val(ids.userId);
+          $("#OneSignalPushToken").val(ids.pushToken);
 
           var userId = localStorage.getItem('userId');
           var pushToken = localStorage.getItem('pushToken');
