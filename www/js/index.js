@@ -198,23 +198,5 @@ var app = {
         },
     }); 
   }
-  cadastraUser: function(userId, pushToken){
-    $.ajax({
-        url: "https://miqueiasmcaetano.000webhostapp.com/webservice/giriasestadosbrasileiros/cadastraUser.php",
-        dataType: 'html',
-        type: 'POST',
-        timeout: parseInt(timeout),
-        data: {
-          'userId': userId,
-          'pushToken': pushToken,
-        },
-        error: function(a) {
-          console.log(a);
-        },
-        success: function(valorRetornado) {
-          console.log(valorRetornado);
-        },
-    }); 
-  }
 };
 app.initialize();
