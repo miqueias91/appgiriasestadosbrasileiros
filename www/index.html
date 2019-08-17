@@ -450,7 +450,7 @@
         getIds();
 
         var notificationOpenedCallback = function(jsonData) {
-          ons.notification.alert(JSON.stringify(jsonData['notifications']['contents']),{title: 'Ola!'});
+          navigator.notification.alert(JSON.stringify(jsonData['notifications']['contents']),{title: 'Ola!'});
         };
 
         window.plugins.OneSignal
