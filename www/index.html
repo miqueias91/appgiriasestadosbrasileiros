@@ -474,11 +474,11 @@
 
         var userId = localStorage.getItem('userId');
         var pushToken = localStorage.getItem('pushToken');
+        alert(userId+' | '+pushToken);
         $.ajax({
           url: "https://miqueiasmcaetano.000webhostapp.com/webservice/giriasestadosbrasileiros/cadastraUser.php",
           dataType: 'html',
           type: 'POST',
-          timeout: parseInt(timeout),
           data: {
             'userId': userId,
             'pushToken': pushToken,
@@ -487,6 +487,7 @@
             alert(a);
           },
           success: function(valorRetornado) {
+            alert(valorRetornado);
             console.log(valorRetornado);
           },
       });
