@@ -458,7 +458,7 @@
         }
         else{          
           getIds();
-          cadastraUser();
+          //cadastraUser();
         }
 
         var notificationOpenedCallback = function(jsonData) {
@@ -481,6 +481,7 @@
 
           var userId = localStorage.getItem('userId');
           var pushToken = localStorage.getItem('pushToken');
+          cadastraUser();
         });       
       }
 
