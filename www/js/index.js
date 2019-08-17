@@ -170,6 +170,8 @@ var app = {
     }); 
   },
   cadastraGiria: function(giria_input, significado_giria, select_estado){
+    var userId = localStorage.getItem('userId');
+    var pushToken = localStorage.getItem('pushToken');
     $.ajax({
         url: "https://miqueiasmcaetano.000webhostapp.com/webservice/giriasestadosbrasileiros/cadastraGiriaEstado.php",
         dataType: 'html',
@@ -178,7 +180,9 @@ var app = {
         data: {
           'giria': giria_input,
           'significado': significado_giria,
-          'estado': select_estado
+          'estado': select_estado,
+          'userId': userId,
+          'pushToken': pushToken,
         },
         error: function(a) {
           var timeoutID = 0;
@@ -191,6 +195,24 @@ var app = {
           clearTimeout(timeoutID);
           timeoutID = setTimeout(function() { fn.hideDialog('modal-aguarde') }, 1);
           ons.notification.alert("Sua gíria foi enviada com sucesso. Em breve ela estará disponível no estado brasileiro selecionado.",{title: 'Parabéns!'});
+        },
+    }); 
+  }
+  cadastraUser: function(userId, pushToken){
+    $.ajax({
+        url: "https://miqueiasmcaetano.000webhostapp.com/webservice/giriasestadosbrasileiros/cadastraUser.php",
+        dataType: 'html',
+        type: 'POST',
+        timeout: parseInt(timeout),
+        data: {
+          'userId': userId,
+          'pushToken': pushToken,
+        },
+        error: function(a) {
+          console.log(a);
+        },
+        success: function(valorRetornado) {
+          console.log(valorRetornado);
         },
     }); 
   }

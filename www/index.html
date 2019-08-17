@@ -447,15 +447,22 @@
     <script src="lib/onsen/js/onsenui.js"></script>
     <script>
       document.addEventListener('deviceready', function () {
-        getIds();
+        //VRIFICO NA PRIMEIRA VEZ QUE ABRE O APP
+        var userId = localStorage.getItem('userId');
+        var pushToken = localStorage.getItem('pushToken');
+        if(userId && pushToken){
+        }
+        else{          
+          getIds();
+        }
 
         var notificationOpenedCallback = function(jsonData) {
-          navigator.notification.alert(JSON.stringify(jsonData['notifications']['contents']),{title: 'Ola!'});
+          ons.notification.alert(JSON.stringify(jsonData['notifications']['contents']),{title: 'Ola!'});
         };
 
         window.plugins.OneSignal
         .startInit('a03d77a5-4edf-4618-ab1b-020123f9fb22')
-        .handleNotificationOpened(notificationOpenedCallback  )
+        .handleNotificationOpened(notificationOpenedCallback)
         .endInit();
       }, false);
 
@@ -463,6 +470,10 @@
         window.plugins.OneSignal.getIds(function(ids) {
             window.localStorage.setItem('userId', ids.userId);
             window.localStorage.setItem('pushToken', ids.pushToken);
+
+            var userId = localStorage.getItem('userId');
+            var pushToken = localStorage.getItem('pushToken');
+            app.cadastraUser(userId, pushToken);
         });
       }
     </script>
