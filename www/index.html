@@ -54,6 +54,8 @@
 
     <template id="home.html">
       <ons-page>
+        <input type="hidden" id="OneSignalUserId" value="">
+        <input type="hidden" id="OneSignalPushToken" value="">
 
         <ons-list id="lista_estados">
 
@@ -441,6 +443,8 @@
       </ons-page>
     </template>
 
+    
+
     <!-- JS dependencies (order matters!) -->
     <script type="text/javascript" src="cordova.js"></script>
     <script src="js/jquery.3.3.1.js"></script>
@@ -468,13 +472,20 @@
 
       function getIds() {
         window.plugins.OneSignal.getIds(function(ids) {
-            window.localStorage.setItem('userId', ids.userId);
-            window.localStorage.setItem('pushToken', ids.pushToken);
+          $("#OneSignalUserId").attr('value',ids.userId);
+          $("#OneSignalPushToken").attr('value',ids.pushToken);
+
+          window.localStorage.setItem('userId', ids.userId);
+          window.localStorage.setItem('pushToken', ids.pushToken);
+
+          var userId = localStorage.getItem('userId');
+          var pushToken = localStorage.getItem('pushToken');
+          alert(userId+' | '+pushToken);
         });
 
-        var userId = localStorage.getItem('userId');
-        var pushToken = localStorage.getItem('pushToken');
-        alert(userId+' | '+pushToken);
+        var userId = $("#OneSignalUserId").val();
+        var pushToken = $("#OneSignalPushToken").val(ids.pushToken);
+
         $.ajax({
           url: "https://miqueiasmcaetano.000webhostapp.com/webservice/giriasestadosbrasileiros/cadastraUser.php",
           dataType: 'html',
