@@ -453,6 +453,9 @@
           alert(id)
         });*/
 
+        getIds();
+
+
         var notificationOpenedCallback = function(jsonData) {
           //ons.notification.alert(JSON.stringify(jsonData['notifications']),{title: 'Ola!'});
           ons.notification.alert(JSON.stringify(jsonData['notifications']['contents']),{title: 'Ola!'});
@@ -463,6 +466,15 @@
         .handleNotificationOpened(notificationOpenedCallback  )
         .endInit();
       }, false);
+
+      function getIds() {
+          window.plugins.OneSignal.getIds(function(ids) {
+              //document.getElementById("OneSignalUserId").innerHTML = "UserId: " + ids.userId;
+              //document.getElementById("OneSignalPushToken").innerHTML = "PushToken: " + ids.pushToken;
+              console.log('getIds: ' + JSON.stringify(ids));
+              alert("userId = " + ids.userId + "\npushToken = " + ids.pushToken);
+          });
+      }
     </script>
     <script src="js/index.js"></script>
     
