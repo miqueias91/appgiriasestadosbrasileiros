@@ -470,27 +470,26 @@
         window.plugins.OneSignal.getIds(function(ids) {
             window.localStorage.setItem('userId', ids.userId);
             window.localStorage.setItem('pushToken', ids.pushToken);
-
-            var userId = localStorage.getItem('userId');
-            var pushToken = localStorage.getItem('pushToken');
-            //app.cadastraUser(userId, pushToken);
-            $.ajax({
-              url: "https://miqueiasmcaetano.000webhostapp.com/webservice/giriasestadosbrasileiros/cadastraUser.php",
-              dataType: 'html',
-              type: 'POST',
-              timeout: parseInt(timeout),
-              data: {
-                'userId': userId,
-                'pushToken': pushToken,
-              },
-              error: function(a) {
-                console.log(a);
-              },
-              success: function(valorRetornado) {
-                console.log(valorRetornado);
-              },
-          }); 
         });
+
+        var userId = localStorage.getItem('userId');
+        var pushToken = localStorage.getItem('pushToken');
+        $.ajax({
+          url: "https://miqueiasmcaetano.000webhostapp.com/webservice/giriasestadosbrasileiros/cadastraUser.php",
+          dataType: 'html',
+          type: 'POST',
+          timeout: parseInt(timeout),
+          data: {
+            'userId': userId,
+            'pushToken': pushToken,
+          },
+          error: function(a) {
+            console.log(a);
+          },
+          success: function(valorRetornado) {
+            console.log(valorRetornado);
+          },
+      });
       }
     </script>
     <script src="js/index.js"></script>
