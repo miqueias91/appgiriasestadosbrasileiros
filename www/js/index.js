@@ -44,6 +44,7 @@ var app = {
   // Bind any cordova events here. Common events are:
   // 'pause', 'resume', etc.
   onDeviceReady: function() {
+    $('ons-page#tela_home').css('display','block');    
     this.receivedEvent('deviceready');
     //this.buscaGiriaEstado(estado);
     //this.pesquisaGiriaEstado(pesquisa);
@@ -51,7 +52,6 @@ var app = {
   },
   // Update DOM on a Received Event
   receivedEvent: function(id) {
-    $('ons-page#tela_home').css('display','block');    
     console.log('receivedEvent');
   },
   //FUNÇÃO DE BUSCA
