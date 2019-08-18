@@ -51,7 +51,7 @@ var app = {
   },
   // Update DOM on a Received Event
   receivedEvent: function(id) {
-    $('template.tela_home').css('display','');
+    $('ons-page#tela_home').css('display','block');    
     console.log('receivedEvent');
   },
   //FUNÇÃO DE BUSCA

@@ -34,7 +34,7 @@
         </ons-tabbar>
 
         <script>
-          ons.getScriptPage().addEventListener('prechange', function(event) {
+          ons.getScriptPage().addEventListener('prechange', function(event) {            
             if (event.target.matches('#appTabbar')) {
               // event.currentTarget.querySelector('ons-toolbar .center').innerHTML = event.tabItem.getAttribute('label');
               event.currentTarget.querySelector('ons-toolbar .center center').innerHTML = 'Gírias dos Estados Brasileiros';
@@ -52,8 +52,8 @@
       </p>
     </ons-modal>
 
-    <template id="home.html" class="tela_home" style="display: none;">
-      <ons-page>
+    <template id="home.html">
+      <ons-page id="tela_home" style="display: none;">
         <input type="hidden" id="OneSignalUserId" value="">
         <input type="hidden" id="OneSignalPushToken" value="">
 
