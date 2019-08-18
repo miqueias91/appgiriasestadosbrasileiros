@@ -468,10 +468,9 @@
         window.plugins.OneSignal
           .startInit('a03d77a5-4edf-4618-ab1b-020123f9fb22')
           .handleNotificationOpened(function(jsonData) {
-            /*alert(
-              JSON.stringify(jsonData['notification'])
-            );*/
-             alert(jsonData['notification']);
+            alert(
+              JSON.stringify(jsonData['notification']['payload'])
+            );
           })
           .inFocusDisplaying(window.plugins.OneSignal.OSInFocusDisplayOption.Notification)
           .endInit();
