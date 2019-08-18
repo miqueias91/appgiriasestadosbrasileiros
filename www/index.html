@@ -463,48 +463,15 @@
 
         var notificationOpenedCallback = function(jsonData) {
           //navigator.notification.alert(JSON.stringify(jsonData['notifications']['contents']),{title: 'Ola!'});
-          navigator.notification.alert(
-              JSON.stringify(jsonData['notifications']['contents']),  // message
-              '',         // callback
-              'Ola!',            // title
-              'OK'                  // buttonName
-          );
-        };
-
-        var notificationReceivedCallback = function(jsonData) {
-          //navigator.notification.alert(JSON.stringify(jsonData['notifications']['contents']),{title: 'Ola!'});
-          navigator.notification.alert(
-              JSON.stringify(jsonData['notifications']['contents']),  // message
-              '',         // callback
-              'Eii!',            // title
-              'OK'                  // buttonName
-          );
+          ons.notification.alert(
+              JSON.stringify(jsonData['notifications']['contents'])
+            );
         };
 
         window.plugins.OneSignal
-        .startInit('a03d77a5-4edf-4618-ab1b-020123f9fb22')
-        /*.handleNotificationReceived(notificationReceivedCallback)
-        .handleNotificationOpened(notificationOpenedCallback)
-        .endInit();*/
-
-
-
-        .handleNotificationReceived(function(jsonData) {
-        alert("Notification received: \n" + JSON.stringify(jsonData['notifications']['contents']));
-        console.log('Did I receive a notification: ' + JSON.stringify(jsonData['notifications']['contents']));
-        })
-        .handleNotificationOpened(function(jsonData) {
-        alert("Notification opened: \n" + JSON.stringify(jsonData));
-        console.log('didOpenRemoteNotificationCallBack: ' + JSON.stringify(jsonData['notifications']['contents']));
-        })
-        .inFocusDisplaying(window.plugins.OneSignal.OSInFocusDisplayOption.InAppAlert)
-        .iOSSettings(iosSettings)
-        .endInit();
-
-
-
-
-
+          .startInit('a03d77a5-4edf-4618-ab1b-020123f9fb22')
+          .handleNotificationOpened(notificationOpenedCallback)
+          .endInit();
       }, false);
 
       function getIds() {
