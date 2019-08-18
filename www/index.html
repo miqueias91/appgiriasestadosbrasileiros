@@ -53,7 +53,7 @@
     </ons-modal>
 
     <template id="home.html">
-      <ons-page id="tela_home" style="display: none;">
+      <ons-page>
         <input type="hidden" id="OneSignalUserId" value="">
         <input type="hidden" id="OneSignalPushToken" value="">
 
@@ -451,7 +451,6 @@
     <script src="lib/onsen/js/onsenui.js"></script>
     <script>
       document.addEventListener('deviceready', function () {
-        $('#tela_home').css('display','block');
         //VRIFICO NA PRIMEIRA VEZ QUE ABRE O APP
         var userId = localStorage.getItem('userId');
         var pushToken = localStorage.getItem('pushToken');
