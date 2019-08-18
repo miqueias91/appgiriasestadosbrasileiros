@@ -463,7 +463,7 @@
 
         var notificationOpenedCallback = function(jsonData) {
           //navigator.notification.alert(JSON.stringify(jsonData['notifications']['contents']),{title: 'Ola!'});
-          ons.notification.alert(
+          navigator.notification.alert(
               JSON.stringify(jsonData['notifications']['contents'])
             );
         };
