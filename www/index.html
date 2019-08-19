@@ -458,18 +458,15 @@
         }
         else{          
           getIds();
-          //cadastraUser();
-        }
-
-        var notificationOpenedCallback = function(jsonData) {
-          //ons.notification.alert(JSON.stringify(jsonData['notifications']['contents']),{title: 'Ola!'});
-        };
+        }   
 
         window.plugins.OneSignal
           .startInit('a03d77a5-4edf-4618-ab1b-020123f9fb22')
           .handleNotificationOpened(function(jsonData) {
+            var mensagem = JSON.stringify(jsonData['notification']['payload']['body'])
             ons.notification.alert(
-              JSON.stringify(jsonData['notification']['payload']['body'])
+              mensagem,
+              {title: 'Ola!'}
             );
           })
           .inFocusDisplaying(window.plugins.OneSignal.OSInFocusDisplayOption.Notification)
