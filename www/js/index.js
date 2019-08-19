@@ -51,10 +51,7 @@ var app = {
       app.trocaClasse(div, 'escondido', 'visivel');
     }, 1000);
     
-    this.receivedEvent('deviceready');
-    //this.buscaGiriaEstado(estado);
-    //this.pesquisaGiriaEstado(pesquisa);
-    //this.cadastraGiria(giria_input, significado_giria, select_estado);
+    this.receivedEvent('deviceready');    
   },
   // Update DOM on a Received Event
   receivedEvent: function(id) {
@@ -63,7 +60,6 @@ var app = {
   //FUNÇÃO DE BUSCA
   onSearchKeyDown: function(id) {
     if (id === '') {
-      // ons.notification.alert("Informe o nome da gíria.",{title: 'Ops!'});
       return false;
     }
     else{
