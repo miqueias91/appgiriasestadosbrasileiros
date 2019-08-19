@@ -44,6 +44,12 @@ var app = {
   // Bind any cordova events here. Common events are:
   // 'pause', 'resume', etc.
   onDeviceReady: function() {
+    setTimeout(function() {
+      var div = document.querySelector('ons-page#tabbar-page');
+      app.trocaClasse(div, 'escondido', 'visivel');
+      var div = document.querySelector('ons-page#pagina_inicio');
+      app.trocaClasse(div, 'escondido', 'visivel');
+    }, 1000);
     
     this.receivedEvent('deviceready');
     //this.buscaGiriaEstado(estado);
@@ -197,6 +203,12 @@ var app = {
           ons.notification.alert("Sua gíria foi enviada com sucesso. Em breve ela estará disponível no estado brasileiro selecionado.",{title: 'Parabéns!'});
         },
     }); 
+  },
+  trocaClasse: function(elemento, antiga, nova) {
+    elemento.classList.remove(antiga);
+    elemento.classList.add(nova);
   }
+
+
 };
 app.initialize();

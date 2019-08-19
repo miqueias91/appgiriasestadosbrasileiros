@@ -49,3 +49,9 @@ ons-fab.fab--material{
 .modal__content {
     font-size: 30px!important;
 }
+.escondido {
+    visibility: hidden;
+}
+.visivel {
+    visibility: visible;
+}

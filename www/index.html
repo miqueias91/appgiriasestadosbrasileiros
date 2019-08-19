@@ -23,7 +23,7 @@
     </ons-navigator>
 
     <template id="tabbar.html">
-      <ons-page id="tabbar-page">
+      <ons-page id="tabbar-page" class="escondido">
         <ons-toolbar>
           <div class="center"><center>Gírias dos Estados Brasileiros</center></div>
         </ons-toolbar>
@@ -34,7 +34,7 @@
         </ons-tabbar>
 
         <script>
-          ons.getScriptPage().addEventListener('prechange', function(event) {            
+          ons.getScriptPage().addEventListener('prechange', function(event) { 
             if (event.target.matches('#appTabbar')) {
               // event.currentTarget.querySelector('ons-toolbar .center').innerHTML = event.tabItem.getAttribute('label');
               event.currentTarget.querySelector('ons-toolbar .center center').innerHTML = 'Gírias dos Estados Brasileiros';
@@ -53,7 +53,7 @@
     </ons-modal>
 
     <template id="home.html">
-      <ons-page>
+      <ons-page id="pagina_inicio" class="escondido">
         <input type="hidden" id="OneSignalUserId" value="">
         <input type="hidden" id="OneSignalPushToken" value="">
 
@@ -463,7 +463,6 @@
         window.plugins.OneSignal
           .startInit('a03d77a5-4edf-4618-ab1b-020123f9fb22')
           .handleNotificationOpened(function(jsonData) {
-            //var mensagem = JSON.stringify(jsonData['notification']['payload']['body']);
             var mensagem = JSON.parse(JSON.stringify(jsonData['notification']['payload']['body']));
 
             ons.notification.alert(
