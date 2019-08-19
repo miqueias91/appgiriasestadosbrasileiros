@@ -463,9 +463,9 @@
         window.plugins.OneSignal
           .startInit('a03d77a5-4edf-4618-ab1b-020123f9fb22')
           .handleNotificationOpened(function(jsonData) {
-            var mensagem = JSON.stringify(jsonData['notification']['payload']['body']);
-            mensagem = mensagem.replace('\"','');
-            
+            //var mensagem = JSON.stringify(jsonData['notification']['payload']['body']);
+            var mensagem = JSON.parse(JSON.stringify(jsonData['notification']['payload']['body']));
+
             ons.notification.alert(
               mensagem,
               {title: 'Ola!'}
