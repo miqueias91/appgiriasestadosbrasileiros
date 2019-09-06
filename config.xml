@@ -9,7 +9,7 @@
     </author>
     <content src="index.html" />
     <gap:plugin name="onesignal-cordova-plugin" source="npm" spec="^2.4.1" />
-    <gap:plugin name="cordova-plugin-admob-simple" source="npm"/>
+    <plugin name="cordova-plugin-admob-simple" source="npm"/>
     <plugin name="cordova-plugin-whitelist" spec="1" />
     <plugin name="cordova-plugin-splashscreen" source="npm" />
     <plugin name="cordova-plugin-statusbar" source="npm" spec="~2.1.3" />
