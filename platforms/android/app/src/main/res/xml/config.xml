@@ -31,8 +31,6 @@
     </author>
     <content src="index.html" />
     <gap:plugin name="onesignal-cordova-plugin" source="npm" spec="^2.4.1" />
-    <gap:plugin name="cordova-admob-sdklibs" source="npm" spec="^2.1.6" />
-    <gap:plugin name="cordova-plugin-admob-simple" source="npm" spec="^3.3.8" />
     <splash src="./www/img/Default@2x~universal~anyany.png" />
     <splash src="./www/img/Default@2x~universal~comany.png" />
     <splash src="./www/img/Default@2x~universal~comcom.png" />
