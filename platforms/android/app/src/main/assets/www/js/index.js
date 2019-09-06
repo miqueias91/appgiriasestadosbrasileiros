@@ -50,12 +50,12 @@ var app = {
   // Bind any cordova events here. Common events are:
   // 'pause', 'resume', etc.
   onDeviceReady: function() {
-
-    this.receivedEvent('deviceready');
+    
+    this.receivedEvent('deviceready');  
   },
   // Update DOM on a Received Event
   receivedEvent: function(id) {
-    initAd();
+    initAd();  
     showBannerFunc();
     showInterstitialFunc();
     console.log('receivedEvent');
@@ -93,7 +93,7 @@ var app = {
         if (valorRetornado == "ERROR") {
           ons.notification.alert("Não foi possível buscar as gírias desse estado.",{title: 'Ops!'});
         }
-        else{
+        else{  
           var obj = valorRetornado;
           if (obj) {
             for(var i in obj) {
@@ -102,7 +102,7 @@ var app = {
           }
         }
         },
-    });
+    }); 
   },
   pesquisaGiriaEstado: function(pesquisa) {
     $.ajax({
@@ -119,7 +119,7 @@ var app = {
           timeoutID = setTimeout(function() { fn.hideDialog('modal-aguarde') }, 1);
           $('#resultado_girias').append("<ons-card><div class='title'>Ops!</div><div class='content'>Não encontramos nada parecido com essa gíria</div></ons-card>");
         },
-        success: function(valorRetornado) {
+        success: function(valorRetornado) { 
           var obj = valorRetornado;
           var timeoutID = 0;
           clearTimeout(timeoutID);
@@ -138,7 +138,7 @@ var app = {
             $('#resultado_girias').append("<ons-card><div class='title'>Ops!</div><div class='content'>Não encontramos nada parecido com essa gíria</div></ons-card>");
           }
         },
-    });
+    }); 
   },
   ultimasGiriasCadastradas: function() {
     $.ajax({
@@ -149,11 +149,11 @@ var app = {
         data: {
           'ultimasGiriasCadastradas': 'sim'
         },
-        error: function(a) {
-          console.log(a)
+        error: function(a) {    
+          console.log(a)      
           $('#ultimas_girias').append("<ons-card><div class='title'>Ops!</div><div class='content'>Nenhuma gíria cadastrada nos últimos dias.</div></ons-card>");
         },
-        success: function(valorRetornado) {
+        success: function(valorRetornado) { 
           var obj = valorRetornado;
           var timeoutID = 0;
           clearTimeout(timeoutID);
@@ -172,7 +172,7 @@ var app = {
             $('#ultimas_girias').append("<ons-card><div class='title'>Ops!</div><div class='content'>Nenhuma gíria cadastrada nos últimos dias.</div></ons-card>");
           }
         },
-    });
+    }); 
   },
   cadastraGiria: function(giria_input, significado_giria, select_estado){
     var userId = localStorage.getItem('userId');
@@ -201,7 +201,7 @@ var app = {
           timeoutID = setTimeout(function() { fn.hideDialog('modal-aguarde') }, 1);
           ons.notification.alert("Sua gíria foi enviada com sucesso. Em breve ela estará disponível no estado brasileiro selecionado.",{title: 'Parabéns!'});
         },
-    });
+    }); 
   },
   trocaClasse: function(elemento, antiga, nova) {
     elemento.classList.remove(antiga);
@@ -209,17 +209,18 @@ var app = {
   }
 };
 
-//initialize the goodies
+//initialize the goodies 
 function initAd(){
   if ( window.plugins && window.plugins.AdMob ) {
+    alert("initAd")
     var ad_units = {
       ios : {
-        banner: 'ca-app-pub-7091486462236476/4482154427',       //PUT ADMOB ADCODE HERE
-        interstitial: 'ca-app-pub-7091486462236476/8135648345'  //PUT ADMOB ADCODE HERE
+        banner: 'ca-app-pub-7091486462236476/4482154427',       //PUT ADMOB ADCODE HERE 
+        interstitial: 'ca-app-pub-7091486462236476/8135648345'  //PUT ADMOB ADCODE HERE 
       },
       android : {
-        banner: 'ca-app-pub-7091486462236476/4482154427',       //PUT ADMOB ADCODE HERE
-        interstitial: 'ca-app-pub-7091486462236476/8135648345'  //PUT ADMOB ADCODE HERE
+        banner: 'ca-app-pub-7091486462236476/4482154427',       //PUT ADMOB ADCODE HERE 
+        interstitial: 'ca-app-pub-7091486462236476/8135648345'  //PUT ADMOB ADCODE HERE 
       }
     };
     var admobid = ( /(android)/i.test(navigator.userAgent) ) ? ad_units.android : ad_units.ios;
@@ -227,23 +228,23 @@ function initAd(){
     window.plugins.AdMob.setOptions( {
       publisherId: admobid.banner,
       interstitialAdId: admobid.interstitial,
-      adSize: window.plugins.AdMob.AD_SIZE.SMART_BANNER,  //use SMART_BANNER, BANNER, IAB_MRECT, IAB_BANNER, IAB_LEADERBOARD
-      bannerAtTop: false, // set to true, to put banner at top
-      overlap: true, // banner will overlap webview
-      offsetTopBar: false, // set to true to avoid ios7 status bar overlap
-      isTesting: false, // receiving test ad
-      autoShow: false // auto show interstitial ad when loaded
+      adSize: window.plugins.AdMob.AD_SIZE.SMART_BANNER,  //use SMART_BANNER, BANNER, IAB_MRECT, IAB_BANNER, IAB_LEADERBOARD 
+      bannerAtTop: false, // set to true, to put banner at top 
+      overlap: true, // banner will overlap webview  
+      offsetTopBar: false, // set to true to avoid ios7 status bar overlap 
+      isTesting: false, // receiving test ad 
+      autoShow: false // auto show interstitial ad when loaded 
     });
 
     registerAdEvents();
-    window.plugins.AdMob.createInterstitialView();  //get the interstitials ready to be shown
+    window.plugins.AdMob.createInterstitialView();  //get the interstitials ready to be shown 
     window.plugins.AdMob.requestInterstitialAd();
   } else {
-        console.log( 'admob plugin not ready' );
+    alert( 'admob plugin not ready' ); 
   }
 }
 
-//functions to allow you to know when ads are shown, etc.
+//functions to allow you to know when ads are shown, etc. 
 function registerAdEvents() {
   document.addEventListener('onReceiveAd', function(){});
   document.addEventListener('onFailedToReceiveAd', function(data){});
@@ -253,17 +254,17 @@ function registerAdEvents() {
   document.addEventListener('onReceiveInterstitialAd', function(){ });
   document.addEventListener('onPresentInterstitialAd', function(){ });
   document.addEventListener('onDismissInterstitialAd', function(){
-    window.plugins.AdMob.createInterstitialView();          //REMOVE THESE 2 LINES IF USING AUTOSHOW
-    window.plugins.AdMob.requestInterstitialAd();           //get the next one ready only after the current one is closed
+    window.plugins.AdMob.createInterstitialView();          //REMOVE THESE 2 LINES IF USING AUTOSHOW 
+    window.plugins.AdMob.requestInterstitialAd();           //get the next one ready only after the current one is closed 
   });
 }
 
-//display the banner
+//display the banner 
 function showBannerFunc(){
   window.plugins.AdMob.createBannerView();
 }
 
-//display the interstitial
+//display the interstitial 
 function showInterstitialFunc(){
   window.plugins.AdMob.showInterstitialAd();
 }
