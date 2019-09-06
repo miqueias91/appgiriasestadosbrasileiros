@@ -2,8 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.phonegap.giriasestadosbrasileiros"
     android:hardwareAccelerated="true"
-    android:versionCode="10003"
-    android:versionName="1.0.3" >
+    android:versionCode="10004"
+    android:versionName="1.0.4" >
 
     <uses-sdk
         android:minSdkVersion="16"
@@ -68,8 +68,7 @@
         android:hardwareAccelerated="true"
         android:icon="@mipmap/icon"
         android:label="@string/app_name"
-        android:supportsRtl="true"
-        android:testOnly="true" >
+        android:supportsRtl="true" >
         <activity
             android:name="com.phonegap.giriasestadosbrasileiros.MainActivity"
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale"
@@ -249,11 +248,6 @@
         <meta-data
             android:name="android.support.VERSION"
             android:value="26.0.0" />
-
-        <provider
-            android:name="com.android.tools.ir.server.InstantRunContentProvider"
-            android:authorities="com.phonegap.giriasestadosbrasileiros.com.android.tools.ir.server.InstantRunContentProvider"
-            android:multiprocess="true" />
     </application>
 
 </manifest>

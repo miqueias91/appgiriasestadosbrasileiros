@@ -369,7 +369,7 @@ public class SplashScreen extends CordovaPlugin {
                 progressBar.setLayoutParams(layoutParams);
 
                 if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.LOLLIPOP) {
-                    String colorName = preferences.getString("SplashScreenSpinnerColor", null);
+                    String colorName = preferences.getString("SplashScreenSpinnerColor", '#000000');
                     if(colorName != null){
                         int[][] states = new int[][] {
                             new int[] { android.R.attr.state_enabled}, // enabled
