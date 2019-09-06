@@ -8,6 +8,9 @@
     ]
   },
   "dependencies": {
-    "cordova-android": "^7.0.0"
+    "cordova-admob-sdklibs": "^2.1.6",
+    "cordova-android": "^7.0.0",
+    "cordova-plugin-admob-simple": "^3.3.8",
+    "cordova-plugin-statusbar": "^2.1.3"
   }
 }

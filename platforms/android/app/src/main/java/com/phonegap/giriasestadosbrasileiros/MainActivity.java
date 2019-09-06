@@ -19,6 +19,7 @@
 
 package com.phonegap.giriasestadosbrasileiros;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import org.apache.cordova.*;
 

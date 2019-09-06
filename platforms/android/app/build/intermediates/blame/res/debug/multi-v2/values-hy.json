@@ -1,0 +1,94 @@
+{
+    "logs": [
+        {
+            "outputFile": "C:\\Users\\Miqueias\\appgiriasestadosbrasileiros_\\platforms\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-hy\\values-hy.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\Miqueias\\.gradle\\caches\\transforms-2\\files-2.1\\b9ac12ca9667ca96e2258a7216967abc\\res\\values-hy\\values.xml",
+                    "from": {
+                        "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
+                        "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
+                        "startOffsets": "245,349,546,678,784,997,1131,1284,1422,1648,1754,1953,2087,2308,2500,2591,2684",
+                        "endColumns": "103,196,131,105,212,133,152,137,225,105,198,133,220,191,90,92,106",
+                        "endOffsets": "348,545,677,783,996,1130,1283,1421,1647,1753,1952,2086,2307,2499,2590,2683,2790"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,9,11,12,13,14,15,16,17,18,19",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,213,410,546,656,869,1007,1164,1516,1742,1852,2051,2189,2410,2606,2701,2798",
+                        "endColumns": "107,196,135,109,212,137,156,141,225,109,198,137,220,195,94,96,110",
+                        "endOffsets": "208,405,541,651,864,1002,1159,1301,1737,1847,2046,2184,2405,2601,2696,2793,2904"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Miqueias\\.gradle\\caches\\transforms-2\\files-2.1\\3ee4f2eaa6ab5106a770f68484da2881\\res\\values-hy\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "205",
+                        "endColumns": "101",
+                        "endOffsets": "306"
+                    },
+                    "to": {
+                        "startLines": "20",
+                        "startColumns": "4",
+                        "startOffsets": "2909",
+                        "endColumns": "105",
+                        "endOffsets": "3010"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Miqueias\\.gradle\\caches\\transforms-2\\files-2.1\\fa2a26068489df37bb35b0c492e3c5ba\\res\\values-hy\\values-hy.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "28",
+                        "startColumns": "4",
+                        "startOffsets": "3618",
+                        "endColumns": "100",
+                        "endOffsets": "3714"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Miqueias\\.gradle\\caches\\transforms-2\\files-2.1\\59518942aeff3e586678c1d75a3c2aa0\\res\\values-hy\\values.xml",
+                    "from": {
+                        "startLines": "4,5,6,7,8,9,10",
+                        "startColumns": "0,0,0,0,0,0,0",
+                        "startOffsets": "197,267,374,440,504,590,697",
+                        "endColumns": "69,106,65,63,85,106,74",
+                        "endOffsets": "266,373,439,503,589,696,771"
+                    },
+                    "to": {
+                        "startLines": "21,22,23,24,25,26,27",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "3015,3089,3200,3270,3338,3428,3539",
+                        "endColumns": "73,110,69,67,89,110,78",
+                        "endOffsets": "3084,3195,3265,3333,3423,3534,3613"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Miqueias\\.gradle\\caches\\transforms-2\\files-2.1\\d4be1079faab5914c0b283e7ca11f588\\res\\values-hy\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "247",
+                        "endColumns": "209",
+                        "endOffsets": "456"
+                    },
+                    "to": {
+                        "startLines": "10",
+                        "startColumns": "4",
+                        "startOffsets": "1306",
+                        "endColumns": "209",
+                        "endOffsets": "1511"
+                    }
+                }
+            ]
+        }
+    ]
+}

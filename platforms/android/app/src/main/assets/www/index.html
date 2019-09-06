@@ -1,313 +1,516 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="app" ng-csp>
 <head>
-    <meta charset="utf-8" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="mobile-web-app-capable" content="yes" />
+  <meta charset="utf-8" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="mobile-web-app-capable" content="yes" />
 
-    <!-- CSS dependencies -->
-    <link rel="stylesheet" href="lib/onsen/css/onsenui.css" />
-    <link rel="stylesheet" href="lib/onsen/css/onsen-css-components.css" />
-    <link rel="stylesheet" href="css/stylesheet.css" />
+  <!-- CSS dependencies -->
+  <link rel="stylesheet" href="lib/onsen/css/onsenui.css" />
+  <link rel="stylesheet" href="lib/onsen/css/onsen-css-components.css" />
+  <link rel="stylesheet" href="css/index.css" />
 
-    <title>Gírias dos Estados Brasileiros</title>
+  <title>Gírias dos Estados Brasileiros</title>
 </head>
 
 <body>
-    <ons-navigator id="appNavigator" swipeable swipe-target-width="80px">
-      <ons-page>
-        <ons-splitter id="appSplitter">
-          <ons-splitter-content page="tabbar.html"></ons-splitter-content>
-        </ons-splitter>
-      </ons-page>
-    </ons-navigator>
+<ons-navigator id="appNavigator" swipeable swipe-target-width="80px">
+  <ons-page>
+    <ons-splitter id="appSplitter">
+      <ons-splitter-content page="tabbar.html"></ons-splitter-content>
+    </ons-splitter>
+  </ons-page>
+</ons-navigator>
 
-    <template id="tabbar.html">
-      <ons-page id="tabbar-page">
-        <ons-toolbar>
-          <div class="center">Home</div>
-        </ons-toolbar>
-        <ons-tabbar swipeable id="appTabbar" position="auto">
-          <ons-tab label="Home" icon="ion-home" page="home.html" active></ons-tab>
-          <ons-tab label="Buscador de Gírias" icon="ion-search" page="forms.html"></ons-tab>
-          <ons-tab label="Nova Gíria" icon="ion-plus" page="animations.html"></ons-tab>
-        </ons-tabbar>
+<template id="tabbar.html">
+  <ons-page id="tabbar-page" class="escondido">
+    <ons-toolbar>
+      <div class="center"><center>Gírias dos Estados Brasileiros</center></div>
+    </ons-toolbar>
+    <ons-tabbar swipeable id="appTabbar" position="auto">
+      <ons-tab label="Home" icon="ion-home" page="home.html" active></ons-tab>
+      <ons-tab label="Buscador de Gírias" icon="ion-search" page="buscar.html"></ons-tab>
+      <ons-tab label="Últimas Gírias" icon="fa-newspaper" page="ultimas.html"></ons-tab>
+    </ons-tabbar>
 
-        <script>
+    <script>
           ons.getScriptPage().addEventListener('prechange', function(event) {
             if (event.target.matches('#appTabbar')) {
-              event.currentTarget.querySelector('ons-toolbar .center').innerHTML = event.tabItem.getAttribute('label');
+              // event.currentTarget.querySelector('ons-toolbar .center').innerHTML = event.tabItem.getAttribute('label');
+              event.currentTarget.querySelector('ons-toolbar .center center').innerHTML = 'Gírias dos Estados Brasileiros';
             }
           });
         </script>
-      </ons-page>
-    </template>
+  </ons-page>
+</template>
 
-    <template id="home.html">
-      <ons-page>
-        <p class="intro">
-          Selecione um Estado Brasileira antes de procurar a gíria ou se preferir utilize o Buscador de Gírias.<br><br>
-        </p>
+<!-- MODAL DE AGUARDE -->
+<ons-modal id="modal-aguarde">
+  <p style="text-align: center">
+    <ons-icon icon="fa-spinner" spin></ons-icon>
+    <br><br>
+  </p>
+</ons-modal>
 
-        <ons-card onclick="fn.pushPage({'id': 'listaGiriasEstado.html', 'title': 'AC'})">
-          <div class="title">Acre (AC)</div>
-        </ons-card>
-        <ons-card onclick="fn.pushPage({'id': 'listaGiriasEstado.html', 'title': 'AL'})">
-          <div class="title">Alagoas (AL)</div>
-        </ons-card>
-        <ons-card onclick="fn.pushPage({'id': 'listaGiriasEstado.html', 'title': 'AP'})">
-          <div class="title">Amapá (AP)</div>
-        </ons-card>
-        <ons-card onclick="fn.pushPage({'id': 'listaGiriasEstado.html', 'title': 'AM'})">
-          <div class="title">Amazonas (AM)</div>
-        </ons-card>
-        <ons-card onclick="fn.pushPage({'id': 'listaGiriasEstado.html', 'title': 'BA'})">
-          <div class="title">Bahia (BA)</div>
-        </ons-card>
-        <ons-card onclick="fn.pushPage({'id': 'listaGiriasEstado.html', 'title': 'CE'})">
-          <div class="title">Ceará (CE)</div>
-        </ons-card>
-        <ons-card onclick="fn.pushPage({'id': 'listaGiriasEstado.html', 'title': 'DF'})">
-          <div class="title">Distrito Federal (DF)</div>
-        </ons-card>
-        <ons-card onclick="fn.pushPage({'id': 'listaGiriasEstado.html', 'title': 'ES'})">
-          <div class="title">Espírito Santo (ES)</div>
-        </ons-card>
-        <ons-card onclick="fn.pushPage({'id': 'listaGiriasEstado.html', 'title': 'GO'})">
-          <div class="title">Goiás (GO)</div>
-        </ons-card>
-        <ons-card onclick="fn.pushPage({'id': 'listaGiriasEstado.html', 'title': 'MA'})">
-          <div class="title">Maranhão (MA)</div>
-        </ons-card>
-        <ons-card onclick="fn.pushPage({'id': 'listaGiriasEstado.html', 'title': 'MT'})">
-          <div class="title">Mato Grosso (MT)</div>
-        </ons-card>
-        <ons-card onclick="fn.pushPage({'id': 'listaGiriasEstado.html', 'title': 'MS'})">
-          <div class="title">Mato Grosso do Sul (MS)</div>
-        </ons-card>
-        <ons-card onclick="fn.pushPage({'id': 'listaGiriasEstado.html', 'title': 'MG'})">
-          <div class="title">Minas Gerais (MG)</div>
-        </ons-card>
-        <ons-card onclick="fn.pushPage({'id': 'listaGiriasEstado.html', 'title': 'PA'})">
-          <div class="title">Pará (PA)</div> 
-        </ons-card>
-        <ons-card onclick="fn.pushPage({'id': 'listaGiriasEstado.html', 'title': 'PB'})">
-          <div class="title">Paraíba (PB)</div>
-        </ons-card>
-        <ons-card onclick="fn.pushPage({'id': 'listaGiriasEstado.html', 'title': 'PR'})">
-          <div class="title">Paraná (PR)</div>
-        </ons-card>
-        <ons-card onclick="fn.pushPage({'id': 'listaGiriasEstado.html', 'title': 'PE'})">
-          <div class="title">Pernambuco (PE)</div>
-        </ons-card>
-        <ons-card onclick="fn.pushPage({'id': 'listaGiriasEstado.html', 'title': 'PI'})">
-          <div class="title">Piauí (PI)</div>
-        </ons-card>
-        <ons-card onclick="fn.pushPage({'id': 'listaGiriasEstado.html', 'title': 'RJ'})">
-          <div class="title">Rio de Janeiro (RJ)</div>
-        </ons-card>
-        <ons-card onclick="fn.pushPage({'id': 'listaGiriasEstado.html', 'title': 'RN'})">
-          <div class="title">Rio Grande do Norte (RN)</div>
-        </ons-card>
-        <ons-card onclick="fn.pushPage({'id': 'listaGiriasEstado.html', 'title': 'RS'})">
-          <div class="title">Rio Grande do Sul (RS)</div>
-        </ons-card>
-        <ons-card onclick="fn.pushPage({'id': 'listaGiriasEstado.html', 'title': 'RO'})">
-          <div class="title">Rondônia (RO)</div>
-        </ons-card>
-        <ons-card onclick="fn.pushPage({'id': 'listaGiriasEstado.html', 'title': 'RR'})">
-          <div class="title">Roraima (RR)</div>
-        </ons-card>
-        <ons-card onclick="fn.pushPage({'id': 'listaGiriasEstado.html', 'title': 'SC'})">
-          <div class="title">Santa Catarina (SC)</div>
-        </ons-card>
-        <ons-card onclick="fn.pushPage({'id': 'listaGiriasEstado.html', 'title': 'SP'})">
-          <div class="title">São Paulo (SP)</div>
-        </ons-card>
-        <ons-card onclick="fn.pushPage({'id': 'listaGiriasEstado.html', 'title': 'SE'})">
-          <div class="title">Sergipe (SE)</div>
-        </ons-card>
-        <ons-card onclick="fn.pushPage({'id': 'listaGiriasEstado.html', 'title': 'TO'})">
-          <div class="title">Tocantins (TO)</div>
-        </ons-card>
+<template id="home.html">
+  <ons-page id="pagina_inicio" class="escondido">
+    <input type="hidden" id="OneSignalUserId" value="">
+    <input type="hidden" id="OneSignalPushToken" value="">
 
-        <style>
-          .intro {
-            text-align: center;
-            padding: 0 20px;
-            margin-top: 40px;
+    <ons-list id="lista_estados">
+
+      <ons-list-item onclick="fn.pushPage({'id': 'listaGiriasEstado.html', 'title': 'AC'})">
+        <div class="left">
+          <img class="list-item__thumbnail" style="border: 1px solid #1f1f21;border-radius: 6px;" src="./img/bandeiras/bandeira_acre.gif">
+        </div>
+        <div class="center">Acre (AC)</div>
+        <div class="right"><ons-icon icon="fa-angle-right"></ons-icon></div>
+      </ons-list-item>
+
+      <ons-list-item onclick="fn.pushPage({'id': 'listaGiriasEstado.html', 'title': 'AL'})">
+        <div class="left">
+          <img class="list-item__thumbnail" style="border: 1px solid #1f1f21;border-radius: 6px;" src="./img/bandeiras/bandeira_alagoas.gif">
+        </div>
+        <div class="center">Alagoas (AL)</div>
+        <div class="right"><ons-icon icon="fa-angle-right"></ons-icon></div>
+      </ons-list-item>
+
+      <ons-list-item onclick="fn.pushPage({'id': 'listaGiriasEstado.html', 'title': 'AP'})">
+        <div class="left">
+          <img class="list-item__thumbnail" style="border: 1px solid #1f1f21;border-radius: 6px;" src="./img/bandeiras/bandeira_amapa.gif">
+        </div>
+        <div class="center">Amapá (AP)</div>
+        <div class="right"><ons-icon icon="fa-angle-right"></ons-icon></div>
+      </ons-list-item>
+
+      <ons-list-item onclick="fn.pushPage({'id': 'listaGiriasEstado.html', 'title': 'AM'})">
+        <div class="left">
+          <img class="list-item__thumbnail" style="border: 1px solid #1f1f21;border-radius: 6px;" src="./img/bandeiras/bandeira_amazonas.gif">
+        </div>
+        <div class="center">Amazonas (AM)</div>
+        <div class="right"><ons-icon icon="fa-angle-right"></ons-icon></div>
+      </ons-list-item>
+
+      <ons-list-item onclick="fn.pushPage({'id': 'listaGiriasEstado.html', 'title': 'BA'})">
+        <div class="left">
+          <img class="list-item__thumbnail" style="border: 1px solid #1f1f21;border-radius: 6px;" src="./img/bandeiras/bandeira_bahia.gif">
+        </div>
+        <div class="center">Bahia (BA)</div>
+        <div class="right"><ons-icon icon="fa-angle-right"></ons-icon></div>
+      </ons-list-item>
+
+      <ons-list-item onclick="fn.pushPage({'id': 'listaGiriasEstado.html', 'title': 'CE'})">
+        <div class="left">
+          <img class="list-item__thumbnail" style="border: 1px solid #1f1f21;border-radius: 6px;" src="./img/bandeiras/bandeira_ceara.gif">
+        </div>
+        <div class="center">Ceará (CE)</div>
+        <div class="right"><ons-icon icon="fa-angle-right"></ons-icon></div>
+      </ons-list-item>
+
+      <ons-list-item onclick="fn.pushPage({'id': 'listaGiriasEstado.html', 'title': 'DF'})">
+        <div class="left">
+          <img class="list-item__thumbnail" style="border: 1px solid #1f1f21;border-radius: 6px;" src="./img/bandeiras/bandeira_distrito_federal.gif">
+        </div>
+        <div class="center">Distrito Federal (DF)</div>
+        <div class="right"><ons-icon icon="fa-angle-right"></ons-icon></div>
+      </ons-list-item>
+
+      <ons-list-item onclick="fn.pushPage({'id': 'listaGiriasEstado.html', 'title': 'ES'})">
+        <div class="left">
+          <img class="list-item__thumbnail" style="border: 1px solid #1f1f21;border-radius: 6px;" src="./img/bandeiras/bandeira_espirito_santo.gif">
+        </div>
+        <div class="center">Espírito Santo (ES)</div>
+        <div class="right"><ons-icon icon="fa-angle-right"></ons-icon></div>
+      </ons-list-item>
+
+      <ons-list-item onclick="fn.pushPage({'id': 'listaGiriasEstado.html', 'title': 'GO'})">
+        <div class="left">
+          <img class="list-item__thumbnail" style="border: 1px solid #1f1f21;border-radius: 6px;" src="./img/bandeiras/bandeira_goias.gif">
+        </div>
+        <div class="center">Goiás (GO)</div>
+        <div class="right"><ons-icon icon="fa-angle-right"></ons-icon></div>
+      </ons-list-item>
+
+      <ons-list-item onclick="fn.pushPage({'id': 'listaGiriasEstado.html', 'title': 'MA'})">
+        <div class="left">
+          <img class="list-item__thumbnail" style="border: 1px solid #1f1f21;border-radius: 6px;" src="./img/bandeiras/bandeira_maranhao.gif">
+        </div>
+        <div class="center">Maranhão (MA)</div>
+        <div class="right"><ons-icon icon="fa-angle-right"></ons-icon></div>
+      </ons-list-item>
+
+      <ons-list-item onclick="fn.pushPage({'id': 'listaGiriasEstado.html', 'title': 'MT'})">
+        <div class="left">
+          <img class="list-item__thumbnail" style="border: 1px solid #1f1f21;border-radius: 6px;" src="./img/bandeiras/bandeira_mato_grosso.gif">
+        </div>
+        <div class="center">Mato Grosso (MT)</div>
+        <div class="right"><ons-icon icon="fa-angle-right"></ons-icon></div>
+      </ons-list-item>
+
+      <ons-list-item onclick="fn.pushPage({'id': 'listaGiriasEstado.html', 'title': 'MS'})">
+        <div class="left">
+          <img class="list-item__thumbnail" style="border: 1px solid #1f1f21;border-radius: 6px;" src="./img/bandeiras/bandeira_mato_grosso_do_sul.gif">
+        </div>
+        <div class="center">Mato Grosso do Sul (MS)</div>
+        <div class="right"><ons-icon icon="fa-angle-right"></ons-icon></div>
+      </ons-list-item>
+
+      <ons-list-item onclick="fn.pushPage({'id': 'listaGiriasEstado.html', 'title': 'MG'})">
+        <div class="left">
+          <img class="list-item__thumbnail" style="border: 1px solid #1f1f21;border-radius: 6px;" src="./img/bandeiras/bandeira_minas_gerais.gif">
+        </div>
+        <div class="center">Minas Gerais (MG)</div>
+        <div class="right"><ons-icon icon="fa-angle-right"></ons-icon></div>
+      </ons-list-item>
+
+      <ons-list-item onclick="fn.pushPage({'id': 'listaGiriasEstado.html', 'title': 'PA'})">
+        <div class="left">
+          <img class="list-item__thumbnail" style="border: 1px solid #1f1f21;border-radius: 6px;" src="./img/bandeiras/bandeira_para.gif">
+        </div>
+        <div class="center">Pará (PA)</div>
+        <div class="right"><ons-icon icon="fa-angle-right"></ons-icon></div>
+      </ons-list-item>
+
+      <ons-list-item onclick="fn.pushPage({'id': 'listaGiriasEstado.html', 'title': 'PB'})">
+        <div class="left">
+          <img class="list-item__thumbnail" style="border: 1px solid #1f1f21;border-radius: 6px;" src="./img/bandeiras/bandeira_paraiba.gif">
+        </div>
+        <div class="center">Paraíba (PB)</div>
+        <div class="right"><ons-icon icon="fa-angle-right"></ons-icon></div>
+      </ons-list-item>
+
+      <ons-list-item onclick="fn.pushPage({'id': 'listaGiriasEstado.html', 'title': 'PR'})">
+        <div class="left">
+          <img class="list-item__thumbnail" style="border: 1px solid #1f1f21;border-radius: 6px;" src="./img/bandeiras/bandeira_parana.gif">
+        </div>
+        <div class="center">Paraná (PR)</div>
+        <div class="right"><ons-icon icon="fa-angle-right"></ons-icon></div>
+      </ons-list-item>
+
+      <ons-list-item onclick="fn.pushPage({'id': 'listaGiriasEstado.html', 'title': 'PE'})">
+        <div class="left">
+          <img class="list-item__thumbnail" style="border: 1px solid #1f1f21;border-radius: 6px;" src="./img/bandeiras/bandeira_pernambuco.gif">
+        </div>
+        <div class="center">Pernambuco (PE)</div>
+        <div class="right"><ons-icon icon="fa-angle-right"></ons-icon></div>
+      </ons-list-item>
+
+      <ons-list-item onclick="fn.pushPage({'id': 'listaGiriasEstado.html', 'title': 'PI'})">
+        <div class="left">
+          <img class="list-item__thumbnail" style="border: 1px solid #1f1f21;border-radius: 6px;" src="./img/bandeiras/bandeira_piaui.gif">
+        </div>
+        <div class="center">Piauí (PI)</div>
+        <div class="right"><ons-icon icon="fa-angle-right"></ons-icon></div>
+      </ons-list-item>
+
+      <ons-list-item onclick="fn.pushPage({'id': 'listaGiriasEstado.html', 'title': 'RJ'})">
+        <div class="left">
+          <img class="list-item__thumbnail" style="border: 1px solid #1f1f21;border-radius: 6px;" src="./img/bandeiras/bandeira_rio_de_janeiro.gif">
+        </div>
+        <div class="center">Rio de Janeiro (RJ)</div>
+        <div class="right"><ons-icon icon="fa-angle-right"></ons-icon></div>
+      </ons-list-item>
+
+      <ons-list-item onclick="fn.pushPage({'id': 'listaGiriasEstado.html', 'title': 'RN'})">
+        <div class="left">
+          <img class="list-item__thumbnail" style="border: 1px solid #1f1f21;border-radius: 6px;" src="./img/bandeiras/bandeira_rio_grande_do_norte.gif">
+        </div>
+        <div class="center">Rio Grande do Norte (RN)</div>
+        <div class="right"><ons-icon icon="fa-angle-right"></ons-icon></div>
+      </ons-list-item>
+
+      <ons-list-item onclick="fn.pushPage({'id': 'listaGiriasEstado.html', 'title': 'RS'})">
+        <div class="left">
+          <img class="list-item__thumbnail" style="border: 1px solid #1f1f21;border-radius: 6px;" src="./img/bandeiras/bandeira_rio_grande_do_sul.gif">
+        </div>
+        <div class="center">Rio Grande do Sul (RS)</div>
+        <div class="right"><ons-icon icon="fa-angle-right"></ons-icon></div>
+      </ons-list-item>
+
+      <ons-list-item onclick="fn.pushPage({'id': 'listaGiriasEstado.html', 'title': 'RO'})">
+        <div class="left">
+          <img class="list-item__thumbnail" style="border: 1px solid #1f1f21;border-radius: 6px;" src="./img/bandeiras/bandeira_rondonia.gif">
+        </div>
+        <div class="center">Rondônia (RO)</div>
+        <div class="right"><ons-icon icon="fa-angle-right"></ons-icon></div>
+      </ons-list-item>
+
+      <ons-list-item onclick="fn.pushPage({'id': 'listaGiriasEstado.html', 'title': 'RR'})">
+        <div class="left">
+          <img class="list-item__thumbnail" style="border: 1px solid #1f1f21;border-radius: 6px;" src="./img/bandeiras/bandeira_roraima.gif">
+        </div>
+        <div class="center">Roraima (RR)</div>
+        <div class="right"><ons-icon icon="fa-angle-right"></ons-icon></div>
+      </ons-list-item>
+
+      <ons-list-item onclick="fn.pushPage({'id': 'listaGiriasEstado.html', 'title': 'SC'})">
+        <div class="left">
+          <img class="list-item__thumbnail" style="border: 1px solid #1f1f21;border-radius: 6px;" src="./img/bandeiras/bandeira_santa_catarina.gif">
+        </div>
+        <div class="center">Santa Catarina (SC)</div>
+        <div class="right"><ons-icon icon="fa-angle-right"></ons-icon></div>
+      </ons-list-item>
+
+      <ons-list-item onclick="fn.pushPage({'id': 'listaGiriasEstado.html', 'title': 'SP'})">
+        <div class="left">
+          <img class="list-item__thumbnail" style="border: 1px solid #1f1f21;border-radius: 6px;" src="./img/bandeiras/bandeira_sao_paulo.gif">
+        </div>
+        <div class="center">São Paulo (SP)</div>
+        <div class="right"><ons-icon icon="fa-angle-right"></ons-icon></div>
+      </ons-list-item>
+
+      <ons-list-item onclick="fn.pushPage({'id': 'listaGiriasEstado.html', 'title': 'SE'})">
+        <div class="left">
+          <img class="list-item__thumbnail" style="border: 1px solid #1f1f21;border-radius: 6px;" src="./img/bandeiras/bandeira_sergipe.gif">
+        </div>
+        <div class="center">Sergipe (SE)</div>
+        <div class="right"><ons-icon icon="fa-angle-right"></ons-icon></div>
+      </ons-list-item>
+
+      <ons-list-item onclick="fn.pushPage({'id': 'listaGiriasEstado.html', 'title': 'TO'})">
+        <div class="left">
+          <img class="list-item__thumbnail" style="border: 1px solid #1f1f21;border-radius: 6px;" src="./img/bandeiras/bandeira_tocantins.gif">
+        </div>
+        <div class="center">Tocantins (TO)</div>
+        <div class="right"><ons-icon icon="fa-angle-right"></ons-icon></div>
+      </ons-list-item>
+    </ons-list>
+
+    <ons-speed-dial position="bottom right" direction="up" :open.sync="spdOpen">
+      <ons-fab onclick="fn.pushPage({'id': 'enviarGiria.html', 'title': 'Enviar Gíria'})">
+        <ons-icon icon="md-plus"></ons-icon>
+      </ons-fab>
+    </ons-speed-dial>
+
+    <style>
+          .button-margin {
+            margin: 6px 0;
           }
-
-          ons-card {
-            cursor: pointer;
-            color: #333;
-          }
-
           .card__title,
           .card--material__title {
             font-size: 20px;
           }
         </style>
-      </ons-page>
-    </template>
+  </ons-page>
+</template>
 
-    <template id="forms.html">
-      <ons-page id="forms-page">
-        <ons-list>
-          <ons-list-header>Buscador de Gírias</ons-list-header>
-          <ons-list-item class="input-items">
-            <label class="center">
-            <ons-input style="width: 100%" id="pesquisa" placeholder="Digite o nome da gíria..."></ons-input>
-          </label>
-          </ons-list-item>
-          <section style="margin: 16px">
-            <ons-button type='button' id="buscar_giria" modifier="large" class="button-margin">Buscar</ons-button>
-          </section>
- 
-          <div id='resultado_girias'></div>
-        </ons-list>
-
-        <script>
-          $( "#buscar_giria" ).click(function() {
-            if ($( "#pesquisa" ).val() === '') {
-              ons.notification.alert("Informe o nome da gíria.");
-              return false;
-            }
-            else{
-              $('#resultado_girias').html("");
-              pesquisaGiriaEstado($( "#pesquisa" ).val());
-            }
-          });
-        </script>
-
-        <style>
-          .right-icon {
-            margin-left: 10px;
-          }
-
-          .right-label {
-            color: #666;
-          }
-        </style>
-      </ons-page>
-    </template>
-
-    <template id="animations.html">
-      <ons-page>
-        <ons-list>
-          <ons-list-header>Cadastrar uma Gíria</ons-list-header>
-          <ons-list-item class="input-items" style="width: 100%">
-            <label class="center">
-            <ons-input id="giria_input" placeholder="Gíria" style="width: 100%"></ons-input>
-          </label>
-          </ons-list-item>
-
-          <ons-list-item class="input-items" style="width: 100%">
-            <label class="center">
-              <textarea id="significado_giria" class="textarea" rows="3" placeholder="Significado da gíria" style="width: 100%"></textarea>
-          </label>
-          </ons-list-item>
-
-          <ons-list-item>
-            <div class="center">
-              <ons-select id="select_estado" style="width: 100%">
-                <option value="">Estado</option>
-                <option value="AC">Acre - AC</option>
-                <option value="AL">Alagoas - AL</option>
-                <option value="AM">Amazonas - AM</option>
-                <option value="AP">Amapá - AP</option>
-                <option value="BA">Bahia - BA</option>
-                <option value="CE">Ceará - CE</option>
-                <option value="DF">Distrito Federal - DF</option>
-                <option value="ES">Espírito Santo - ES</option>
-                <option value="GO">Goiás - GO</option>
-                <option value="MA">Maranhão - MA</option>
-                <option value="MT">Mato Grosso - MT</option>
-                <option value="MS">Mato Grosso do Sul - MS</option>
-                <option value="MG">Minas Gerais - MG</option>
-                <option value="PA">Pará - PA</option>
-                <option value="PB">Paraíba - PB</option>
-                <option value="PR">Paraná - PR</option>
-                <option value="PI">Piauí - PI</option>
-                <option value="PE">Pernambuco - PE</option>
-                <option value="RJ">Rio de Janeiro - RJ</option>
-                <option value="RN">Rio Grande do Norte - RN</option>
-                <option value="RS">Rio Grande do Sul - RS</option>
-                <option value="RO">Rondônia - RO</option>
-                <option value="RR">Roraima - RR</option>
-                <option value="SP">São Paulo - SP</option>
-                <option value="SC">Santa Catarina - SC</option>
-                <option value="SE">Sergipe - SE</option>
-                <option value="TO">Tocantins - TO</option>
-              </ons-select>
-            </div>
-          </ons-list-item>
-
-          <section style="margin: 16px">
-            <ons-button type='button' id="cadastrar_giria" modifier="large" class="button-margin">Cadastrar</ons-button>
-          </section>
-
-        </ons-list>
-      <script>
-        $( "#cadastrar_giria" ).click(function() {
-          if ($( "#giria_input" ).val() === '') {
-            ons.notification.alert("Informe o nome da gíria.");
-            return false;
-          }
-          else if($( "#significado_giria" ).val() === ''){
-            ons.notification.alert("Informe o signifcado da gíria.");
-            return false;
-          }
-          else if ($( "#select_estado" ).val() === '') {
-            ons.notification.alert("Informe o estado da gíria.");
-            return false;
-          }
-          else{
-            cadastraGiria($( "#giria_input" ).val(), $( "#significado_giria" ).val(), $( "#select_estado" ).val());
-            $( "#giria_input" ).val("");
-            $( "#significado_giria" ).val("");
-            $( "#select_estado" ).val("");
-          }
-        });
-      </script>
-      </ons-page>
-    </template>
-
-    <template id="listaGiriasEstado.html">
-      <ons-page>
-        <ons-toolbar>
-          <div class="left">
-            <ons-back-button>Home</ons-back-button>
-          </div>
-          <div class="center"></div>
-        </ons-toolbar>
-        <div id='conteudo_girias'></div>
-        <script>
+<template id="listaGiriasEstado.html">
+  <ons-page>
+    <ons-toolbar>
+      <div class="left">
+        <ons-back-button>Home</ons-back-button>
+      </div>
+      <div class="center"></div>
+    </ons-toolbar>
+    <div id='conteudo_girias'></div>
+    <script>
           ons.getScriptPage().onInit = function () {
-            buscaGiriaEstado(this.data.title);
+            //CHAMA DA FUNÇÃO PARA ABRIR MODAL
+            fn.showDialog('modal-aguarde');
+            app.buscaGiriaEstado(this.data.title);
             this.querySelector('ons-toolbar div.center').textContent = this.data.title;
           }
         </script>
-        <style>
+    <style>
           .button-margin {
             margin: 6px 0;
           }
         </style>
-      </ons-page>
-    </template>
+  </ons-page>
+</template>
 
-    <style>
+<style>
       ons-splitter-side[animation=overlay] {
         border-left: 1px solid #bbb;
       }
     </style>
 
-    <!-- JS dependencies (order matters!) -->
-    <script type="text/javascript" src="cordova.js"></script>
-    <script src="js/jquery.3.3.1.js"></script>
-    <script src="lib/onsen/js/onsenui.js"></script>
-    <script src="js/script_onsen.js"></script>
-    <script src="js/script.js"></script>
+<template id="buscar.html">
+  <ons-page id="forms-page">
+    <ons-search-input
+            style="width: 100%"
+            placeholder="Digite o nome da gíria..."
+            onchange="app.onSearchKeyDown(this.value);"
+    ></ons-search-input>
+    <div id='resultado_girias'></div>
+  </ons-page>
+</template>
+
+<template id="ultimas.html">
+  <ons-page id="">
+    <div id='ultimas_girias'></div>
+    <script>
+          ons.getScriptPage().onInit = function () {
+            app.ultimasGiriasCadastradas();
+          }
+        </script>
+  </ons-page>
+</template>
+
+<template id="enviarGiria.html">
+  <ons-page>
+
+    <ons-toolbar>
+      <div class="left">
+        <ons-back-button>Enviar Gíria</ons-back-button>
+      </div>
+      <div class="center"></div>
+    </ons-toolbar>
+
+    <ons-list>
+      <br>
+      <ons-list-header>Conhece uma gíria legal? Compartilhe com a gente.</ons-list-header>
+      <ons-list-item class="input-items" style="width: 100%">
+        <label class="center">
+          <ons-input id="giria_input" placeholder="Gíria" style="width: 100%"></ons-input>
+        </label>
+      </ons-list-item>
+
+      <ons-list-item class="input-items" style="width: 100%">
+        <label class="center">
+          <textarea id="significado_giria" class="textarea" rows="3" placeholder="Significado da gíria" style="width: 100%"></textarea>
+        </label>
+      </ons-list-item>
+
+      <ons-list-item>
+        <div class="center">
+          <ons-select id="select_estado" style="width: 100%">
+            <option value="">Estado</option>
+            <option value="AC">Acre - AC</option>
+            <option value="AL">Alagoas - AL</option>
+            <option value="AM">Amazonas - AM</option>
+            <option value="AP">Amapá - AP</option>
+            <option value="BA">Bahia - BA</option>
+            <option value="CE">Ceará - CE</option>
+            <option value="DF">Distrito Federal - DF</option>
+            <option value="ES">Espírito Santo - ES</option>
+            <option value="GO">Goiás - GO</option>
+            <option value="MA">Maranhão - MA</option>
+            <option value="MT">Mato Grosso - MT</option>
+            <option value="MS">Mato Grosso do Sul - MS</option>
+            <option value="MG">Minas Gerais - MG</option>
+            <option value="PA">Pará - PA</option>
+            <option value="PB">Paraíba - PB</option>
+            <option value="PR">Paraná - PR</option>
+            <option value="PI">Piauí - PI</option>
+            <option value="PE">Pernambuco - PE</option>
+            <option value="RJ">Rio de Janeiro - RJ</option>
+            <option value="RN">Rio Grande do Norte - RN</option>
+            <option value="RS">Rio Grande do Sul - RS</option>
+            <option value="RO">Rondônia - RO</option>
+            <option value="RR">Roraima - RR</option>
+            <option value="SP">São Paulo - SP</option>
+            <option value="SC">Santa Catarina - SC</option>
+            <option value="SE">Sergipe - SE</option>
+            <option value="TO">Tocantins - TO</option>
+          </ons-select>
+        </div>
+      </ons-list-item>
+
+      <section style="margin: 16px">
+        <ons-button type='button' id="cadastrar_giria" modifier="large" class="button-margin">Enviar</ons-button>
+      </section>
+
+    </ons-list>
+    <script>
+        ons.getScriptPage().onInit = function () {
+          this.querySelector('ons-toolbar div.center').textContent = this.data.title;
+
+          $( "#cadastrar_giria" ).click(function() {
+            if ($( "#giria_input" ).val() === '') {
+              ons.notification.alert("Informe o nome da gíria.",{title: 'Ops!'});
+              return false;
+            }
+            else if($( "#significado_giria" ).val() === ''){
+              ons.notification.alert("Informe o signifcado da gíria.",{title: 'Ops!'});
+              return false;
+            }
+            else if ($( "#select_estado" ).val() === '') {
+              ons.notification.alert("Informe o estado da gíria.",{title: 'Ops!'});
+              return false;
+            }
+            else{
+              fn.showDialog('modal-aguarde');
+              app.cadastraGiria($( "#giria_input" ).val(), $( "#significado_giria" ).val(), $( "#select_estado" ).val());
+              $( "#giria_input" ).val("");
+              $( "#significado_giria" ).val("");
+              $( "#select_estado" ).val("");
+            }
+          });
+        }
+
+      </script>
+  </ons-page>
+</template>
+
+
+
+<!-- JS dependencies (order matters!) -->
+<script type="text/javascript" src="cordova.js"></script>
+<script src="js/jquery.3.3.1.js"></script>
+<script src="lib/onsen/js/onsenui.js"></script>
+<script>
+      document.addEventListener('deviceready', function () {
+        //VRIFICO NA PRIMEIRA VEZ QUE ABRE O APP
+        var userId = localStorage.getItem('userId');
+        var pushToken = localStorage.getItem('pushToken');
+        if(userId && pushToken){
+        }
+        else{
+          getIds();
+        }
+
+        window.plugins.OneSignal
+          .startInit('a03d77a5-4edf-4618-ab1b-020123f9fb22')
+          .handleNotificationOpened(function(jsonData) {
+            var mensagem = JSON.parse(JSON.stringify(jsonData['notification']['payload']['body']));
+
+            ons.notification.alert(
+              mensagem,
+              {title: 'Ola!'}
+            );
+          })
+          .inFocusDisplaying(window.plugins.OneSignal.OSInFocusDisplayOption.Notification)
+          .endInit();
+      }, false);
+
+      function getIds() {
+        window.plugins.OneSignal.getIds(function(ids) {
+          window.localStorage.setItem('userId', ids.userId);
+          window.localStorage.setItem('pushToken', ids.pushToken);
+
+          $("#OneSignalUserId").val(ids.userId);
+          $("#OneSignalPushToken").val(ids.pushToken);
+
+          var userId = localStorage.getItem('userId');
+          var pushToken = localStorage.getItem('pushToken');
+          cadastraUser();
+        });
+      }
+
+      function cadastraUser() {
+        var userId = $("#OneSignalUserId").val();
+        var pushToken = $("#OneSignalPushToken").val();
+
+        $.ajax({
+          url: "https://miqueiasmcaetano.000webhostapp.com/webservice/giriasestadosbrasileiros/cadastraUser.php",
+          dataType: 'html',
+          type: 'POST',
+          data: {
+            'userId': userId,
+            'pushToken': pushToken,
+          },
+          error: function(a) {
+            alert(a);
+          },
+          success: function(valorRetornado) {
+            console.log(valorRetornado);
+          },
+        });
+      }
+    </script>
+<script src="js/index.js"></script>
+
 </body>
 
 </html>
