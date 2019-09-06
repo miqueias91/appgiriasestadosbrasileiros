@@ -212,6 +212,7 @@ var app = {
 //initialize the goodies 
 function initAd(){
   if ( window.plugins && window.plugins.AdMob ) {
+    alert("initAd")
     var ad_units = {
       ios : {
         banner: 'ca-app-pub-7091486462236476/4482154427',       //PUT ADMOB ADCODE HERE 
@@ -239,7 +240,7 @@ function initAd(){
     window.plugins.AdMob.createInterstitialView();  //get the interstitials ready to be shown 
     window.plugins.AdMob.requestInterstitialAd();
   } else {
-    //alert( 'admob plugin not ready' ); 
+    alert( 'admob plugin not ready' ); 
   }
 }
 
