@@ -1,27 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\Miqueias\\appgiriasestadosbrasileiros_\\platforms\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-gl\\values-gl.xml",
+            "outputFile": "C:\\Users\\Miqueias\\appgiriasestadosbrasileiros\\platforms\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-gl\\values-gl.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Miqueias\\.gradle\\caches\\transforms-2\\files-2.1\\d4be1079faab5914c0b283e7ca11f588\\res\\values-gl\\values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "247",
-                        "endColumns": "192",
-                        "endOffsets": "439"
-                    },
-                    "to": {
-                        "startLines": "10",
-                        "startColumns": "4",
-                        "startOffsets": "1288",
-                        "endColumns": "192",
-                        "endOffsets": "1476"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Miqueias\\.gradle\\caches\\transforms-2\\files-2.1\\59518942aeff3e586678c1d75a3c2aa0\\res\\values-gl\\values.xml",
+                    "source": "C:\\Users\\Miqueias\\.gradle\\caches\\transforms-2\\files-2.1\\fc1b49e0257e628ea8a52209ad0919a3\\res\\values-gl\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10",
                         "startColumns": "0,0,0,0,0,0,0",
@@ -38,24 +21,41 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Miqueias\\.gradle\\caches\\transforms-2\\files-2.1\\fa2a26068489df37bb35b0c492e3c5ba\\res\\values-gl\\values-gl.xml",
+                    "source": "C:\\Users\\Miqueias\\.gradle\\caches\\transforms-2\\files-2.1\\b26a8a009595197460875a681e8d2d13\\res\\values-gl\\values.xml",
                     "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "247",
+                        "endColumns": "192",
+                        "endOffsets": "439"
                     },
                     "to": {
-                        "startLines": "28",
+                        "startLines": "10",
                         "startColumns": "4",
-                        "startOffsets": "3606",
-                        "endColumns": "100",
-                        "endOffsets": "3702"
+                        "startOffsets": "1288",
+                        "endColumns": "192",
+                        "endOffsets": "1476"
                     }
                 },
                 {
-                    "source": "C:\\Users\\Miqueias\\.gradle\\caches\\transforms-2\\files-2.1\\b9ac12ca9667ca96e2258a7216967abc\\res\\values-gl\\values.xml",
+                    "source": "C:\\Users\\Miqueias\\.gradle\\caches\\transforms-2\\files-2.1\\5d64378c3d824d729b56eb1371904e9e\\res\\values-gl\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "205",
+                        "endColumns": "100",
+                        "endOffsets": "305"
+                    },
+                    "to": {
+                        "startLines": "20",
+                        "startColumns": "4",
+                        "startOffsets": "2875",
+                        "endColumns": "104",
+                        "endOffsets": "2975"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Miqueias\\.gradle\\caches\\transforms-2\\files-2.1\\c7cc73417569e055eb62579f4521942d\\res\\values-gl\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -72,20 +72,20 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Miqueias\\.gradle\\caches\\transforms-2\\files-2.1\\3ee4f2eaa6ab5106a770f68484da2881\\res\\values-gl\\values.xml",
+                    "source": "C:\\Users\\Miqueias\\.gradle\\caches\\transforms-2\\files-2.1\\98615b233e7626d65365d6b0c78e2f65\\res\\values-gl\\values-gl.xml",
                     "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "205",
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
                         "endColumns": "100",
-                        "endOffsets": "305"
+                        "endOffsets": "151"
                     },
                     "to": {
-                        "startLines": "20",
+                        "startLines": "28",
                         "startColumns": "4",
-                        "startOffsets": "2875",
-                        "endColumns": "104",
-                        "endOffsets": "2975"
+                        "startOffsets": "3606",
+                        "endColumns": "100",
+                        "endOffsets": "3702"
                     }
                 }
             ]

@@ -242,20 +242,20 @@ document.addEventListener('deviceready', function() {
 }, false)
 
 document.addEventListener('admob.banner.events.LOAD_FAIL', function(event) {
-  alert(event)
+  console.log(event)
 })
 
 document.addEventListener('admob.interstitial.events.LOAD_FAIL', function(event) {
-  alert(event)
+  console.log(event)
 })
 
 document.addEventListener('admob.interstitial.events.LOAD', function(event) {
-  alert(event)
+  console.log(event)
   document.getElementById('showAd').disabled = false
 })
 
 document.addEventListener('admob.interstitial.events.CLOSE', function(event) {
-  alert(event)
+  console.log(event)
 
   admob.interstitial.prepare()
 })

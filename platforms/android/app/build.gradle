@@ -1,42 +1,24 @@
-/*
-       Licensed to the Apache Software Foundation (ASF) under one
-       or more contributor license agreements.  See the NOTICE file
-       distributed with this work for additional information
-       regarding copyright ownership.  The ASF licenses this file
-       to you under the Apache License, Version 2.0 (the
-       "License"); you may not use this file except in compliance
-       with the License.  You may obtain a copy of the License at
-
-         http://www.apache.org/licenses/LICENSE-2.0
-
-       Unless required by applicable law or agreed to in writing,
-       software distributed under the License is distributed on an
-       "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-       KIND, either express or implied.  See the License for the
-       specific language governing permissions and limitations
-       under the License.
-*/
-
+apply plugin: 'com.onesignal.androidsdk.onesignal-gradle-plugin'
 apply plugin: 'com.android.application'
 
 buildscript {
     repositories {
         mavenCentral()
-        jcenter()
         maven {
-            url "https://maven.google.com"
+            //url "https://maven.google.com"
+            url 'https://plugins.gradle.org/m2/'
         }
+        jcenter()
         google()
     }
 
     dependencies {
         classpath 'com.android.tools.build:gradle:3.4.2'
+        classpath 'gradle.plugin.com.onesignal:onesignal-gradle-plugin:[0.12.4, 0.99.99]'
     }
 }
-configurations.all {
-    resolutionStrategy {
-        force 'com.android.support:support-v4:25+'
-    }
+repositories {
+    maven { url 'https://maven.google.com' }
 }
 
 // Allow plugins to declare Maven dependencies via build-extras.gradle.
@@ -75,7 +57,7 @@ ext {
     if (!project.hasProperty('cdvBuildMultipleApks')) {
         cdvBuildMultipleApks = null
     }
-    // Whether to append a 0 "abi digit" to versionCode when only a single APK is build 
+    // Whether to append a 0 "abi digit" to versionCode when only a single APK is build
     if (!project.hasProperty('cdvVersionCodeForceAbiDigit')) {
         cdvVersionCodeForceAbiDigit = null
     }
@@ -95,14 +77,18 @@ ext {
     // Plugin gradle extensions can append to this to have code run at the end.
     cdvPluginPostBuildExtras = []
 }
-
 // PLUGIN GRADLE EXTENSIONS START
 apply from: "../onesignal-cordova-plugin/giriasestadosbrasileiros-build-extras-onesignal.gradle"
 // PLUGIN GRADLE EXTENSIONS END
 
-def hasBuildExtras = file('build-extras.gradle').exists()
-if (hasBuildExtras) {
+def hasBuildExtras1 = file('build-extras.gradle').exists()
+if (hasBuildExtras1) {
     apply from: 'build-extras.gradle'
+}
+
+def hasBuildExtras2 = file('../build-extras.gradle').exists()
+if (hasBuildExtras2) {
+    apply from: '../build-extras.gradle'
 }
 
 // Set property defaults after extension .gradle files.
@@ -124,7 +110,7 @@ if (ext.cdvReleaseSigningPropertiesFile == null && file('../release-signing.prop
 // Cast to appropriate types.
 ext.cdvBuildMultipleApks = cdvBuildMultipleApks == null ? false : cdvBuildMultipleApks.toBoolean();
 ext.cdvVersionCodeForceAbiDigit = cdvVersionCodeForceAbiDigit == null ? false : cdvVersionCodeForceAbiDigit.toBoolean();
-ext.cdvMinSdkVersion = cdvMinSdkVersion == null ? null : defaultMinSdkVersion
+ext.cdvMinSdkVersion = cdvMinSdkVersion == null ? defaultMinSdkVersion : Integer.parseInt('' + cdvMinSdkVersion)
 ext.cdvVersionCode = cdvVersionCode == null ? null : Integer.parseInt('' + cdvVersionCode)
 
 def computeBuildTargetName(debugBuild) {
@@ -147,9 +133,8 @@ cdvBuildRelease.dependsOn {
     return computeBuildTargetName(false)
 }
 
-task cdvPrintProps  {
+task cdvPrintProps {
     doLast{
-
         println('cdvCompileSdkVersion=' + cdvCompileSdkVersion)
         println('cdvBuildToolsVersion=' + cdvBuildToolsVersion)
         println('cdvVersionCode=' + cdvVersionCode)
@@ -171,25 +156,31 @@ android {
     defaultConfig {
         versionCode cdvVersionCode ?: new BigInteger("" + privateHelpers.extractIntFromManifest("versionCode"))
         applicationId privateHelpers.extractStringFromManifest("package")
-        minSdkVersion 16
-        targetSdkVersion 26
+        minSdkVersion 14
+        targetSdkVersion 28
 
         if (cdvMinSdkVersion != null) {
             minSdkVersion cdvMinSdkVersion
         }
+        manifestPlaceholders = [
+                onesignal_app_id: 'a03d77a5-4edf-4618-ab1b-020123f9fb22',
+                // Project number pulled from dashboard, local value is ignored.
+                onesignal_google_project_number: 'REMOTE'
+        ]
     }
 
     lintOptions {
-      abortOnError false;
+        abortOnError false;
     }
 
     compileSdkVersion cdvCompileSdkVersion
     buildToolsVersion cdvBuildToolsVersion
 
-    //This code exists for Crosswalk and other Native APIs.
-    //By default, we multiply the existing version code in the Android Manifest by 10 and 
-    //add a number for each architecture.  If you are not using Crosswalk or SQLite, you can
-    //ignore this chunk of code, and your version codes will be respected.
+    // This code exists for Crosswalk and other Native APIs.
+    // By default, we multiply the existing version code in the
+    // Android Manifest by 10 and add a number for each architecture.
+    // If you are not using Crosswalk or SQLite, you can
+    // ignore this chunk of code, and your version codes will be respected.
 
     if (Boolean.valueOf(cdvBuildMultipleApks)) {
         flavorDimensions "default"
@@ -271,8 +262,10 @@ dependencies {
     implementation fileTree(dir: 'libs', include: '*.jar')
     // SUB-PROJECT DEPENDENCIES START
     implementation(project(path: ":CordovaLib"))
-    compile "com.onesignal:OneSignal:3.11.2"
-    // SUB-PROJECT DEPENDENCIES END
+    implementation "com.google.android.gms:play-services-base:15.0.1"
+    implementation "com.google.android.gms:play-services-ads:15.0.1"
+    implementation 'com.google.firebase:firebase-analytics:15.0.0'
+    implementation "com.onesignal:OneSignal:3.11.3"
 }
 
 def promptForReleaseKeyPassword() {
@@ -289,9 +282,9 @@ def promptForReleaseKeyPassword() {
 
 gradle.taskGraph.whenReady { taskGraph ->
     taskGraph.getAllTasks().each() { task ->
-      if(['validateReleaseSigning', 'validateSigningRelease', 'validateSigningArmv7Release', 'validateSigningX76Release'].contains(task.name)) {
-         promptForReleaseKeyPassword()
-      }
+        if(['validateReleaseSigning', 'validateSigningRelease', 'validateSigningArmv7Release', 'validateSigningX76Release'].contains(task.name)) {
+            promptForReleaseKeyPassword()
+        }
     }
 }
 
@@ -334,4 +327,4 @@ for (def func : cdvPluginPostBuildExtras) {
 if (hasProperty('postBuildExtras')) {
     postBuildExtras()
 }
-apply plugin: 'com.google.gms.google-services'  // Google Play services Gradle plugin
+apply plugin: 'com.google.gms.google-services'

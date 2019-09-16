@@ -39,12 +39,6 @@ var app = {
   initialize: function() {
     console.log('initialize');
     document.addEventListener('deviceready', this.onDeviceReady.bind(this), false);
-    setTimeout(function() {
-      var div = document.querySelector('ons-page#tabbar-page');
-      app.trocaClasse(div, 'escondido', 'visivel');
-      var div = document.querySelector('ons-page#pagina_inicio');
-      app.trocaClasse(div, 'escondido', 'visivel');
-    }, 1000);
   },
   // deviceready Event Handler    
   // Bind any cordova events here. Common events are:

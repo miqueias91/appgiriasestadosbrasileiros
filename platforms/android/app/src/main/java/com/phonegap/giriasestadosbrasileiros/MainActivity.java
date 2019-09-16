@@ -22,6 +22,7 @@ package com.phonegap.giriasestadosbrasileiros;
 import android.graphics.Color;
 import android.os.Bundle;
 import org.apache.cordova.*;
+import com.onesignal.OneSignal;
 
 public class MainActivity extends CordovaActivity
 {
@@ -35,8 +36,12 @@ public class MainActivity extends CordovaActivity
         if (extras != null && extras.getBoolean("cdvStartInBackground", false)) {
             moveTaskToBack(true);
         }
-
         // Set by <content src="index.html" /> in config.xml
         loadUrl(launchUrl);
+        // OneSignal Initialization
+        OneSignal.startInit(this)
+                .inFocusDisplaying(OneSignal.OSInFocusDisplayOption.Notification)
+                .unsubscribeWhenNotificationsAreDisabled(true)
+                .init();
     }
 }

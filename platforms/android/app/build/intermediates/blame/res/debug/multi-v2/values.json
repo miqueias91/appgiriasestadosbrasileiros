@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\Miqueias\\appgiriasestadosbrasileiros_\\platforms\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
+            "outputFile": "C:\\Users\\Miqueias\\appgiriasestadosbrasileiros\\platforms\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Miqueias\\.gradle\\caches\\transforms-2\\files-2.1\\334d25d2f7eaa082b2e261dd67f3916c\\res\\values\\values.xml",
+                    "source": "C:\\Users\\Miqueias\\.gradle\\caches\\transforms-2\\files-2.1\\8457ebd8faa16129268c2d8762589c36\\res\\values\\values.xml",
                     "from": {
                         "startLines": "2,3,4,5,7,8,9,10,17,19,22,6",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4",
@@ -23,60 +23,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Miqueias\\.gradle\\caches\\transforms-2\\files-2.1\\d4be1079faab5914c0b283e7ca11f588\\res\\values\\values.xml",
-                    "from": {
-                        "startLines": "4,7",
-                        "startColumns": "0,0",
-                        "startOffsets": "238,401",
-                        "endColumns": "63,166",
-                        "endOffsets": "301,567"
-                    },
-                    "to": {
-                        "startLines": "52,64",
-                        "startColumns": "4,4",
-                        "startOffsets": "3393,4703",
-                        "endColumns": "67,166",
-                        "endOffsets": "3456,4865"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Miqueias\\.gradle\\caches\\transforms-2\\files-2.1\\b9ac12ca9667ca96e2258a7216967abc\\res\\values\\values.xml",
-                    "from": {
-                        "startLines": "4,5,6,7,8,9,10,11,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,33,46",
-                        "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
-                        "startOffsets": "215,301,377,463,549,625,702,778,951,1052,1233,1354,1457,1637,1756,1868,1967,2155,2256,2437,2558,2733,2877,2936,2994,3164,3475",
-                        "endLines": "4,5,6,7,8,9,10,11,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,45,64",
-                        "endColumns": "85,75,85,85,75,76,75,75,100,180,120,102,179,118,111,98,187,100,180,120,174,143,58,57,74,20,20",
-                        "endOffsets": "300,376,462,548,624,701,777,853,1051,1232,1353,1456,1636,1755,1867,1966,2154,2255,2436,2557,2732,2876,2935,2993,3068,3474,3887"
-                    },
-                    "to": {
-                        "startLines": "6,7,8,9,10,11,12,13,56,57,58,59,60,61,62,63,65,66,67,68,69,70,71,72,73,154,167",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "354,444,524,614,704,784,865,945,3663,3768,3949,4074,4181,4361,4484,4600,4870,5058,5163,5344,5469,5644,5792,5855,5917,11531,11846",
-                        "endLines": "6,7,8,9,10,11,12,13,56,57,58,59,60,61,62,63,65,66,67,68,69,70,71,72,73,166,185",
-                        "endColumns": "89,79,89,89,79,80,79,79,104,180,124,106,179,122,115,102,187,104,180,124,174,147,62,61,78,20,20",
-                        "endOffsets": "439,519,609,699,779,860,940,1020,3763,3944,4069,4176,4356,4479,4595,4698,5053,5158,5339,5464,5639,5787,5850,5912,5991,11841,12258"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Miqueias\\.gradle\\caches\\transforms-2\\files-2.1\\59518942aeff3e586678c1d75a3c2aa0\\res\\values\\values.xml",
-                    "from": {
-                        "startLines": "4,5,6,7,8,9,10",
-                        "startColumns": "0,0,0,0,0,0,0",
-                        "startOffsets": "168,206,279,313,348,397,461",
-                        "endColumns": "37,72,33,34,48,63,34",
-                        "endOffsets": "205,278,312,347,396,460,495"
-                    },
-                    "to": {
-                        "startLines": "84,85,86,87,88,89,90",
-                        "startColumns": "4,4,4,4,4,4,4",
-                        "startOffsets": "6996,7038,7115,7153,7192,7245,7313",
-                        "endColumns": "41,76,37,38,52,67,38",
-                        "endOffsets": "7033,7110,7148,7187,7240,7308,7347"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Miqueias\\.gradle\\caches\\transforms-2\\files-2.1\\fa2a26068489df37bb35b0c492e3c5ba\\res\\values\\values.xml",
+                    "source": "C:\\Users\\Miqueias\\.gradle\\caches\\transforms-2\\files-2.1\\98615b233e7626d65365d6b0c78e2f65\\res\\values\\values.xml",
                     "from": {
                         "startLines": "2,3,4,5,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,53,54,58,59,60,6,15",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -95,7 +42,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Miqueias\\.gradle\\caches\\transforms-2\\files-2.1\\3ee4f2eaa6ab5106a770f68484da2881\\res\\values\\values.xml",
+                    "source": "C:\\Users\\Miqueias\\.gradle\\caches\\transforms-2\\files-2.1\\5d64378c3d824d729b56eb1371904e9e\\res\\values\\values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
@@ -112,7 +59,75 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Miqueias\\.gradle\\caches\\transforms-2\\files-2.1\\bee1f622d538ae8ec2a07a14c8bb8233\\res\\values\\values.xml",
+                    "source": "C:\\Users\\Miqueias\\.gradle\\caches\\transforms-2\\files-2.1\\1df80bcb3338f430a179e5b59351a07e\\res\\values\\values.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10",
+                        "startColumns": "4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,144,215,288,348,414,536,597,663",
+                        "endColumns": "88,70,72,59,65,121,60,65,66",
+                        "endOffsets": "139,210,283,343,409,531,592,658,725"
+                    },
+                    "to": {
+                        "startLines": "16,17,19,51,112,114,115,120,122",
+                        "startColumns": "4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "1157,1246,1375,3333,8473,8649,8771,9033,9228",
+                        "endColumns": "88,70,72,59,65,121,60,65,66",
+                        "endOffsets": "1241,1312,1443,3388,8534,8766,8827,9094,9290"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Miqueias\\.gradle\\caches\\transforms-2\\files-2.1\\b26a8a009595197460875a681e8d2d13\\res\\values\\values.xml",
+                    "from": {
+                        "startLines": "4,7",
+                        "startColumns": "0,0",
+                        "startOffsets": "238,401",
+                        "endColumns": "63,166",
+                        "endOffsets": "301,567"
+                    },
+                    "to": {
+                        "startLines": "52,64",
+                        "startColumns": "4,4",
+                        "startOffsets": "3393,4703",
+                        "endColumns": "67,166",
+                        "endOffsets": "3456,4865"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Miqueias\\appgiriasestadosbrasileiros\\platforms\\android\\app\\src\\main\\res\\values\\strings.xml",
+                    "from": {
+                        "startLines": "4,2,3",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "182,55,123",
+                        "endColumns": "63,67,58",
+                        "endOffsets": "241,118,177"
+                    },
+                    "to": {
+                        "startLines": "54,55,82",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "3531,3595,6854",
+                        "endColumns": "63,67,58",
+                        "endOffsets": "3590,3658,6908"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Miqueias\\appgiriasestadosbrasileiros\\platforms\\android\\app\\build\\generated\\res\\google-services\\debug\\values\\values.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,199,316,398,502,605,725,831",
+                        "endColumns": "143,116,81,103,102,119,105,82",
+                        "endOffsets": "194,311,393,497,600,720,826,909"
+                    },
+                    "to": {
+                        "startLines": "74,76,77,78,79,80,81,83",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "5996,6222,6339,6421,6525,6628,6748,6913",
+                        "endColumns": "143,116,81,103,102,119,105,82",
+                        "endOffsets": "6135,6334,6416,6520,6623,6743,6849,6991"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Miqueias\\.gradle\\caches\\transforms-2\\files-2.1\\73ea96eaff4486359c3571593cab69e2\\res\\values\\values.xml",
                     "from": {
                         "startLines": "4,14",
                         "startColumns": "0,0",
@@ -131,54 +146,39 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Miqueias\\.gradle\\caches\\transforms-2\\files-2.1\\7f7a0d263092701a4e9245f7c61564a4\\res\\values\\values.xml",
+                    "source": "C:\\Users\\Miqueias\\.gradle\\caches\\transforms-2\\files-2.1\\fc1b49e0257e628ea8a52209ad0919a3\\res\\values\\values.xml",
                     "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10",
-                        "startColumns": "4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,144,215,288,348,414,536,597,663",
-                        "endColumns": "88,70,72,59,65,121,60,65,66",
-                        "endOffsets": "139,210,283,343,409,531,592,658,725"
+                        "startLines": "4,5,6,7,8,9,10",
+                        "startColumns": "0,0,0,0,0,0,0",
+                        "startOffsets": "168,206,279,313,348,397,461",
+                        "endColumns": "37,72,33,34,48,63,34",
+                        "endOffsets": "205,278,312,347,396,460,495"
                     },
                     "to": {
-                        "startLines": "16,17,19,51,112,114,115,120,122",
-                        "startColumns": "4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "1157,1246,1375,3333,8473,8649,8771,9033,9228",
-                        "endColumns": "88,70,72,59,65,121,60,65,66",
-                        "endOffsets": "1241,1312,1443,3388,8534,8766,8827,9094,9290"
+                        "startLines": "84,85,86,87,88,89,90",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "6996,7038,7115,7153,7192,7245,7313",
+                        "endColumns": "41,76,37,38,52,67,38",
+                        "endOffsets": "7033,7110,7148,7187,7240,7308,7347"
                     }
                 },
                 {
-                    "source": "C:\\Users\\Miqueias\\appgiriasestadosbrasileiros_\\platforms\\android\\app\\src\\main\\res\\values\\strings.xml",
+                    "source": "C:\\Users\\Miqueias\\.gradle\\caches\\transforms-2\\files-2.1\\c7cc73417569e055eb62579f4521942d\\res\\values\\values.xml",
                     "from": {
-                        "startLines": "4,2,3",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "186,57,126",
-                        "endColumns": "63,67,58",
-                        "endOffsets": "245,120,180"
+                        "startLines": "4,5,6,7,8,9,10,11,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,33,46",
+                        "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
+                        "startOffsets": "215,301,377,463,549,625,702,778,951,1052,1233,1354,1457,1637,1756,1868,1967,2155,2256,2437,2558,2733,2877,2936,2994,3164,3475",
+                        "endLines": "4,5,6,7,8,9,10,11,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,45,64",
+                        "endColumns": "85,75,85,85,75,76,75,75,100,180,120,102,179,118,111,98,187,100,180,120,174,143,58,57,74,20,20",
+                        "endOffsets": "300,376,462,548,624,701,777,853,1051,1232,1353,1456,1636,1755,1867,1966,2154,2255,2436,2557,2732,2876,2935,2993,3068,3474,3887"
                     },
                     "to": {
-                        "startLines": "54,55,82",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "3531,3595,6854",
-                        "endColumns": "63,67,58",
-                        "endOffsets": "3590,3658,6908"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Miqueias\\appgiriasestadosbrasileiros_\\platforms\\android\\app\\build\\generated\\res\\google-services\\debug\\values\\values.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,199,316,398,502,605,725,831",
-                        "endColumns": "143,116,81,103,102,119,105,82",
-                        "endOffsets": "194,311,393,497,600,720,826,909"
-                    },
-                    "to": {
-                        "startLines": "74,76,77,78,79,80,81,83",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "5996,6222,6339,6421,6525,6628,6748,6913",
-                        "endColumns": "143,116,81,103,102,119,105,82",
-                        "endOffsets": "6135,6334,6416,6520,6623,6743,6849,6991"
+                        "startLines": "6,7,8,9,10,11,12,13,56,57,58,59,60,61,62,63,65,66,67,68,69,70,71,72,73,154,167",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "354,444,524,614,704,784,865,945,3663,3768,3949,4074,4181,4361,4484,4600,4870,5058,5163,5344,5469,5644,5792,5855,5917,11531,11846",
+                        "endLines": "6,7,8,9,10,11,12,13,56,57,58,59,60,61,62,63,65,66,67,68,69,70,71,72,73,166,185",
+                        "endColumns": "89,79,89,89,79,80,79,79,104,180,124,106,179,122,115,102,187,104,180,124,174,147,62,61,78,20,20",
+                        "endOffsets": "439,519,609,699,779,860,940,1020,3763,3944,4069,4176,4356,4479,4595,4698,5053,5158,5339,5464,5639,5787,5850,5912,5991,11841,12258"
                     }
                 }
             ]

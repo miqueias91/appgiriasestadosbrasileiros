@@ -1,725 +1,710 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Miqueias\appgiriasestadosbrasileiros_\platforms\android\app\src\main\AndroidManifest.xml:2:1-27:12
-INJECTED from C:\Users\Miqueias\appgiriasestadosbrasileiros_\platforms\android\app\src\main\AndroidManifest.xml:2:1-27:12
-INJECTED from C:\Users\Miqueias\appgiriasestadosbrasileiros_\platforms\android\app\src\main\AndroidManifest.xml:2:1-27:12
-INJECTED from C:\Users\Miqueias\appgiriasestadosbrasileiros_\platforms\android\app\src\main\AndroidManifest.xml:2:1-27:12
-MERGED from [:CordovaLib] C:\Users\Miqueias\appgiriasestadosbrasileiros_\platforms\android\CordovaLib\build\intermediates\library_manifest\debug\AndroidManifest.xml:20:1-27:12
-MERGED from [com.onesignal:OneSignal:3.11.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\544c312a4882fd90479a7ec1f4fb8420\AndroidManifest.xml:2:1-106:12
-MERGED from [com.google.android.gms:play-services-location:15.0.1] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\198bd7cd8bc257407495714ee75d5a8f\AndroidManifest.xml:2:1-9:12
-MERGED from [com.google.firebase:firebase-messaging:17.3.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\3ee4f2eaa6ab5106a770f68484da2881\AndroidManifest.xml:17:1-37:12
-MERGED from [com.google.firebase:firebase-core:16.0.8] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\79c3cb155d7d0381f7eba101985a5872\AndroidManifest.xml:2:1-9:12
-MERGED from [com.google.firebase:firebase-analytics:16.4.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\6d8a37e61819873a0554457fc2dc3b45\AndroidManifest.xml:2:1-9:12
-MERGED from [com.google.android.gms:play-services-measurement-api:16.4.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\4d24278a99c0eff09f9087cd122d8cac\AndroidManifest.xml:17:1-36:12
-MERGED from [com.google.firebase:firebase-iid:17.0.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\69f25ce4a2900659c08851f9093d35b9\AndroidManifest.xml:17:1-59:12
-MERGED from [com.google.firebase:firebase-iid-interop:16.0.1] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\c6d9e442ec6e96dc3e5dc5061db188df\AndroidManifest.xml:2:1-10:12
-MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\b9ac12ca9667ca96e2258a7216967abc\AndroidManifest.xml:17:1-29:12
-MERGED from [com.google.android.gms:play-services-ads:15.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\59518942aeff3e586678c1d75a3c2aa0\AndroidManifest.xml:17:1-25:12
-MERGED from [com.google.android.gms:play-services-ads-lite:15.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\bee1f622d538ae8ec2a07a14c8bb8233\AndroidManifest.xml:17:1-36:12
-MERGED from [com.google.android.gms:play-services-gass:15.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\57a6d107fae1a13b85397d14f1396c4a\AndroidManifest.xml:2:1-9:12
-MERGED from [com.google.firebase:firebase-common:16.0.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\23e97738d7045515996e5e84f63d6672\AndroidManifest.xml:2:1-17:12
-MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\3e2f90af3aafbafaa5307631fae6a7e9\AndroidManifest.xml:2:1-9:12
-MERGED from [com.google.firebase:firebase-measurement-connector:17.0.1] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\1c477d9e9008d147a9e4131ebb8fa29a\AndroidManifest.xml:17:1-25:12
-MERGED from [com.google.android.gms:play-services-places-placereport:15.0.1] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\971e352ba6446a27c2d805bb8cd741ad\AndroidManifest.xml:17:1-24:12
-MERGED from [com.google.android.gms:play-services-measurement:16.4.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\0809a03836c85c14321315eb015ab825\AndroidManifest.xml:17:1-55:12
-MERGED from [com.google.android.gms:play-services-measurement-sdk:16.4.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\083a6ff4167d461c89133b05a810b206\AndroidManifest.xml:17:1-25:12
-MERGED from [com.google.android.gms:play-services-measurement-impl:16.4.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\3dd2e5de1db11a6e037f453a216698e0\AndroidManifest.xml:17:1-40:12
-MERGED from [com.google.android.gms:play-services-stats:16.0.1] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\8a4ffc8cea210125c129e601f976f08d\AndroidManifest.xml:2:1-9:12
-MERGED from [com.google.android.gms:play-services-measurement-sdk-api:16.4.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\c16fc11a1a94341a34f582b15b97bc2f\AndroidManifest.xml:17:1-30:12
-MERGED from [com.google.android.gms:play-services-measurement-base:16.4.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\8c0b56333e412af875e15e2264390724\AndroidManifest.xml:2:1-9:12
-MERGED from [com.google.android.gms:play-services-ads-identifier:16.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\4903ba50d85cf565c8a4f26edda8ba1e\AndroidManifest.xml:17:1-24:12
-MERGED from [com.google.android.gms:play-services-basement:16.2.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\d4be1079faab5914c0b283e7ca11f588\AndroidManifest.xml:17:1-28:12
-MERGED from [com.android.support:support-v4:26.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\e1b062729e50cca9337df132fcb7c258\AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support:customtabs:26.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\a9f0482b4a62582a93b67326ee7f3c28\AndroidManifest.xml:17:1-28:12
-MERGED from [com.android.support:cardview-v7:26.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\334d25d2f7eaa082b2e261dd67f3916c\AndroidManifest.xml:17:1-28:12
-MERGED from [com.google.android.gms:play-services-ads-base:15.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\db5ef3ab2a0370b7a0c69ef62898a6ba\AndroidManifest.xml:17:1-24:12
-MERGED from [com.android.support:support-media-compat:26.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\7f7a0d263092701a4e9245f7c61564a4\AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support:support-fragment:26.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\de2729d9a676cf4f60c4c2d6fdcea4f8\AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support:support-core-utils:26.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\2f8df773daaa3cda40b5f269a878e7f1\AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support:support-core-ui:26.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\3adbe670a6d4b39ae5e60c0a7cff9655\AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support:support-compat:26.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\fa2a26068489df37bb35b0c492e3c5ba\AndroidManifest.xml:17:1-31:12
-INJECTED from C:\Users\Miqueias\appgiriasestadosbrasileiros_\platforms\android\app\src\main\AndroidManifest.xml:2:1-27:12
-INJECTED from C:\Users\Miqueias\appgiriasestadosbrasileiros_\platforms\android\app\src\main\AndroidManifest.xml:2:1-27:12
-INJECTED from C:\Users\Miqueias\appgiriasestadosbrasileiros_\platforms\android\app\src\main\AndroidManifest.xml:2:1-27:12
+ADDED from C:\Users\Miqueias\appgiriasestadosbrasileiros\platforms\android\app\src\main\AndroidManifest.xml:2:1-27:12
+INJECTED from C:\Users\Miqueias\appgiriasestadosbrasileiros\platforms\android\app\src\main\AndroidManifest.xml:2:1-27:12
+INJECTED from C:\Users\Miqueias\appgiriasestadosbrasileiros\platforms\android\app\src\main\AndroidManifest.xml:2:1-27:12
+INJECTED from C:\Users\Miqueias\appgiriasestadosbrasileiros\platforms\android\app\src\main\AndroidManifest.xml:2:1-27:12
+MERGED from [:CordovaLib] C:\Users\Miqueias\appgiriasestadosbrasileiros\platforms\android\CordovaLib\build\intermediates\library_manifest\debug\AndroidManifest.xml:20:1-27:12
+MERGED from [com.onesignal:OneSignal:3.11.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\6e380f12c127faf9aff056cbb709627f\AndroidManifest.xml:2:1-106:12
+MERGED from [com.google.android.gms:play-services-location:15.0.1] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\e642d898c6f7152cac636a6465bd48bd\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-messaging:15.0.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\5d64378c3d824d729b56eb1371904e9e\AndroidManifest.xml:17:1-37:12
+MERGED from [com.google.firebase:firebase-core:15.0.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\4e6bcf06f4ea31c2399b5f2930f671b7\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:15.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\0f7868a56fd84a87a7e2f8a6d55a017d\AndroidManifest.xml:17:1-34:12
+MERGED from [com.google.firebase:firebase-analytics:15.0.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\61876ec19336128d3faa743a3dcf63b3\AndroidManifest.xml:17:1-55:12
+MERGED from [com.google.firebase:firebase-analytics-impl:15.0.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\7c34f382bfc74c830df1a7c4e5bdf0ca\AndroidManifest.xml:17:1-41:12
+MERGED from [com.google.firebase:firebase-iid:15.1.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\5cea42b421b4335d7cce697800657412\AndroidManifest.xml:17:1-65:12
+MERGED from [com.google.firebase:firebase-iid-interop:15.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\1cbb63f3331ba19955bb60acda672666\AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.android.gms:play-services-base:15.0.1] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\c7cc73417569e055eb62579f4521942d\AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.android.gms:play-services-ads:15.0.1] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\fc1b49e0257e628ea8a52209ad0919a3\AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.firebase:firebase-common:15.0.1] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\c7ea4c92abbaca0dadc169732817a928\AndroidManifest.xml:2:1-15:12
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\86d769c7a79511e608b6cdfafa0bf0f7\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-ads-identifier:15.0.1] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\01e3e9a23c1c2fec775ddd6e5559b2b8\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-ads-lite:15.0.1] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\73ea96eaff4486359c3571593cab69e2\AndroidManifest.xml:17:1-36:12
+MERGED from [com.google.android.gms:play-services-gass:15.0.1] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\9df3b5ba9180fd03b02d96d044fec395\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-stats:15.0.1] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\94f37039dedf694ffd674dc37dc035fd\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-measurement-connector:15.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\bfc8f0cb215ca6848a65152bdd50e0a9\AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.android.gms:play-services-places-placereport:15.0.1] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\d61cf477f8f3fc69234817d66c4089e5\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\b26a8a009595197460875a681e8d2d13\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:customtabs:26.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\37f409f13a36948ad1abd6febbc04a0e\AndroidManifest.xml:17:1-28:12
+MERGED from [com.google.android.gms:play-services-ads-base:15.0.1] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\048d7b4e4b249479d7e970de67a20ad0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-measurement-base:15.0.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\e54e1fce7613c3113ad09a6f07042e5f\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:support-v4:26.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\e39d950d3331253a1c14d2bc5dea35d7\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:cardview-v7:26.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\8457ebd8faa16129268c2d8762589c36\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-media-compat:26.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\1df80bcb3338f430a179e5b59351a07e\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-fragment:26.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\3ce27b93f700d926066d7cea50815277\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-utils:26.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\ba5ac5fae5867abb4a58809650416837\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-ui:26.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\330e49d878fe93e51cdafbccb4f5ae6f\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-compat:26.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\98615b233e7626d65365d6b0c78e2f65\AndroidManifest.xml:17:1-31:12
+INJECTED from C:\Users\Miqueias\appgiriasestadosbrasileiros\platforms\android\app\src\main\AndroidManifest.xml:2:1-27:12
+INJECTED from C:\Users\Miqueias\appgiriasestadosbrasileiros\platforms\android\app\src\main\AndroidManifest.xml:2:1-27:12
+INJECTED from C:\Users\Miqueias\appgiriasestadosbrasileiros\platforms\android\app\src\main\AndroidManifest.xml:2:1-27:12
 	package
-		ADDED from C:\Users\Miqueias\appgiriasestadosbrasileiros_\platforms\android\app\src\main\AndroidManifest.xml:2:102-149
-		INJECTED from C:\Users\Miqueias\appgiriasestadosbrasileiros_\platforms\android\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Miqueias\appgiriasestadosbrasileiros_\platforms\android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Miqueias\appgiriasestadosbrasileiros\platforms\android\app\src\main\AndroidManifest.xml:2:102-149
+		INJECTED from C:\Users\Miqueias\appgiriasestadosbrasileiros\platforms\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Miqueias\appgiriasestadosbrasileiros\platforms\android\app\src\main\AndroidManifest.xml
 	android:versionName
-		ADDED from C:\Users\Miqueias\appgiriasestadosbrasileiros_\platforms\android\app\src\main\AndroidManifest.xml:2:74-101
-		INJECTED from C:\Users\Miqueias\appgiriasestadosbrasileiros_\platforms\android\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Miqueias\appgiriasestadosbrasileiros_\platforms\android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Miqueias\appgiriasestadosbrasileiros\platforms\android\app\src\main\AndroidManifest.xml:2:74-101
+		INJECTED from C:\Users\Miqueias\appgiriasestadosbrasileiros\platforms\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Miqueias\appgiriasestadosbrasileiros\platforms\android\app\src\main\AndroidManifest.xml
 	android:hardwareAccelerated
-		ADDED from C:\Users\Miqueias\appgiriasestadosbrasileiros_\platforms\android\app\src\main\AndroidManifest.xml:2:11-45
+		ADDED from C:\Users\Miqueias\appgiriasestadosbrasileiros\platforms\android\app\src\main\AndroidManifest.xml:2:11-45
 	xmlns:android
-		ADDED from C:\Users\Miqueias\appgiriasestadosbrasileiros_\platforms\android\app\src\main\AndroidManifest.xml:2:150-208
+		ADDED from C:\Users\Miqueias\appgiriasestadosbrasileiros\platforms\android\app\src\main\AndroidManifest.xml:2:150-208
 	android:versionCode
-		ADDED from C:\Users\Miqueias\appgiriasestadosbrasileiros_\platforms\android\app\src\main\AndroidManifest.xml:2:46-73
-		INJECTED from C:\Users\Miqueias\appgiriasestadosbrasileiros_\platforms\android\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Miqueias\appgiriasestadosbrasileiros_\platforms\android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Miqueias\appgiriasestadosbrasileiros\platforms\android\app\src\main\AndroidManifest.xml:2:46-73
+		INJECTED from C:\Users\Miqueias\appgiriasestadosbrasileiros\platforms\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Miqueias\appgiriasestadosbrasileiros\platforms\android\app\src\main\AndroidManifest.xml
 supports-screens
-ADDED from C:\Users\Miqueias\appgiriasestadosbrasileiros_\platforms\android\app\src\main\AndroidManifest.xml:3:5-191
+ADDED from C:\Users\Miqueias\appgiriasestadosbrasileiros\platforms\android\app\src\main\AndroidManifest.xml:3:5-191
 	android:largeScreens
-		ADDED from C:\Users\Miqueias\appgiriasestadosbrasileiros_\platforms\android\app\src\main\AndroidManifest.xml:3:49-76
+		ADDED from C:\Users\Miqueias\appgiriasestadosbrasileiros\platforms\android\app\src\main\AndroidManifest.xml:3:49-76
 	android:smallScreens
-		ADDED from C:\Users\Miqueias\appgiriasestadosbrasileiros_\platforms\android\app\src\main\AndroidManifest.xml:3:132-159
+		ADDED from C:\Users\Miqueias\appgiriasestadosbrasileiros\platforms\android\app\src\main\AndroidManifest.xml:3:132-159
 	android:normalScreens
-		ADDED from C:\Users\Miqueias\appgiriasestadosbrasileiros_\platforms\android\app\src\main\AndroidManifest.xml:3:77-105
+		ADDED from C:\Users\Miqueias\appgiriasestadosbrasileiros\platforms\android\app\src\main\AndroidManifest.xml:3:77-105
 	android:xlargeScreens
-		ADDED from C:\Users\Miqueias\appgiriasestadosbrasileiros_\platforms\android\app\src\main\AndroidManifest.xml:3:160-188
+		ADDED from C:\Users\Miqueias\appgiriasestadosbrasileiros\platforms\android\app\src\main\AndroidManifest.xml:3:160-188
 	android:resizeable
-		ADDED from C:\Users\Miqueias\appgiriasestadosbrasileiros_\platforms\android\app\src\main\AndroidManifest.xml:3:106-131
+		ADDED from C:\Users\Miqueias\appgiriasestadosbrasileiros\platforms\android\app\src\main\AndroidManifest.xml:3:106-131
 	android:anyDensity
-		ADDED from C:\Users\Miqueias\appgiriasestadosbrasileiros_\platforms\android\app\src\main\AndroidManifest.xml:3:23-48
+		ADDED from C:\Users\Miqueias\appgiriasestadosbrasileiros\platforms\android\app\src\main\AndroidManifest.xml:3:23-48
 application
-ADDED from C:\Users\Miqueias\appgiriasestadosbrasileiros_\platforms\android\app\src\main\AndroidManifest.xml:4:5-21:19
-MERGED from [com.onesignal:OneSignal:3.11.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\544c312a4882fd90479a7ec1f4fb8420\AndroidManifest.xml:48:5-104:19
-MERGED from [com.onesignal:OneSignal:3.11.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\544c312a4882fd90479a7ec1f4fb8420\AndroidManifest.xml:48:5-104:19
-MERGED from [com.google.android.gms:play-services-location:15.0.1] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\198bd7cd8bc257407495714ee75d5a8f\AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-location:15.0.1] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\198bd7cd8bc257407495714ee75d5a8f\AndroidManifest.xml:7:5-20
-MERGED from [com.google.firebase:firebase-messaging:17.3.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\3ee4f2eaa6ab5106a770f68484da2881\AndroidManifest.xml:22:5-35:19
-MERGED from [com.google.firebase:firebase-messaging:17.3.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\3ee4f2eaa6ab5106a770f68484da2881\AndroidManifest.xml:22:5-35:19
-MERGED from [com.google.firebase:firebase-core:16.0.8] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\79c3cb155d7d0381f7eba101985a5872\AndroidManifest.xml:7:5-20
-MERGED from [com.google.firebase:firebase-core:16.0.8] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\79c3cb155d7d0381f7eba101985a5872\AndroidManifest.xml:7:5-20
-MERGED from [com.google.firebase:firebase-analytics:16.4.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\6d8a37e61819873a0554457fc2dc3b45\AndroidManifest.xml:7:5-20
-MERGED from [com.google.firebase:firebase-analytics:16.4.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\6d8a37e61819873a0554457fc2dc3b45\AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-measurement-api:16.4.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\4d24278a99c0eff09f9087cd122d8cac\AndroidManifest.xml:26:5-34:19
-MERGED from [com.google.android.gms:play-services-measurement-api:16.4.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\4d24278a99c0eff09f9087cd122d8cac\AndroidManifest.xml:26:5-34:19
-MERGED from [com.google.firebase:firebase-iid:17.0.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\69f25ce4a2900659c08851f9093d35b9\AndroidManifest.xml:28:5-57:19
-MERGED from [com.google.firebase:firebase-iid:17.0.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\69f25ce4a2900659c08851f9093d35b9\AndroidManifest.xml:28:5-57:19
-MERGED from [com.google.firebase:firebase-iid-interop:16.0.1] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\c6d9e442ec6e96dc3e5dc5061db188df\AndroidManifest.xml:7:5-8:19
-MERGED from [com.google.firebase:firebase-iid-interop:16.0.1] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\c6d9e442ec6e96dc3e5dc5061db188df\AndroidManifest.xml:7:5-8:19
-MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\b9ac12ca9667ca96e2258a7216967abc\AndroidManifest.xml:22:5-27:19
-MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\b9ac12ca9667ca96e2258a7216967abc\AndroidManifest.xml:22:5-27:19
-MERGED from [com.google.android.gms:play-services-ads-lite:15.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\bee1f622d538ae8ec2a07a14c8bb8233\AndroidManifest.xml:26:5-34:19
-MERGED from [com.google.android.gms:play-services-ads-lite:15.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\bee1f622d538ae8ec2a07a14c8bb8233\AndroidManifest.xml:26:5-34:19
-MERGED from [com.google.android.gms:play-services-gass:15.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\57a6d107fae1a13b85397d14f1396c4a\AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-gass:15.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\57a6d107fae1a13b85397d14f1396c4a\AndroidManifest.xml:7:5-20
-MERGED from [com.google.firebase:firebase-common:16.0.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\23e97738d7045515996e5e84f63d6672\AndroidManifest.xml:9:5-15:19
-MERGED from [com.google.firebase:firebase-common:16.0.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\23e97738d7045515996e5e84f63d6672\AndroidManifest.xml:9:5-15:19
-MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\3e2f90af3aafbafaa5307631fae6a7e9\AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\3e2f90af3aafbafaa5307631fae6a7e9\AndroidManifest.xml:7:5-20
-MERGED from [com.google.firebase:firebase-measurement-connector:17.0.1] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\1c477d9e9008d147a9e4131ebb8fa29a\AndroidManifest.xml:22:5-23:19
-MERGED from [com.google.firebase:firebase-measurement-connector:17.0.1] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\1c477d9e9008d147a9e4131ebb8fa29a\AndroidManifest.xml:22:5-23:19
-MERGED from [com.google.android.gms:play-services-places-placereport:15.0.1] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\971e352ba6446a27c2d805bb8cd741ad\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-places-placereport:15.0.1] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\971e352ba6446a27c2d805bb8cd741ad\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-measurement:16.4.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\0809a03836c85c14321315eb015ab825\AndroidManifest.xml:28:5-53:19
-MERGED from [com.google.android.gms:play-services-measurement:16.4.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\0809a03836c85c14321315eb015ab825\AndroidManifest.xml:28:5-53:19
-MERGED from [com.google.android.gms:play-services-measurement-sdk:16.4.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\083a6ff4167d461c89133b05a810b206\AndroidManifest.xml:22:5-23:19
-MERGED from [com.google.android.gms:play-services-measurement-sdk:16.4.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\083a6ff4167d461c89133b05a810b206\AndroidManifest.xml:22:5-23:19
-MERGED from [com.google.android.gms:play-services-measurement-impl:16.4.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\3dd2e5de1db11a6e037f453a216698e0\AndroidManifest.xml:28:5-38:19
-MERGED from [com.google.android.gms:play-services-measurement-impl:16.4.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\3dd2e5de1db11a6e037f453a216698e0\AndroidManifest.xml:28:5-38:19
-MERGED from [com.google.android.gms:play-services-stats:16.0.1] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\8a4ffc8cea210125c129e601f976f08d\AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-stats:16.0.1] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\8a4ffc8cea210125c129e601f976f08d\AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-measurement-sdk-api:16.4.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\c16fc11a1a94341a34f582b15b97bc2f\AndroidManifest.xml:27:5-28:19
-MERGED from [com.google.android.gms:play-services-measurement-sdk-api:16.4.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\c16fc11a1a94341a34f582b15b97bc2f\AndroidManifest.xml:27:5-28:19
-MERGED from [com.google.android.gms:play-services-measurement-base:16.4.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\8c0b56333e412af875e15e2264390724\AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-measurement-base:16.4.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\8c0b56333e412af875e15e2264390724\AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-ads-identifier:16.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\4903ba50d85cf565c8a4f26edda8ba1e\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-ads-identifier:16.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\4903ba50d85cf565c8a4f26edda8ba1e\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-basement:16.2.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\d4be1079faab5914c0b283e7ca11f588\AndroidManifest.xml:22:5-26:19
-MERGED from [com.google.android.gms:play-services-basement:16.2.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\d4be1079faab5914c0b283e7ca11f588\AndroidManifest.xml:22:5-26:19
-MERGED from [com.android.support:support-v4:26.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\e1b062729e50cca9337df132fcb7c258\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-v4:26.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\e1b062729e50cca9337df132fcb7c258\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:customtabs:26.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\a9f0482b4a62582a93b67326ee7f3c28\AndroidManifest.xml:22:5-26:19
-MERGED from [com.android.support:customtabs:26.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\a9f0482b4a62582a93b67326ee7f3c28\AndroidManifest.xml:22:5-26:19
-MERGED from [com.android.support:cardview-v7:26.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\334d25d2f7eaa082b2e261dd67f3916c\AndroidManifest.xml:22:5-26:19
-MERGED from [com.android.support:cardview-v7:26.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\334d25d2f7eaa082b2e261dd67f3916c\AndroidManifest.xml:22:5-26:19
-MERGED from [com.google.android.gms:play-services-ads-base:15.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\db5ef3ab2a0370b7a0c69ef62898a6ba\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-ads-base:15.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\db5ef3ab2a0370b7a0c69ef62898a6ba\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-media-compat:26.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\7f7a0d263092701a4e9245f7c61564a4\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-media-compat:26.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\7f7a0d263092701a4e9245f7c61564a4\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-fragment:26.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\de2729d9a676cf4f60c4c2d6fdcea4f8\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-fragment:26.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\de2729d9a676cf4f60c4c2d6fdcea4f8\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-core-utils:26.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\2f8df773daaa3cda40b5f269a878e7f1\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-core-utils:26.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\2f8df773daaa3cda40b5f269a878e7f1\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-core-ui:26.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\3adbe670a6d4b39ae5e60c0a7cff9655\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-core-ui:26.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\3adbe670a6d4b39ae5e60c0a7cff9655\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-compat:26.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\fa2a26068489df37bb35b0c492e3c5ba\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-compat:26.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\fa2a26068489df37bb35b0c492e3c5ba\AndroidManifest.xml:25:5-29:19
+ADDED from C:\Users\Miqueias\appgiriasestadosbrasileiros\platforms\android\app\src\main\AndroidManifest.xml:4:5-23:19
+MERGED from [com.onesignal:OneSignal:3.11.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\6e380f12c127faf9aff056cbb709627f\AndroidManifest.xml:48:5-104:19
+MERGED from [com.onesignal:OneSignal:3.11.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\6e380f12c127faf9aff056cbb709627f\AndroidManifest.xml:48:5-104:19
+MERGED from [com.google.android.gms:play-services-location:15.0.1] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\e642d898c6f7152cac636a6465bd48bd\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-location:15.0.1] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\e642d898c6f7152cac636a6465bd48bd\AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-messaging:15.0.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\5d64378c3d824d729b56eb1371904e9e\AndroidManifest.xml:22:5-35:19
+MERGED from [com.google.firebase:firebase-messaging:15.0.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\5d64378c3d824d729b56eb1371904e9e\AndroidManifest.xml:22:5-35:19
+MERGED from [com.google.firebase:firebase-core:15.0.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\4e6bcf06f4ea31c2399b5f2930f671b7\AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-core:15.0.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\4e6bcf06f4ea31c2399b5f2930f671b7\AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:15.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\0f7868a56fd84a87a7e2f8a6d55a017d\AndroidManifest.xml:26:5-32:19
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:15.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\0f7868a56fd84a87a7e2f8a6d55a017d\AndroidManifest.xml:26:5-32:19
+MERGED from [com.google.firebase:firebase-analytics:15.0.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\61876ec19336128d3faa743a3dcf63b3\AndroidManifest.xml:28:5-53:19
+MERGED from [com.google.firebase:firebase-analytics:15.0.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\61876ec19336128d3faa743a3dcf63b3\AndroidManifest.xml:28:5-53:19
+MERGED from [com.google.firebase:firebase-analytics-impl:15.0.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\7c34f382bfc74c830df1a7c4e5bdf0ca\AndroidManifest.xml:28:5-39:19
+MERGED from [com.google.firebase:firebase-analytics-impl:15.0.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\7c34f382bfc74c830df1a7c4e5bdf0ca\AndroidManifest.xml:28:5-39:19
+MERGED from [com.google.firebase:firebase-iid:15.1.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\5cea42b421b4335d7cce697800657412\AndroidManifest.xml:34:5-63:19
+MERGED from [com.google.firebase:firebase-iid:15.1.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\5cea42b421b4335d7cce697800657412\AndroidManifest.xml:34:5-63:19
+MERGED from [com.google.firebase:firebase-iid-interop:15.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\1cbb63f3331ba19955bb60acda672666\AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-iid-interop:15.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\1cbb63f3331ba19955bb60acda672666\AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.android.gms:play-services-base:15.0.1] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\c7cc73417569e055eb62579f4521942d\AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:15.0.1] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\c7cc73417569e055eb62579f4521942d\AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.firebase:firebase-common:15.0.1] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\c7ea4c92abbaca0dadc169732817a928\AndroidManifest.xml:7:5-13:19
+MERGED from [com.google.firebase:firebase-common:15.0.1] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\c7ea4c92abbaca0dadc169732817a928\AndroidManifest.xml:7:5-13:19
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\86d769c7a79511e608b6cdfafa0bf0f7\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\86d769c7a79511e608b6cdfafa0bf0f7\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-ads-identifier:15.0.1] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\01e3e9a23c1c2fec775ddd6e5559b2b8\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-ads-identifier:15.0.1] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\01e3e9a23c1c2fec775ddd6e5559b2b8\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-ads-lite:15.0.1] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\73ea96eaff4486359c3571593cab69e2\AndroidManifest.xml:26:5-34:19
+MERGED from [com.google.android.gms:play-services-ads-lite:15.0.1] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\73ea96eaff4486359c3571593cab69e2\AndroidManifest.xml:26:5-34:19
+MERGED from [com.google.android.gms:play-services-gass:15.0.1] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\9df3b5ba9180fd03b02d96d044fec395\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-gass:15.0.1] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\9df3b5ba9180fd03b02d96d044fec395\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-stats:15.0.1] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\94f37039dedf694ffd674dc37dc035fd\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-stats:15.0.1] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\94f37039dedf694ffd674dc37dc035fd\AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-measurement-connector:15.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\bfc8f0cb215ca6848a65152bdd50e0a9\AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.firebase:firebase-measurement-connector:15.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\bfc8f0cb215ca6848a65152bdd50e0a9\AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-places-placereport:15.0.1] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\d61cf477f8f3fc69234817d66c4089e5\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-places-placereport:15.0.1] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\d61cf477f8f3fc69234817d66c4089e5\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\b26a8a009595197460875a681e8d2d13\AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\b26a8a009595197460875a681e8d2d13\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:customtabs:26.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\37f409f13a36948ad1abd6febbc04a0e\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:customtabs:26.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\37f409f13a36948ad1abd6febbc04a0e\AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-ads-base:15.0.1] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\048d7b4e4b249479d7e970de67a20ad0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-ads-base:15.0.1] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\048d7b4e4b249479d7e970de67a20ad0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-measurement-base:15.0.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\e54e1fce7613c3113ad09a6f07042e5f\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-measurement-base:15.0.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\e54e1fce7613c3113ad09a6f07042e5f\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:26.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\e39d950d3331253a1c14d2bc5dea35d7\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-v4:26.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\e39d950d3331253a1c14d2bc5dea35d7\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:cardview-v7:26.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\8457ebd8faa16129268c2d8762589c36\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:cardview-v7:26.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\8457ebd8faa16129268c2d8762589c36\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-media-compat:26.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\1df80bcb3338f430a179e5b59351a07e\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:26.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\1df80bcb3338f430a179e5b59351a07e\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-fragment:26.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\3ce27b93f700d926066d7cea50815277\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-fragment:26.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\3ce27b93f700d926066d7cea50815277\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-utils:26.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\ba5ac5fae5867abb4a58809650416837\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-utils:26.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\ba5ac5fae5867abb4a58809650416837\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-ui:26.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\330e49d878fe93e51cdafbccb4f5ae6f\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-ui:26.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\330e49d878fe93e51cdafbccb4f5ae6f\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-compat:26.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\98615b233e7626d65365d6b0c78e2f65\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-compat:26.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\98615b233e7626d65365d6b0c78e2f65\AndroidManifest.xml:25:5-29:19
 	android:supportsRtl
-		ADDED from C:\Users\Miqueias\appgiriasestadosbrasileiros_\platforms\android\app\src\main\AndroidManifest.xml:4:114-140
+		ADDED from C:\Users\Miqueias\appgiriasestadosbrasileiros\platforms\android\app\src\main\AndroidManifest.xml:4:114-140
 	android:label
-		ADDED from C:\Users\Miqueias\appgiriasestadosbrasileiros_\platforms\android\app\src\main\AndroidManifest.xml:4:81-113
+		ADDED from C:\Users\Miqueias\appgiriasestadosbrasileiros\platforms\android\app\src\main\AndroidManifest.xml:4:81-113
 	android:hardwareAccelerated
-		ADDED from C:\Users\Miqueias\appgiriasestadosbrasileiros_\platforms\android\app\src\main\AndroidManifest.xml:4:18-52
+		ADDED from C:\Users\Miqueias\appgiriasestadosbrasileiros\platforms\android\app\src\main\AndroidManifest.xml:4:18-52
 	android:icon
-		ADDED from C:\Users\Miqueias\appgiriasestadosbrasileiros_\platforms\android\app\src\main\AndroidManifest.xml:4:53-80
+		ADDED from C:\Users\Miqueias\appgiriasestadosbrasileiros\platforms\android\app\src\main\AndroidManifest.xml:4:53-80
 activity#com.phonegap.giriasestadosbrasileiros.MainActivity
-ADDED from C:\Users\Miqueias\appgiriasestadosbrasileiros_\platforms\android\app\src\main\AndroidManifest.xml:5:9-10:20
+ADDED from C:\Users\Miqueias\appgiriasestadosbrasileiros\platforms\android\app\src\main\AndroidManifest.xml:5:9-10:20
 	android:screenOrientation
-		ADDED from C:\Users\Miqueias\appgiriasestadosbrasileiros_\platforms\android\app\src\main\AndroidManifest.xml:5:194-230
+		ADDED from C:\Users\Miqueias\appgiriasestadosbrasileiros\platforms\android\app\src\main\AndroidManifest.xml:5:194-230
 	android:label
-		ADDED from C:\Users\Miqueias\appgiriasestadosbrasileiros_\platforms\android\app\src\main\AndroidManifest.xml:5:97-134
+		ADDED from C:\Users\Miqueias\appgiriasestadosbrasileiros\platforms\android\app\src\main\AndroidManifest.xml:5:97-134
 	android:launchMode
-		ADDED from C:\Users\Miqueias\appgiriasestadosbrasileiros_\platforms\android\app\src\main\AndroidManifest.xml:5:135-165
+		ADDED from C:\Users\Miqueias\appgiriasestadosbrasileiros\platforms\android\app\src\main\AndroidManifest.xml:5:135-165
 	android:windowSoftInputMode
-		ADDED from C:\Users\Miqueias\appgiriasestadosbrasileiros_\platforms\android\app\src\main\AndroidManifest.xml:5:294-336
+		ADDED from C:\Users\Miqueias\appgiriasestadosbrasileiros\platforms\android\app\src\main\AndroidManifest.xml:5:294-336
 	android:configChanges
-		ADDED from C:\Users\Miqueias\appgiriasestadosbrasileiros_\platforms\android\app\src\main\AndroidManifest.xml:5:19-96
+		ADDED from C:\Users\Miqueias\appgiriasestadosbrasileiros\platforms\android\app\src\main\AndroidManifest.xml:5:19-96
 	android:theme
-		ADDED from C:\Users\Miqueias\appgiriasestadosbrasileiros_\platforms\android\app\src\main\AndroidManifest.xml:5:231-293
+		ADDED from C:\Users\Miqueias\appgiriasestadosbrasileiros\platforms\android\app\src\main\AndroidManifest.xml:5:231-293
 	android:name
-		ADDED from C:\Users\Miqueias\appgiriasestadosbrasileiros_\platforms\android\app\src\main\AndroidManifest.xml:5:166-193
+		ADDED from C:\Users\Miqueias\appgiriasestadosbrasileiros\platforms\android\app\src\main\AndroidManifest.xml:5:166-193
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\Miqueias\appgiriasestadosbrasileiros_\platforms\android\app\src\main\AndroidManifest.xml:6:13-9:29
+ADDED from C:\Users\Miqueias\appgiriasestadosbrasileiros\platforms\android\app\src\main\AndroidManifest.xml:6:13-9:29
 	android:label
-		ADDED from C:\Users\Miqueias\appgiriasestadosbrasileiros_\platforms\android\app\src\main\AndroidManifest.xml:6:28-65
+		ADDED from C:\Users\Miqueias\appgiriasestadosbrasileiros\platforms\android\app\src\main\AndroidManifest.xml:6:28-65
 action#android.intent.action.MAIN
-ADDED from C:\Users\Miqueias\appgiriasestadosbrasileiros_\platforms\android\app\src\main\AndroidManifest.xml:7:17-69
+ADDED from C:\Users\Miqueias\appgiriasestadosbrasileiros\platforms\android\app\src\main\AndroidManifest.xml:7:17-69
 	android:name
-		ADDED from C:\Users\Miqueias\appgiriasestadosbrasileiros_\platforms\android\app\src\main\AndroidManifest.xml:7:25-66
+		ADDED from C:\Users\Miqueias\appgiriasestadosbrasileiros\platforms\android\app\src\main\AndroidManifest.xml:7:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\Miqueias\appgiriasestadosbrasileiros_\platforms\android\app\src\main\AndroidManifest.xml:8:17-77
+ADDED from C:\Users\Miqueias\appgiriasestadosbrasileiros\platforms\android\app\src\main\AndroidManifest.xml:8:17-77
 	android:name
-		ADDED from C:\Users\Miqueias\appgiriasestadosbrasileiros_\platforms\android\app\src\main\AndroidManifest.xml:8:27-74
+		ADDED from C:\Users\Miqueias\appgiriasestadosbrasileiros\platforms\android\app\src\main\AndroidManifest.xml:8:27-74
 amazon:enable-feature
-ADDED from C:\Users\Miqueias\appgiriasestadosbrasileiros_\platforms\android\app\src\main\AndroidManifest.xml:11:9-159
+ADDED from C:\Users\Miqueias\appgiriasestadosbrasileiros\platforms\android\app\src\main\AndroidManifest.xml:11:9-159
 	xmlns:amazon
-		ADDED from C:\Users\Miqueias\appgiriasestadosbrasileiros_\platforms\android\app\src\main\AndroidManifest.xml:11:100-156
+		ADDED from C:\Users\Miqueias\appgiriasestadosbrasileiros\platforms\android\app\src\main\AndroidManifest.xml:11:100-156
 	android:required
-		ADDED from C:\Users\Miqueias\appgiriasestadosbrasileiros_\platforms\android\app\src\main\AndroidManifest.xml:11:75-99
+		ADDED from C:\Users\Miqueias\appgiriasestadosbrasileiros\platforms\android\app\src\main\AndroidManifest.xml:11:75-99
 	android:name
-		ADDED from C:\Users\Miqueias\appgiriasestadosbrasileiros_\platforms\android\app\src\main\AndroidManifest.xml:11:32-74
+		ADDED from C:\Users\Miqueias\appgiriasestadosbrasileiros\platforms\android\app\src\main\AndroidManifest.xml:11:32-74
 service#com.onesignal.ADMMessageHandler
-ADDED from C:\Users\Miqueias\appgiriasestadosbrasileiros_\platforms\android\app\src\main\AndroidManifest.xml:12:9-92
+ADDED from C:\Users\Miqueias\appgiriasestadosbrasileiros\platforms\android\app\src\main\AndroidManifest.xml:12:9-92
 	android:exported
-		ADDED from C:\Users\Miqueias\appgiriasestadosbrasileiros_\platforms\android\app\src\main\AndroidManifest.xml:12:18-42
+		ADDED from C:\Users\Miqueias\appgiriasestadosbrasileiros\platforms\android\app\src\main\AndroidManifest.xml:12:18-42
 	android:name
-		ADDED from C:\Users\Miqueias\appgiriasestadosbrasileiros_\platforms\android\app\src\main\AndroidManifest.xml:12:43-89
+		ADDED from C:\Users\Miqueias\appgiriasestadosbrasileiros\platforms\android\app\src\main\AndroidManifest.xml:12:43-89
 receiver#com.onesignal.ADMMessageHandler$Receiver
-ADDED from C:\Users\Miqueias\appgiriasestadosbrasileiros_\platforms\android\app\src\main\AndroidManifest.xml:13:9-19:20
+ADDED from C:\Users\Miqueias\appgiriasestadosbrasileiros\platforms\android\app\src\main\AndroidManifest.xml:13:9-19:20
 	android:permission
-		ADDED from C:\Users\Miqueias\appgiriasestadosbrasileiros_\platforms\android\app\src\main\AndroidManifest.xml:13:75-139
+		ADDED from C:\Users\Miqueias\appgiriasestadosbrasileiros\platforms\android\app\src\main\AndroidManifest.xml:13:75-139
 	android:name
-		ADDED from C:\Users\Miqueias\appgiriasestadosbrasileiros_\platforms\android\app\src\main\AndroidManifest.xml:13:19-74
+		ADDED from C:\Users\Miqueias\appgiriasestadosbrasileiros\platforms\android\app\src\main\AndroidManifest.xml:13:19-74
 intent-filter#action:name:com.amazon.device.messaging.intent.RECEIVE+action:name:com.amazon.device.messaging.intent.REGISTRATION+category:name:com.phonegap.giriasestadosbrasileiros
-ADDED from C:\Users\Miqueias\appgiriasestadosbrasileiros_\platforms\android\app\src\main\AndroidManifest.xml:14:13-18:29
+ADDED from C:\Users\Miqueias\appgiriasestadosbrasileiros\platforms\android\app\src\main\AndroidManifest.xml:14:13-18:29
 action#com.amazon.device.messaging.intent.REGISTRATION
-ADDED from C:\Users\Miqueias\appgiriasestadosbrasileiros_\platforms\android\app\src\main\AndroidManifest.xml:15:17-90
+ADDED from C:\Users\Miqueias\appgiriasestadosbrasileiros\platforms\android\app\src\main\AndroidManifest.xml:15:17-90
 	android:name
-		ADDED from C:\Users\Miqueias\appgiriasestadosbrasileiros_\platforms\android\app\src\main\AndroidManifest.xml:15:25-87
+		ADDED from C:\Users\Miqueias\appgiriasestadosbrasileiros\platforms\android\app\src\main\AndroidManifest.xml:15:25-87
 action#com.amazon.device.messaging.intent.RECEIVE
-ADDED from C:\Users\Miqueias\appgiriasestadosbrasileiros_\platforms\android\app\src\main\AndroidManifest.xml:16:17-85
+ADDED from C:\Users\Miqueias\appgiriasestadosbrasileiros\platforms\android\app\src\main\AndroidManifest.xml:16:17-85
 	android:name
-		ADDED from C:\Users\Miqueias\appgiriasestadosbrasileiros_\platforms\android\app\src\main\AndroidManifest.xml:16:25-82
+		ADDED from C:\Users\Miqueias\appgiriasestadosbrasileiros\platforms\android\app\src\main\AndroidManifest.xml:16:25-82
 category#com.phonegap.giriasestadosbrasileiros
-ADDED from C:\Users\Miqueias\appgiriasestadosbrasileiros_\platforms\android\app\src\main\AndroidManifest.xml:17:17-82
+ADDED from C:\Users\Miqueias\appgiriasestadosbrasileiros\platforms\android\app\src\main\AndroidManifest.xml:17:17-82
 	android:name
-		ADDED from C:\Users\Miqueias\appgiriasestadosbrasileiros_\platforms\android\app\src\main\AndroidManifest.xml:17:27-79
-activity#com.google.android.gms.ads.AdActivity
-ADDED from C:\Users\Miqueias\appgiriasestadosbrasileiros_\platforms\android\app\src\main\AndroidManifest.xml:20:9-233
-MERGED from [com.google.android.gms:play-services-ads-lite:15.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\bee1f622d538ae8ec2a07a14c8bb8233\AndroidManifest.xml:29:9-33:64
-MERGED from [com.google.android.gms:play-services-ads-lite:15.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\bee1f622d538ae8ec2a07a14c8bb8233\AndroidManifest.xml:29:9-33:64
-	android:exported
-		ADDED from [com.google.android.gms:play-services-ads-lite:15.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\bee1f622d538ae8ec2a07a14c8bb8233\AndroidManifest.xml:32:13-37
-	android:configChanges
-		ADDED from C:\Users\Miqueias\appgiriasestadosbrasileiros_\platforms\android\app\src\main\AndroidManifest.xml:20:19-128
-	android:theme
-		ADDED from C:\Users\Miqueias\appgiriasestadosbrasileiros_\platforms\android\app\src\main\AndroidManifest.xml:20:182-230
+		ADDED from C:\Users\Miqueias\appgiriasestadosbrasileiros\platforms\android\app\src\main\AndroidManifest.xml:17:27-79
+meta-data#com.google.android.gms.ads.APPLICATION_ID
+ADDED from C:\Users\Miqueias\appgiriasestadosbrasileiros\platforms\android\app\src\main\AndroidManifest.xml:20:9-22:69
+	android:value
+		ADDED from C:\Users\Miqueias\appgiriasestadosbrasileiros\platforms\android\app\src\main\AndroidManifest.xml:22:13-67
 	android:name
-		ADDED from C:\Users\Miqueias\appgiriasestadosbrasileiros_\platforms\android\app\src\main\AndroidManifest.xml:20:129-181
+		ADDED from C:\Users\Miqueias\appgiriasestadosbrasileiros\platforms\android\app\src\main\AndroidManifest.xml:21:13-69
 uses-permission#com.amazon.device.messaging.permission.RECEIVE
-ADDED from C:\Users\Miqueias\appgiriasestadosbrasileiros_\platforms\android\app\src\main\AndroidManifest.xml:22:5-86
+ADDED from C:\Users\Miqueias\appgiriasestadosbrasileiros\platforms\android\app\src\main\AndroidManifest.xml:24:5-86
 	android:name
-		ADDED from C:\Users\Miqueias\appgiriasestadosbrasileiros_\platforms\android\app\src\main\AndroidManifest.xml:22:22-83
+		ADDED from C:\Users\Miqueias\appgiriasestadosbrasileiros\platforms\android\app\src\main\AndroidManifest.xml:24:22-83
 permission#com.phonegap.giriasestadosbrasileiros.permission.RECEIVE_ADM_MESSAGE
-ADDED from C:\Users\Miqueias\appgiriasestadosbrasileiros_\platforms\android\app\src\main\AndroidManifest.xml:23:5-139
+ADDED from C:\Users\Miqueias\appgiriasestadosbrasileiros\platforms\android\app\src\main\AndroidManifest.xml:25:5-139
 	android:protectionLevel
-		ADDED from C:\Users\Miqueias\appgiriasestadosbrasileiros_\platforms\android\app\src\main\AndroidManifest.xml:23:101-136
+		ADDED from C:\Users\Miqueias\appgiriasestadosbrasileiros\platforms\android\app\src\main\AndroidManifest.xml:25:101-136
 	android:name
-		ADDED from C:\Users\Miqueias\appgiriasestadosbrasileiros_\platforms\android\app\src\main\AndroidManifest.xml:23:17-100
+		ADDED from C:\Users\Miqueias\appgiriasestadosbrasileiros\platforms\android\app\src\main\AndroidManifest.xml:25:17-100
 uses-permission#com.phonegap.giriasestadosbrasileiros.permission.RECEIVE_ADM_MESSAGE
-ADDED from C:\Users\Miqueias\appgiriasestadosbrasileiros_\platforms\android\app\src\main\AndroidManifest.xml:24:5-108
+ADDED from C:\Users\Miqueias\appgiriasestadosbrasileiros\platforms\android\app\src\main\AndroidManifest.xml:26:5-108
 	android:name
-		ADDED from C:\Users\Miqueias\appgiriasestadosbrasileiros_\platforms\android\app\src\main\AndroidManifest.xml:24:22-105
-uses-permission#android.permission.INTERNET
-ADDED from C:\Users\Miqueias\appgiriasestadosbrasileiros_\platforms\android\app\src\main\AndroidManifest.xml:25:5-67
-MERGED from [com.onesignal:OneSignal:3.11.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\544c312a4882fd90479a7ec1f4fb8420\AndroidManifest.xml:16:5-67
-MERGED from [com.onesignal:OneSignal:3.11.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\544c312a4882fd90479a7ec1f4fb8420\AndroidManifest.xml:16:5-67
-MERGED from [com.google.android.gms:play-services-measurement-api:16.4.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\4d24278a99c0eff09f9087cd122d8cac\AndroidManifest.xml:22:5-67
-MERGED from [com.google.android.gms:play-services-measurement-api:16.4.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\4d24278a99c0eff09f9087cd122d8cac\AndroidManifest.xml:22:5-67
-MERGED from [com.google.firebase:firebase-iid:17.0.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\69f25ce4a2900659c08851f9093d35b9\AndroidManifest.xml:23:5-67
-MERGED from [com.google.firebase:firebase-iid:17.0.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\69f25ce4a2900659c08851f9093d35b9\AndroidManifest.xml:23:5-67
-MERGED from [com.google.android.gms:play-services-ads-lite:15.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\bee1f622d538ae8ec2a07a14c8bb8233\AndroidManifest.xml:23:5-67
-MERGED from [com.google.android.gms:play-services-ads-lite:15.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\bee1f622d538ae8ec2a07a14c8bb8233\AndroidManifest.xml:23:5-67
-MERGED from [com.google.android.gms:play-services-measurement:16.4.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\0809a03836c85c14321315eb015ab825\AndroidManifest.xml:23:5-67
-MERGED from [com.google.android.gms:play-services-measurement:16.4.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\0809a03836c85c14321315eb015ab825\AndroidManifest.xml:23:5-67
-MERGED from [com.google.android.gms:play-services-measurement-impl:16.4.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\3dd2e5de1db11a6e037f453a216698e0\AndroidManifest.xml:23:5-67
-MERGED from [com.google.android.gms:play-services-measurement-impl:16.4.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\3dd2e5de1db11a6e037f453a216698e0\AndroidManifest.xml:23:5-67
-MERGED from [com.google.android.gms:play-services-measurement-sdk-api:16.4.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\c16fc11a1a94341a34f582b15b97bc2f\AndroidManifest.xml:23:5-67
-MERGED from [com.google.android.gms:play-services-measurement-sdk-api:16.4.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\c16fc11a1a94341a34f582b15b97bc2f\AndroidManifest.xml:23:5-67
-	android:name
-		ADDED from C:\Users\Miqueias\appgiriasestadosbrasileiros_\platforms\android\app\src\main\AndroidManifest.xml:25:22-64
-uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from C:\Users\Miqueias\appgiriasestadosbrasileiros_\platforms\android\app\src\main\AndroidManifest.xml:26:5-79
-MERGED from [com.onesignal:OneSignal:3.11.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\544c312a4882fd90479a7ec1f4fb8420\AndroidManifest.xml:24:5-79
-MERGED from [com.onesignal:OneSignal:3.11.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\544c312a4882fd90479a7ec1f4fb8420\AndroidManifest.xml:24:5-79
-MERGED from [com.google.android.gms:play-services-measurement-api:16.4.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\4d24278a99c0eff09f9087cd122d8cac\AndroidManifest.xml:23:5-79
-MERGED from [com.google.android.gms:play-services-measurement-api:16.4.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\4d24278a99c0eff09f9087cd122d8cac\AndroidManifest.xml:23:5-79
-MERGED from [com.google.firebase:firebase-iid:17.0.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\69f25ce4a2900659c08851f9093d35b9\AndroidManifest.xml:22:5-79
-MERGED from [com.google.firebase:firebase-iid:17.0.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\69f25ce4a2900659c08851f9093d35b9\AndroidManifest.xml:22:5-79
-MERGED from [com.google.android.gms:play-services-ads-lite:15.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\bee1f622d538ae8ec2a07a14c8bb8233\AndroidManifest.xml:24:5-79
-MERGED from [com.google.android.gms:play-services-ads-lite:15.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\bee1f622d538ae8ec2a07a14c8bb8233\AndroidManifest.xml:24:5-79
-MERGED from [com.google.android.gms:play-services-measurement:16.4.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\0809a03836c85c14321315eb015ab825\AndroidManifest.xml:24:5-79
-MERGED from [com.google.android.gms:play-services-measurement:16.4.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\0809a03836c85c14321315eb015ab825\AndroidManifest.xml:24:5-79
-MERGED from [com.google.android.gms:play-services-measurement-impl:16.4.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\3dd2e5de1db11a6e037f453a216698e0\AndroidManifest.xml:24:5-79
-MERGED from [com.google.android.gms:play-services-measurement-impl:16.4.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\3dd2e5de1db11a6e037f453a216698e0\AndroidManifest.xml:24:5-79
-MERGED from [com.google.android.gms:play-services-measurement-sdk-api:16.4.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\c16fc11a1a94341a34f582b15b97bc2f\AndroidManifest.xml:24:5-79
-MERGED from [com.google.android.gms:play-services-measurement-sdk-api:16.4.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\c16fc11a1a94341a34f582b15b97bc2f\AndroidManifest.xml:24:5-79
-	android:name
-		ADDED from C:\Users\Miqueias\appgiriasestadosbrasileiros_\platforms\android\app\src\main\AndroidManifest.xml:26:22-76
+		ADDED from C:\Users\Miqueias\appgiriasestadosbrasileiros\platforms\android\app\src\main\AndroidManifest.xml:26:22-105
 uses-sdk
-INJECTED from C:\Users\Miqueias\appgiriasestadosbrasileiros_\platforms\android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from C:\Users\Miqueias\appgiriasestadosbrasileiros_\platforms\android\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\Miqueias\appgiriasestadosbrasileiros_\platforms\android\app\src\main\AndroidManifest.xml
-MERGED from [:CordovaLib] C:\Users\Miqueias\appgiriasestadosbrasileiros_\platforms\android\CordovaLib\build\intermediates\library_manifest\debug\AndroidManifest.xml:25:5-44
-MERGED from [:CordovaLib] C:\Users\Miqueias\appgiriasestadosbrasileiros_\platforms\android\CordovaLib\build\intermediates\library_manifest\debug\AndroidManifest.xml:25:5-44
-MERGED from [com.onesignal:OneSignal:3.11.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\544c312a4882fd90479a7ec1f4fb8420\AndroidManifest.xml:4:5-44
-MERGED from [com.onesignal:OneSignal:3.11.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\544c312a4882fd90479a7ec1f4fb8420\AndroidManifest.xml:4:5-44
-MERGED from [com.google.android.gms:play-services-location:15.0.1] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\198bd7cd8bc257407495714ee75d5a8f\AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-location:15.0.1] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\198bd7cd8bc257407495714ee75d5a8f\AndroidManifest.xml:5:5-44
-MERGED from [com.google.firebase:firebase-messaging:17.3.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\3ee4f2eaa6ab5106a770f68484da2881\AndroidManifest.xml:20:5-44
-MERGED from [com.google.firebase:firebase-messaging:17.3.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\3ee4f2eaa6ab5106a770f68484da2881\AndroidManifest.xml:20:5-44
-MERGED from [com.google.firebase:firebase-core:16.0.8] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\79c3cb155d7d0381f7eba101985a5872\AndroidManifest.xml:5:5-44
-MERGED from [com.google.firebase:firebase-core:16.0.8] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\79c3cb155d7d0381f7eba101985a5872\AndroidManifest.xml:5:5-44
-MERGED from [com.google.firebase:firebase-analytics:16.4.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\6d8a37e61819873a0554457fc2dc3b45\AndroidManifest.xml:5:5-44
-MERGED from [com.google.firebase:firebase-analytics:16.4.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\6d8a37e61819873a0554457fc2dc3b45\AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-measurement-api:16.4.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\4d24278a99c0eff09f9087cd122d8cac\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-measurement-api:16.4.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\4d24278a99c0eff09f9087cd122d8cac\AndroidManifest.xml:20:5-44
-MERGED from [com.google.firebase:firebase-iid:17.0.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\69f25ce4a2900659c08851f9093d35b9\AndroidManifest.xml:20:5-44
-MERGED from [com.google.firebase:firebase-iid:17.0.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\69f25ce4a2900659c08851f9093d35b9\AndroidManifest.xml:20:5-44
-MERGED from [com.google.firebase:firebase-iid-interop:16.0.1] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\c6d9e442ec6e96dc3e5dc5061db188df\AndroidManifest.xml:5:5-44
-MERGED from [com.google.firebase:firebase-iid-interop:16.0.1] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\c6d9e442ec6e96dc3e5dc5061db188df\AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\b9ac12ca9667ca96e2258a7216967abc\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\b9ac12ca9667ca96e2258a7216967abc\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-ads:15.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\59518942aeff3e586678c1d75a3c2aa0\AndroidManifest.xml:21:5-23:62
-MERGED from [com.google.android.gms:play-services-ads:15.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\59518942aeff3e586678c1d75a3c2aa0\AndroidManifest.xml:21:5-23:62
-MERGED from [com.google.android.gms:play-services-ads-lite:15.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\bee1f622d538ae8ec2a07a14c8bb8233\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-ads-lite:15.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\bee1f622d538ae8ec2a07a14c8bb8233\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-gass:15.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\57a6d107fae1a13b85397d14f1396c4a\AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-gass:15.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\57a6d107fae1a13b85397d14f1396c4a\AndroidManifest.xml:5:5-44
-MERGED from [com.google.firebase:firebase-common:16.0.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\23e97738d7045515996e5e84f63d6672\AndroidManifest.xml:5:5-7:41
-MERGED from [com.google.firebase:firebase-common:16.0.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\23e97738d7045515996e5e84f63d6672\AndroidManifest.xml:5:5-7:41
-MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\3e2f90af3aafbafaa5307631fae6a7e9\AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\3e2f90af3aafbafaa5307631fae6a7e9\AndroidManifest.xml:5:5-44
-MERGED from [com.google.firebase:firebase-measurement-connector:17.0.1] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\1c477d9e9008d147a9e4131ebb8fa29a\AndroidManifest.xml:20:5-44
-MERGED from [com.google.firebase:firebase-measurement-connector:17.0.1] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\1c477d9e9008d147a9e4131ebb8fa29a\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-places-placereport:15.0.1] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\971e352ba6446a27c2d805bb8cd741ad\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-places-placereport:15.0.1] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\971e352ba6446a27c2d805bb8cd741ad\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-measurement:16.4.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\0809a03836c85c14321315eb015ab825\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-measurement:16.4.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\0809a03836c85c14321315eb015ab825\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-measurement-sdk:16.4.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\083a6ff4167d461c89133b05a810b206\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-measurement-sdk:16.4.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\083a6ff4167d461c89133b05a810b206\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-measurement-impl:16.4.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\3dd2e5de1db11a6e037f453a216698e0\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-measurement-impl:16.4.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\3dd2e5de1db11a6e037f453a216698e0\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-stats:16.0.1] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\8a4ffc8cea210125c129e601f976f08d\AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-stats:16.0.1] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\8a4ffc8cea210125c129e601f976f08d\AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-measurement-sdk-api:16.4.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\c16fc11a1a94341a34f582b15b97bc2f\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-measurement-sdk-api:16.4.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\c16fc11a1a94341a34f582b15b97bc2f\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-measurement-base:16.4.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\8c0b56333e412af875e15e2264390724\AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-measurement-base:16.4.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\8c0b56333e412af875e15e2264390724\AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-ads-identifier:16.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\4903ba50d85cf565c8a4f26edda8ba1e\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-ads-identifier:16.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\4903ba50d85cf565c8a4f26edda8ba1e\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-basement:16.2.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\d4be1079faab5914c0b283e7ca11f588\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-basement:16.2.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\d4be1079faab5914c0b283e7ca11f588\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-v4:26.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\e1b062729e50cca9337df132fcb7c258\AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-v4:26.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\e1b062729e50cca9337df132fcb7c258\AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:customtabs:26.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\a9f0482b4a62582a93b67326ee7f3c28\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:customtabs:26.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\a9f0482b4a62582a93b67326ee7f3c28\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cardview-v7:26.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\334d25d2f7eaa082b2e261dd67f3916c\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cardview-v7:26.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\334d25d2f7eaa082b2e261dd67f3916c\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-ads-base:15.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\db5ef3ab2a0370b7a0c69ef62898a6ba\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-ads-base:15.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\db5ef3ab2a0370b7a0c69ef62898a6ba\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-media-compat:26.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\7f7a0d263092701a4e9245f7c61564a4\AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-media-compat:26.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\7f7a0d263092701a4e9245f7c61564a4\AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-fragment:26.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\de2729d9a676cf4f60c4c2d6fdcea4f8\AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-fragment:26.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\de2729d9a676cf4f60c4c2d6fdcea4f8\AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-core-utils:26.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\2f8df773daaa3cda40b5f269a878e7f1\AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:support-core-utils:26.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\2f8df773daaa3cda40b5f269a878e7f1\AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:support-core-ui:26.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\3adbe670a6d4b39ae5e60c0a7cff9655\AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-core-ui:26.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\3adbe670a6d4b39ae5e60c0a7cff9655\AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-compat:26.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\fa2a26068489df37bb35b0c492e3c5ba\AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-compat:26.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\fa2a26068489df37bb35b0c492e3c5ba\AndroidManifest.xml:21:5-23:58
-INJECTED from C:\Users\Miqueias\appgiriasestadosbrasileiros_\platforms\android\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\Miqueias\appgiriasestadosbrasileiros_\platforms\android\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Miqueias\appgiriasestadosbrasileiros\platforms\android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\Miqueias\appgiriasestadosbrasileiros\platforms\android\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Miqueias\appgiriasestadosbrasileiros\platforms\android\app\src\main\AndroidManifest.xml
+MERGED from [:CordovaLib] C:\Users\Miqueias\appgiriasestadosbrasileiros\platforms\android\CordovaLib\build\intermediates\library_manifest\debug\AndroidManifest.xml:25:5-44
+MERGED from [:CordovaLib] C:\Users\Miqueias\appgiriasestadosbrasileiros\platforms\android\CordovaLib\build\intermediates\library_manifest\debug\AndroidManifest.xml:25:5-44
+MERGED from [com.onesignal:OneSignal:3.11.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\6e380f12c127faf9aff056cbb709627f\AndroidManifest.xml:4:5-44
+MERGED from [com.onesignal:OneSignal:3.11.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\6e380f12c127faf9aff056cbb709627f\AndroidManifest.xml:4:5-44
+MERGED from [com.google.android.gms:play-services-location:15.0.1] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\e642d898c6f7152cac636a6465bd48bd\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-location:15.0.1] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\e642d898c6f7152cac636a6465bd48bd\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-messaging:15.0.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\5d64378c3d824d729b56eb1371904e9e\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-messaging:15.0.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\5d64378c3d824d729b56eb1371904e9e\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-core:15.0.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\4e6bcf06f4ea31c2399b5f2930f671b7\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-core:15.0.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\4e6bcf06f4ea31c2399b5f2930f671b7\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:15.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\0f7868a56fd84a87a7e2f8a6d55a017d\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:15.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\0f7868a56fd84a87a7e2f8a6d55a017d\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-analytics:15.0.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\61876ec19336128d3faa743a3dcf63b3\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-analytics:15.0.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\61876ec19336128d3faa743a3dcf63b3\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-analytics-impl:15.0.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\7c34f382bfc74c830df1a7c4e5bdf0ca\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-analytics-impl:15.0.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\7c34f382bfc74c830df1a7c4e5bdf0ca\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-iid:15.1.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\5cea42b421b4335d7cce697800657412\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-iid:15.1.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\5cea42b421b4335d7cce697800657412\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-iid-interop:15.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\1cbb63f3331ba19955bb60acda672666\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-iid-interop:15.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\1cbb63f3331ba19955bb60acda672666\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-base:15.0.1] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\c7cc73417569e055eb62579f4521942d\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:15.0.1] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\c7cc73417569e055eb62579f4521942d\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-ads:15.0.1] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\fc1b49e0257e628ea8a52209ad0919a3\AndroidManifest.xml:21:5-23:62
+MERGED from [com.google.android.gms:play-services-ads:15.0.1] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\fc1b49e0257e628ea8a52209ad0919a3\AndroidManifest.xml:21:5-23:62
+MERGED from [com.google.firebase:firebase-common:15.0.1] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\c7ea4c92abbaca0dadc169732817a928\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-common:15.0.1] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\c7ea4c92abbaca0dadc169732817a928\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\86d769c7a79511e608b6cdfafa0bf0f7\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\86d769c7a79511e608b6cdfafa0bf0f7\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-ads-identifier:15.0.1] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\01e3e9a23c1c2fec775ddd6e5559b2b8\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-ads-identifier:15.0.1] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\01e3e9a23c1c2fec775ddd6e5559b2b8\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-ads-lite:15.0.1] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\73ea96eaff4486359c3571593cab69e2\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-ads-lite:15.0.1] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\73ea96eaff4486359c3571593cab69e2\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-gass:15.0.1] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\9df3b5ba9180fd03b02d96d044fec395\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-gass:15.0.1] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\9df3b5ba9180fd03b02d96d044fec395\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-stats:15.0.1] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\94f37039dedf694ffd674dc37dc035fd\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-stats:15.0.1] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\94f37039dedf694ffd674dc37dc035fd\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector:15.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\bfc8f0cb215ca6848a65152bdd50e0a9\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector:15.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\bfc8f0cb215ca6848a65152bdd50e0a9\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-places-placereport:15.0.1] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\d61cf477f8f3fc69234817d66c4089e5\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-places-placereport:15.0.1] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\d61cf477f8f3fc69234817d66c4089e5\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\b26a8a009595197460875a681e8d2d13\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\b26a8a009595197460875a681e8d2d13\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customtabs:26.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\37f409f13a36948ad1abd6febbc04a0e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customtabs:26.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\37f409f13a36948ad1abd6febbc04a0e\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-ads-base:15.0.1] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\048d7b4e4b249479d7e970de67a20ad0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-ads-base:15.0.1] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\048d7b4e4b249479d7e970de67a20ad0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-base:15.0.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\e54e1fce7613c3113ad09a6f07042e5f\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-base:15.0.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\e54e1fce7613c3113ad09a6f07042e5f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:26.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\e39d950d3331253a1c14d2bc5dea35d7\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:26.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\e39d950d3331253a1c14d2bc5dea35d7\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:cardview-v7:26.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\8457ebd8faa16129268c2d8762589c36\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:26.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\8457ebd8faa16129268c2d8762589c36\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:26.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\1df80bcb3338f430a179e5b59351a07e\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-media-compat:26.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\1df80bcb3338f430a179e5b59351a07e\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-fragment:26.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\3ce27b93f700d926066d7cea50815277\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-fragment:26.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\3ce27b93f700d926066d7cea50815277\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-core-utils:26.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\ba5ac5fae5867abb4a58809650416837\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-utils:26.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\ba5ac5fae5867abb4a58809650416837\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-ui:26.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\330e49d878fe93e51cdafbccb4f5ae6f\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-ui:26.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\330e49d878fe93e51cdafbccb4f5ae6f\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:26.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\98615b233e7626d65365d6b0c78e2f65\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:26.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\98615b233e7626d65365d6b0c78e2f65\AndroidManifest.xml:21:5-23:58
+INJECTED from C:\Users\Miqueias\appgiriasestadosbrasileiros\platforms\android\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Miqueias\appgiriasestadosbrasileiros\platforms\android\app\src\main\AndroidManifest.xml
 	tools:overrideLibrary
-		ADDED from [com.google.android.gms:play-services-ads:15.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\59518942aeff3e586678c1d75a3c2aa0\AndroidManifest.xml:23:9-59
+		ADDED from [com.google.android.gms:play-services-ads:15.0.1] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\fc1b49e0257e628ea8a52209ad0919a3\AndroidManifest.xml:23:9-59
 	android:targetSdkVersion
-		INJECTED from C:\Users\Miqueias\appgiriasestadosbrasileiros_\platforms\android\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Miqueias\appgiriasestadosbrasileiros_\platforms\android\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Miqueias\appgiriasestadosbrasileiros_\platforms\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Miqueias\appgiriasestadosbrasileiros\platforms\android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Miqueias\appgiriasestadosbrasileiros\platforms\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Miqueias\appgiriasestadosbrasileiros\platforms\android\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from C:\Users\Miqueias\appgiriasestadosbrasileiros_\platforms\android\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Miqueias\appgiriasestadosbrasileiros_\platforms\android\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Miqueias\appgiriasestadosbrasileiros_\platforms\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Miqueias\appgiriasestadosbrasileiros\platforms\android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Miqueias\appgiriasestadosbrasileiros\platforms\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Miqueias\appgiriasestadosbrasileiros\platforms\android\app\src\main\AndroidManifest.xml
 permission#${applicationId}.permission.C2D_MESSAGE
-ADDED from [com.onesignal:OneSignal:3.11.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\544c312a4882fd90479a7ec1f4fb8420\AndroidManifest.xml:7:5-9:47
+ADDED from [com.onesignal:OneSignal:3.11.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\6e380f12c127faf9aff056cbb709627f\AndroidManifest.xml:7:5-9:47
+MERGED from [com.google.firebase:firebase-iid:15.1.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\5cea42b421b4335d7cce697800657412\AndroidManifest.xml:28:5-30:47
+MERGED from [com.google.firebase:firebase-iid:15.1.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\5cea42b421b4335d7cce697800657412\AndroidManifest.xml:28:5-30:47
 	android:protectionLevel
-		ADDED from [com.onesignal:OneSignal:3.11.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\544c312a4882fd90479a7ec1f4fb8420\AndroidManifest.xml:9:9-44
+		ADDED from [com.onesignal:OneSignal:3.11.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\6e380f12c127faf9aff056cbb709627f\AndroidManifest.xml:9:9-44
 	android:name
-		ADDED from [com.onesignal:OneSignal:3.11.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\544c312a4882fd90479a7ec1f4fb8420\AndroidManifest.xml:8:9-63
+		ADDED from [com.onesignal:OneSignal:3.11.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\6e380f12c127faf9aff056cbb709627f\AndroidManifest.xml:8:9-63
 permission#com.phonegap.giriasestadosbrasileiros.permission.C2D_MESSAGE
-ADDED from [com.onesignal:OneSignal:3.11.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\544c312a4882fd90479a7ec1f4fb8420\AndroidManifest.xml:7:5-9:47
+ADDED from [com.onesignal:OneSignal:3.11.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\6e380f12c127faf9aff056cbb709627f\AndroidManifest.xml:7:5-9:47
+MERGED from [com.google.firebase:firebase-iid:15.1.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\5cea42b421b4335d7cce697800657412\AndroidManifest.xml:28:5-30:47
+MERGED from [com.google.firebase:firebase-iid:15.1.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\5cea42b421b4335d7cce697800657412\AndroidManifest.xml:28:5-30:47
 	android:protectionLevel
-		ADDED from [com.onesignal:OneSignal:3.11.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\544c312a4882fd90479a7ec1f4fb8420\AndroidManifest.xml:9:9-44
+		ADDED from [com.onesignal:OneSignal:3.11.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\6e380f12c127faf9aff056cbb709627f\AndroidManifest.xml:9:9-44
 	android:name
-		ADDED from [com.onesignal:OneSignal:3.11.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\544c312a4882fd90479a7ec1f4fb8420\AndroidManifest.xml:8:9-63
+		ADDED from [com.onesignal:OneSignal:3.11.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\6e380f12c127faf9aff056cbb709627f\AndroidManifest.xml:8:9-63
 uses-permission#${applicationId}.permission.C2D_MESSAGE
-ADDED from [com.onesignal:OneSignal:3.11.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\544c312a4882fd90479a7ec1f4fb8420\AndroidManifest.xml:11:5-79
+ADDED from [com.onesignal:OneSignal:3.11.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\6e380f12c127faf9aff056cbb709627f\AndroidManifest.xml:11:5-79
+MERGED from [com.google.firebase:firebase-iid:15.1.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\5cea42b421b4335d7cce697800657412\AndroidManifest.xml:32:5-79
+MERGED from [com.google.firebase:firebase-iid:15.1.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\5cea42b421b4335d7cce697800657412\AndroidManifest.xml:32:5-79
 	android:name
-		ADDED from [com.onesignal:OneSignal:3.11.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\544c312a4882fd90479a7ec1f4fb8420\AndroidManifest.xml:11:22-76
+		ADDED from [com.onesignal:OneSignal:3.11.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\6e380f12c127faf9aff056cbb709627f\AndroidManifest.xml:11:22-76
 uses-permission#com.phonegap.giriasestadosbrasileiros.permission.C2D_MESSAGE
-ADDED from [com.onesignal:OneSignal:3.11.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\544c312a4882fd90479a7ec1f4fb8420\AndroidManifest.xml:11:5-79
+ADDED from [com.onesignal:OneSignal:3.11.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\6e380f12c127faf9aff056cbb709627f\AndroidManifest.xml:11:5-79
+MERGED from [com.google.firebase:firebase-iid:15.1.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\5cea42b421b4335d7cce697800657412\AndroidManifest.xml:32:5-79
+MERGED from [com.google.firebase:firebase-iid:15.1.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\5cea42b421b4335d7cce697800657412\AndroidManifest.xml:32:5-79
 	android:name
-		ADDED from [com.onesignal:OneSignal:3.11.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\544c312a4882fd90479a7ec1f4fb8420\AndroidManifest.xml:11:22-76
+		ADDED from [com.onesignal:OneSignal:3.11.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\6e380f12c127faf9aff056cbb709627f\AndroidManifest.xml:11:22-76
+uses-permission#android.permission.INTERNET
+ADDED from [com.onesignal:OneSignal:3.11.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\6e380f12c127faf9aff056cbb709627f\AndroidManifest.xml:16:5-67
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:15.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\0f7868a56fd84a87a7e2f8a6d55a017d\AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:15.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\0f7868a56fd84a87a7e2f8a6d55a017d\AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-analytics:15.0.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\61876ec19336128d3faa743a3dcf63b3\AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-analytics:15.0.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\61876ec19336128d3faa743a3dcf63b3\AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-analytics-impl:15.0.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\7c34f382bfc74c830df1a7c4e5bdf0ca\AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-analytics-impl:15.0.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\7c34f382bfc74c830df1a7c4e5bdf0ca\AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-iid:15.1.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\5cea42b421b4335d7cce697800657412\AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-iid:15.1.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\5cea42b421b4335d7cce697800657412\AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-ads-lite:15.0.1] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\73ea96eaff4486359c3571593cab69e2\AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-ads-lite:15.0.1] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\73ea96eaff4486359c3571593cab69e2\AndroidManifest.xml:23:5-67
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.11.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\6e380f12c127faf9aff056cbb709627f\AndroidManifest.xml:16:22-64
 uses-permission#com.google.android.c2dm.permission.RECEIVE
-ADDED from [com.onesignal:OneSignal:3.11.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\544c312a4882fd90479a7ec1f4fb8420\AndroidManifest.xml:17:5-82
-MERGED from [com.google.firebase:firebase-iid:17.0.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\69f25ce4a2900659c08851f9093d35b9\AndroidManifest.xml:26:5-82
-MERGED from [com.google.firebase:firebase-iid:17.0.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\69f25ce4a2900659c08851f9093d35b9\AndroidManifest.xml:26:5-82
+ADDED from [com.onesignal:OneSignal:3.11.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\6e380f12c127faf9aff056cbb709627f\AndroidManifest.xml:17:5-82
+MERGED from [com.google.firebase:firebase-iid:15.1.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\5cea42b421b4335d7cce697800657412\AndroidManifest.xml:26:5-82
+MERGED from [com.google.firebase:firebase-iid:15.1.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\5cea42b421b4335d7cce697800657412\AndroidManifest.xml:26:5-82
 	android:name
-		ADDED from [com.onesignal:OneSignal:3.11.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\544c312a4882fd90479a7ec1f4fb8420\AndroidManifest.xml:17:22-79
+		ADDED from [com.onesignal:OneSignal:3.11.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\6e380f12c127faf9aff056cbb709627f\AndroidManifest.xml:17:22-79
 uses-permission#android.permission.WAKE_LOCK
-ADDED from [com.onesignal:OneSignal:3.11.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\544c312a4882fd90479a7ec1f4fb8420\AndroidManifest.xml:18:5-68
-MERGED from [com.google.android.gms:play-services-measurement-api:16.4.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\4d24278a99c0eff09f9087cd122d8cac\AndroidManifest.xml:24:5-68
-MERGED from [com.google.android.gms:play-services-measurement-api:16.4.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\4d24278a99c0eff09f9087cd122d8cac\AndroidManifest.xml:24:5-68
-MERGED from [com.google.firebase:firebase-iid:17.0.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\69f25ce4a2900659c08851f9093d35b9\AndroidManifest.xml:24:5-68
-MERGED from [com.google.firebase:firebase-iid:17.0.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\69f25ce4a2900659c08851f9093d35b9\AndroidManifest.xml:24:5-68
-MERGED from [com.google.android.gms:play-services-measurement:16.4.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\0809a03836c85c14321315eb015ab825\AndroidManifest.xml:25:5-68
-MERGED from [com.google.android.gms:play-services-measurement:16.4.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\0809a03836c85c14321315eb015ab825\AndroidManifest.xml:25:5-68
-MERGED from [com.google.android.gms:play-services-measurement-impl:16.4.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\3dd2e5de1db11a6e037f453a216698e0\AndroidManifest.xml:25:5-68
-MERGED from [com.google.android.gms:play-services-measurement-impl:16.4.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\3dd2e5de1db11a6e037f453a216698e0\AndroidManifest.xml:25:5-68
-MERGED from [com.google.android.gms:play-services-measurement-sdk-api:16.4.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\c16fc11a1a94341a34f582b15b97bc2f\AndroidManifest.xml:25:5-68
-MERGED from [com.google.android.gms:play-services-measurement-sdk-api:16.4.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\c16fc11a1a94341a34f582b15b97bc2f\AndroidManifest.xml:25:5-68
+ADDED from [com.onesignal:OneSignal:3.11.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\6e380f12c127faf9aff056cbb709627f\AndroidManifest.xml:18:5-68
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:15.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\0f7868a56fd84a87a7e2f8a6d55a017d\AndroidManifest.xml:24:5-68
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:15.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\0f7868a56fd84a87a7e2f8a6d55a017d\AndroidManifest.xml:24:5-68
+MERGED from [com.google.firebase:firebase-analytics:15.0.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\61876ec19336128d3faa743a3dcf63b3\AndroidManifest.xml:25:5-68
+MERGED from [com.google.firebase:firebase-analytics:15.0.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\61876ec19336128d3faa743a3dcf63b3\AndroidManifest.xml:25:5-68
+MERGED from [com.google.firebase:firebase-analytics-impl:15.0.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\7c34f382bfc74c830df1a7c4e5bdf0ca\AndroidManifest.xml:25:5-68
+MERGED from [com.google.firebase:firebase-analytics-impl:15.0.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\7c34f382bfc74c830df1a7c4e5bdf0ca\AndroidManifest.xml:25:5-68
+MERGED from [com.google.firebase:firebase-iid:15.1.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\5cea42b421b4335d7cce697800657412\AndroidManifest.xml:24:5-68
+MERGED from [com.google.firebase:firebase-iid:15.1.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\5cea42b421b4335d7cce697800657412\AndroidManifest.xml:24:5-68
 	android:name
-		ADDED from [com.onesignal:OneSignal:3.11.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\544c312a4882fd90479a7ec1f4fb8420\AndroidManifest.xml:18:22-65
+		ADDED from [com.onesignal:OneSignal:3.11.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\6e380f12c127faf9aff056cbb709627f\AndroidManifest.xml:18:22-65
 uses-permission#android.permission.VIBRATE
-ADDED from [com.onesignal:OneSignal:3.11.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\544c312a4882fd90479a7ec1f4fb8420\AndroidManifest.xml:23:5-66
+ADDED from [com.onesignal:OneSignal:3.11.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\6e380f12c127faf9aff056cbb709627f\AndroidManifest.xml:23:5-66
 	android:name
-		ADDED from [com.onesignal:OneSignal:3.11.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\544c312a4882fd90479a7ec1f4fb8420\AndroidManifest.xml:23:22-63
+		ADDED from [com.onesignal:OneSignal:3.11.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\6e380f12c127faf9aff056cbb709627f\AndroidManifest.xml:23:22-63
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [com.onesignal:OneSignal:3.11.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\6e380f12c127faf9aff056cbb709627f\AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:15.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\0f7868a56fd84a87a7e2f8a6d55a017d\AndroidManifest.xml:23:5-79
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:15.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\0f7868a56fd84a87a7e2f8a6d55a017d\AndroidManifest.xml:23:5-79
+MERGED from [com.google.firebase:firebase-analytics:15.0.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\61876ec19336128d3faa743a3dcf63b3\AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-analytics:15.0.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\61876ec19336128d3faa743a3dcf63b3\AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-analytics-impl:15.0.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\7c34f382bfc74c830df1a7c4e5bdf0ca\AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-analytics-impl:15.0.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\7c34f382bfc74c830df1a7c4e5bdf0ca\AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-iid:15.1.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\5cea42b421b4335d7cce697800657412\AndroidManifest.xml:22:5-79
+MERGED from [com.google.firebase:firebase-iid:15.1.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\5cea42b421b4335d7cce697800657412\AndroidManifest.xml:22:5-79
+MERGED from [com.google.android.gms:play-services-ads-lite:15.0.1] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\73ea96eaff4486359c3571593cab69e2\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-ads-lite:15.0.1] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\73ea96eaff4486359c3571593cab69e2\AndroidManifest.xml:24:5-79
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.11.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\6e380f12c127faf9aff056cbb709627f\AndroidManifest.xml:24:22-76
 uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
-ADDED from [com.onesignal:OneSignal:3.11.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\544c312a4882fd90479a7ec1f4fb8420\AndroidManifest.xml:29:5-81
+ADDED from [com.onesignal:OneSignal:3.11.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\6e380f12c127faf9aff056cbb709627f\AndroidManifest.xml:29:5-81
 	android:name
-		ADDED from [com.onesignal:OneSignal:3.11.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\544c312a4882fd90479a7ec1f4fb8420\AndroidManifest.xml:29:22-78
+		ADDED from [com.onesignal:OneSignal:3.11.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\6e380f12c127faf9aff056cbb709627f\AndroidManifest.xml:29:22-78
 uses-permission#com.sec.android.provider.badge.permission.READ
-ADDED from [com.onesignal:OneSignal:3.11.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\544c312a4882fd90479a7ec1f4fb8420\AndroidManifest.xml:31:5-86
+ADDED from [com.onesignal:OneSignal:3.11.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\6e380f12c127faf9aff056cbb709627f\AndroidManifest.xml:31:5-86
 	android:name
-		ADDED from [com.onesignal:OneSignal:3.11.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\544c312a4882fd90479a7ec1f4fb8420\AndroidManifest.xml:31:22-83
+		ADDED from [com.onesignal:OneSignal:3.11.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\6e380f12c127faf9aff056cbb709627f\AndroidManifest.xml:31:22-83
 uses-permission#com.sec.android.provider.badge.permission.WRITE
-ADDED from [com.onesignal:OneSignal:3.11.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\544c312a4882fd90479a7ec1f4fb8420\AndroidManifest.xml:32:5-87
+ADDED from [com.onesignal:OneSignal:3.11.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\6e380f12c127faf9aff056cbb709627f\AndroidManifest.xml:32:5-87
 	android:name
-		ADDED from [com.onesignal:OneSignal:3.11.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\544c312a4882fd90479a7ec1f4fb8420\AndroidManifest.xml:32:22-84
+		ADDED from [com.onesignal:OneSignal:3.11.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\6e380f12c127faf9aff056cbb709627f\AndroidManifest.xml:32:22-84
 uses-permission#com.htc.launcher.permission.READ_SETTINGS
-ADDED from [com.onesignal:OneSignal:3.11.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\544c312a4882fd90479a7ec1f4fb8420\AndroidManifest.xml:33:5-81
+ADDED from [com.onesignal:OneSignal:3.11.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\6e380f12c127faf9aff056cbb709627f\AndroidManifest.xml:33:5-81
 	android:name
-		ADDED from [com.onesignal:OneSignal:3.11.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\544c312a4882fd90479a7ec1f4fb8420\AndroidManifest.xml:33:22-78
+		ADDED from [com.onesignal:OneSignal:3.11.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\6e380f12c127faf9aff056cbb709627f\AndroidManifest.xml:33:22-78
 uses-permission#com.htc.launcher.permission.UPDATE_SHORTCUT
-ADDED from [com.onesignal:OneSignal:3.11.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\544c312a4882fd90479a7ec1f4fb8420\AndroidManifest.xml:34:5-83
+ADDED from [com.onesignal:OneSignal:3.11.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\6e380f12c127faf9aff056cbb709627f\AndroidManifest.xml:34:5-83
 	android:name
-		ADDED from [com.onesignal:OneSignal:3.11.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\544c312a4882fd90479a7ec1f4fb8420\AndroidManifest.xml:34:22-80
+		ADDED from [com.onesignal:OneSignal:3.11.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\6e380f12c127faf9aff056cbb709627f\AndroidManifest.xml:34:22-80
 uses-permission#com.sonyericsson.home.permission.BROADCAST_BADGE
-ADDED from [com.onesignal:OneSignal:3.11.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\544c312a4882fd90479a7ec1f4fb8420\AndroidManifest.xml:35:5-88
+ADDED from [com.onesignal:OneSignal:3.11.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\6e380f12c127faf9aff056cbb709627f\AndroidManifest.xml:35:5-88
 	android:name
-		ADDED from [com.onesignal:OneSignal:3.11.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\544c312a4882fd90479a7ec1f4fb8420\AndroidManifest.xml:35:22-85
+		ADDED from [com.onesignal:OneSignal:3.11.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\6e380f12c127faf9aff056cbb709627f\AndroidManifest.xml:35:22-85
 uses-permission#com.sonymobile.home.permission.PROVIDER_INSERT_BADGE
-ADDED from [com.onesignal:OneSignal:3.11.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\544c312a4882fd90479a7ec1f4fb8420\AndroidManifest.xml:36:5-92
+ADDED from [com.onesignal:OneSignal:3.11.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\6e380f12c127faf9aff056cbb709627f\AndroidManifest.xml:36:5-92
 	android:name
-		ADDED from [com.onesignal:OneSignal:3.11.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\544c312a4882fd90479a7ec1f4fb8420\AndroidManifest.xml:36:22-89
+		ADDED from [com.onesignal:OneSignal:3.11.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\6e380f12c127faf9aff056cbb709627f\AndroidManifest.xml:36:22-89
 uses-permission#com.anddoes.launcher.permission.UPDATE_COUNT
-ADDED from [com.onesignal:OneSignal:3.11.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\544c312a4882fd90479a7ec1f4fb8420\AndroidManifest.xml:37:5-84
+ADDED from [com.onesignal:OneSignal:3.11.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\6e380f12c127faf9aff056cbb709627f\AndroidManifest.xml:37:5-84
 	android:name
-		ADDED from [com.onesignal:OneSignal:3.11.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\544c312a4882fd90479a7ec1f4fb8420\AndroidManifest.xml:37:22-81
+		ADDED from [com.onesignal:OneSignal:3.11.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\6e380f12c127faf9aff056cbb709627f\AndroidManifest.xml:37:22-81
 uses-permission#com.majeur.launcher.permission.UPDATE_BADGE
-ADDED from [com.onesignal:OneSignal:3.11.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\544c312a4882fd90479a7ec1f4fb8420\AndroidManifest.xml:38:5-83
+ADDED from [com.onesignal:OneSignal:3.11.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\6e380f12c127faf9aff056cbb709627f\AndroidManifest.xml:38:5-83
 	android:name
-		ADDED from [com.onesignal:OneSignal:3.11.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\544c312a4882fd90479a7ec1f4fb8420\AndroidManifest.xml:38:22-80
+		ADDED from [com.onesignal:OneSignal:3.11.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\6e380f12c127faf9aff056cbb709627f\AndroidManifest.xml:38:22-80
 uses-permission#com.huawei.android.launcher.permission.CHANGE_BADGE
-ADDED from [com.onesignal:OneSignal:3.11.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\544c312a4882fd90479a7ec1f4fb8420\AndroidManifest.xml:39:5-91
+ADDED from [com.onesignal:OneSignal:3.11.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\6e380f12c127faf9aff056cbb709627f\AndroidManifest.xml:39:5-91
 	android:name
-		ADDED from [com.onesignal:OneSignal:3.11.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\544c312a4882fd90479a7ec1f4fb8420\AndroidManifest.xml:39:22-88
+		ADDED from [com.onesignal:OneSignal:3.11.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\6e380f12c127faf9aff056cbb709627f\AndroidManifest.xml:39:22-88
 uses-permission#com.huawei.android.launcher.permission.READ_SETTINGS
-ADDED from [com.onesignal:OneSignal:3.11.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\544c312a4882fd90479a7ec1f4fb8420\AndroidManifest.xml:40:5-92
+ADDED from [com.onesignal:OneSignal:3.11.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\6e380f12c127faf9aff056cbb709627f\AndroidManifest.xml:40:5-92
 	android:name
-		ADDED from [com.onesignal:OneSignal:3.11.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\544c312a4882fd90479a7ec1f4fb8420\AndroidManifest.xml:40:22-89
+		ADDED from [com.onesignal:OneSignal:3.11.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\6e380f12c127faf9aff056cbb709627f\AndroidManifest.xml:40:22-89
 uses-permission#com.huawei.android.launcher.permission.WRITE_SETTINGS
-ADDED from [com.onesignal:OneSignal:3.11.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\544c312a4882fd90479a7ec1f4fb8420\AndroidManifest.xml:41:5-93
+ADDED from [com.onesignal:OneSignal:3.11.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\6e380f12c127faf9aff056cbb709627f\AndroidManifest.xml:41:5-93
 	android:name
-		ADDED from [com.onesignal:OneSignal:3.11.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\544c312a4882fd90479a7ec1f4fb8420\AndroidManifest.xml:41:22-90
+		ADDED from [com.onesignal:OneSignal:3.11.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\6e380f12c127faf9aff056cbb709627f\AndroidManifest.xml:41:22-90
 uses-permission#android.permission.READ_APP_BADGE
-ADDED from [com.onesignal:OneSignal:3.11.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\544c312a4882fd90479a7ec1f4fb8420\AndroidManifest.xml:42:5-73
+ADDED from [com.onesignal:OneSignal:3.11.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\6e380f12c127faf9aff056cbb709627f\AndroidManifest.xml:42:5-73
 	android:name
-		ADDED from [com.onesignal:OneSignal:3.11.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\544c312a4882fd90479a7ec1f4fb8420\AndroidManifest.xml:42:22-70
+		ADDED from [com.onesignal:OneSignal:3.11.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\6e380f12c127faf9aff056cbb709627f\AndroidManifest.xml:42:22-70
 uses-permission#com.oppo.launcher.permission.READ_SETTINGS
-ADDED from [com.onesignal:OneSignal:3.11.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\544c312a4882fd90479a7ec1f4fb8420\AndroidManifest.xml:43:5-82
+ADDED from [com.onesignal:OneSignal:3.11.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\6e380f12c127faf9aff056cbb709627f\AndroidManifest.xml:43:5-82
 	android:name
-		ADDED from [com.onesignal:OneSignal:3.11.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\544c312a4882fd90479a7ec1f4fb8420\AndroidManifest.xml:43:22-79
+		ADDED from [com.onesignal:OneSignal:3.11.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\6e380f12c127faf9aff056cbb709627f\AndroidManifest.xml:43:22-79
 uses-permission#com.oppo.launcher.permission.WRITE_SETTINGS
-ADDED from [com.onesignal:OneSignal:3.11.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\544c312a4882fd90479a7ec1f4fb8420\AndroidManifest.xml:44:5-83
+ADDED from [com.onesignal:OneSignal:3.11.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\6e380f12c127faf9aff056cbb709627f\AndroidManifest.xml:44:5-83
 	android:name
-		ADDED from [com.onesignal:OneSignal:3.11.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\544c312a4882fd90479a7ec1f4fb8420\AndroidManifest.xml:44:22-80
+		ADDED from [com.onesignal:OneSignal:3.11.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\6e380f12c127faf9aff056cbb709627f\AndroidManifest.xml:44:22-80
 uses-permission#me.everything.badger.permission.BADGE_COUNT_READ
-ADDED from [com.onesignal:OneSignal:3.11.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\544c312a4882fd90479a7ec1f4fb8420\AndroidManifest.xml:45:5-88
+ADDED from [com.onesignal:OneSignal:3.11.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\6e380f12c127faf9aff056cbb709627f\AndroidManifest.xml:45:5-88
 	android:name
-		ADDED from [com.onesignal:OneSignal:3.11.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\544c312a4882fd90479a7ec1f4fb8420\AndroidManifest.xml:45:22-85
+		ADDED from [com.onesignal:OneSignal:3.11.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\6e380f12c127faf9aff056cbb709627f\AndroidManifest.xml:45:22-85
 uses-permission#me.everything.badger.permission.BADGE_COUNT_WRITE
-ADDED from [com.onesignal:OneSignal:3.11.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\544c312a4882fd90479a7ec1f4fb8420\AndroidManifest.xml:46:5-89
+ADDED from [com.onesignal:OneSignal:3.11.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\6e380f12c127faf9aff056cbb709627f\AndroidManifest.xml:46:5-89
 	android:name
-		ADDED from [com.onesignal:OneSignal:3.11.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\544c312a4882fd90479a7ec1f4fb8420\AndroidManifest.xml:46:22-86
+		ADDED from [com.onesignal:OneSignal:3.11.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\6e380f12c127faf9aff056cbb709627f\AndroidManifest.xml:46:22-86
 meta-data#onesignal_app_id
-ADDED from [com.onesignal:OneSignal:3.11.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\544c312a4882fd90479a7ec1f4fb8420\AndroidManifest.xml:49:9-51:51
+ADDED from [com.onesignal:OneSignal:3.11.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\6e380f12c127faf9aff056cbb709627f\AndroidManifest.xml:49:9-51:51
 	android:value
-		ADDED from [com.onesignal:OneSignal:3.11.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\544c312a4882fd90479a7ec1f4fb8420\AndroidManifest.xml:51:13-48
+		ADDED from [com.onesignal:OneSignal:3.11.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\6e380f12c127faf9aff056cbb709627f\AndroidManifest.xml:51:13-48
 	android:name
-		ADDED from [com.onesignal:OneSignal:3.11.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\544c312a4882fd90479a7ec1f4fb8420\AndroidManifest.xml:50:13-44
+		ADDED from [com.onesignal:OneSignal:3.11.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\6e380f12c127faf9aff056cbb709627f\AndroidManifest.xml:50:13-44
 meta-data#onesignal_google_project_number
-ADDED from [com.onesignal:OneSignal:3.11.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\544c312a4882fd90479a7ec1f4fb8420\AndroidManifest.xml:53:9-55:70
+ADDED from [com.onesignal:OneSignal:3.11.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\6e380f12c127faf9aff056cbb709627f\AndroidManifest.xml:53:9-55:70
 	android:value
-		ADDED from [com.onesignal:OneSignal:3.11.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\544c312a4882fd90479a7ec1f4fb8420\AndroidManifest.xml:55:13-67
+		ADDED from [com.onesignal:OneSignal:3.11.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\6e380f12c127faf9aff056cbb709627f\AndroidManifest.xml:55:13-67
 	android:name
-		ADDED from [com.onesignal:OneSignal:3.11.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\544c312a4882fd90479a7ec1f4fb8420\AndroidManifest.xml:54:13-59
+		ADDED from [com.onesignal:OneSignal:3.11.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\6e380f12c127faf9aff056cbb709627f\AndroidManifest.xml:54:13-59
 receiver#com.onesignal.GcmBroadcastReceiver
-ADDED from [com.onesignal:OneSignal:3.11.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\544c312a4882fd90479a7ec1f4fb8420\AndroidManifest.xml:57:9-67:20
+ADDED from [com.onesignal:OneSignal:3.11.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\6e380f12c127faf9aff056cbb709627f\AndroidManifest.xml:57:9-67:20
 	android:permission
-		ADDED from [com.onesignal:OneSignal:3.11.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\544c312a4882fd90479a7ec1f4fb8420\AndroidManifest.xml:59:13-73
+		ADDED from [com.onesignal:OneSignal:3.11.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\6e380f12c127faf9aff056cbb709627f\AndroidManifest.xml:59:13-73
 	android:name
-		ADDED from [com.onesignal:OneSignal:3.11.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\544c312a4882fd90479a7ec1f4fb8420\AndroidManifest.xml:58:13-62
+		ADDED from [com.onesignal:OneSignal:3.11.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\6e380f12c127faf9aff056cbb709627f\AndroidManifest.xml:58:13-62
 intent-filter#action:name:com.google.android.c2dm.intent.RECEIVE+category:name:${applicationId}
-ADDED from [com.onesignal:OneSignal:3.11.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\544c312a4882fd90479a7ec1f4fb8420\AndroidManifest.xml:62:13-66:29
+ADDED from [com.onesignal:OneSignal:3.11.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\6e380f12c127faf9aff056cbb709627f\AndroidManifest.xml:62:13-66:29
 	android:priority
-		ADDED from [com.onesignal:OneSignal:3.11.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\544c312a4882fd90479a7ec1f4fb8420\AndroidManifest.xml:62:28-50
+		ADDED from [com.onesignal:OneSignal:3.11.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\6e380f12c127faf9aff056cbb709627f\AndroidManifest.xml:62:28-50
 intent-filter#action:name:com.google.android.c2dm.intent.RECEIVE+category:name:com.phonegap.giriasestadosbrasileiros
-ADDED from [com.onesignal:OneSignal:3.11.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\544c312a4882fd90479a7ec1f4fb8420\AndroidManifest.xml:62:13-66:29
+ADDED from [com.onesignal:OneSignal:3.11.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\6e380f12c127faf9aff056cbb709627f\AndroidManifest.xml:62:13-66:29
 	android:priority
-		ADDED from [com.onesignal:OneSignal:3.11.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\544c312a4882fd90479a7ec1f4fb8420\AndroidManifest.xml:62:28-50
+		ADDED from [com.onesignal:OneSignal:3.11.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\6e380f12c127faf9aff056cbb709627f\AndroidManifest.xml:62:28-50
 action#com.google.android.c2dm.intent.RECEIVE
-ADDED from [com.onesignal:OneSignal:3.11.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\544c312a4882fd90479a7ec1f4fb8420\AndroidManifest.xml:63:17-81
+ADDED from [com.onesignal:OneSignal:3.11.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\6e380f12c127faf9aff056cbb709627f\AndroidManifest.xml:63:17-81
 	android:name
-		ADDED from [com.onesignal:OneSignal:3.11.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\544c312a4882fd90479a7ec1f4fb8420\AndroidManifest.xml:63:25-78
+		ADDED from [com.onesignal:OneSignal:3.11.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\6e380f12c127faf9aff056cbb709627f\AndroidManifest.xml:63:25-78
 category#${applicationId}
-ADDED from [com.onesignal:OneSignal:3.11.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\544c312a4882fd90479a7ec1f4fb8420\AndroidManifest.xml:65:17-61
+ADDED from [com.onesignal:OneSignal:3.11.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\6e380f12c127faf9aff056cbb709627f\AndroidManifest.xml:65:17-61
 	android:name
-		ADDED from [com.onesignal:OneSignal:3.11.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\544c312a4882fd90479a7ec1f4fb8420\AndroidManifest.xml:65:27-58
+		ADDED from [com.onesignal:OneSignal:3.11.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\6e380f12c127faf9aff056cbb709627f\AndroidManifest.xml:65:27-58
 receiver#com.onesignal.NotificationOpenedReceiver
-ADDED from [com.onesignal:OneSignal:3.11.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\544c312a4882fd90479a7ec1f4fb8420\AndroidManifest.xml:68:9-77
+ADDED from [com.onesignal:OneSignal:3.11.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\6e380f12c127faf9aff056cbb709627f\AndroidManifest.xml:68:9-77
 	android:name
-		ADDED from [com.onesignal:OneSignal:3.11.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\544c312a4882fd90479a7ec1f4fb8420\AndroidManifest.xml:68:19-74
+		ADDED from [com.onesignal:OneSignal:3.11.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\6e380f12c127faf9aff056cbb709627f\AndroidManifest.xml:68:19-74
 service#com.onesignal.GcmIntentService
-ADDED from [com.onesignal:OneSignal:3.11.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\544c312a4882fd90479a7ec1f4fb8420\AndroidManifest.xml:70:9-66
+ADDED from [com.onesignal:OneSignal:3.11.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\6e380f12c127faf9aff056cbb709627f\AndroidManifest.xml:70:9-66
 	android:name
-		ADDED from [com.onesignal:OneSignal:3.11.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\544c312a4882fd90479a7ec1f4fb8420\AndroidManifest.xml:70:18-63
+		ADDED from [com.onesignal:OneSignal:3.11.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\6e380f12c127faf9aff056cbb709627f\AndroidManifest.xml:70:18-63
 service#com.onesignal.GcmIntentJobService
-ADDED from [com.onesignal:OneSignal:3.11.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\544c312a4882fd90479a7ec1f4fb8420\AndroidManifest.xml:71:9-73:72
+ADDED from [com.onesignal:OneSignal:3.11.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\6e380f12c127faf9aff056cbb709627f\AndroidManifest.xml:71:9-73:72
 	android:permission
-		ADDED from [com.onesignal:OneSignal:3.11.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\544c312a4882fd90479a7ec1f4fb8420\AndroidManifest.xml:73:13-69
+		ADDED from [com.onesignal:OneSignal:3.11.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\6e380f12c127faf9aff056cbb709627f\AndroidManifest.xml:73:13-69
 	android:name
-		ADDED from [com.onesignal:OneSignal:3.11.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\544c312a4882fd90479a7ec1f4fb8420\AndroidManifest.xml:72:13-61
+		ADDED from [com.onesignal:OneSignal:3.11.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\6e380f12c127faf9aff056cbb709627f\AndroidManifest.xml:72:13-61
 service#com.onesignal.RestoreJobService
-ADDED from [com.onesignal:OneSignal:3.11.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\544c312a4882fd90479a7ec1f4fb8420\AndroidManifest.xml:74:9-76:72
+ADDED from [com.onesignal:OneSignal:3.11.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\6e380f12c127faf9aff056cbb709627f\AndroidManifest.xml:74:9-76:72
 	android:permission
-		ADDED from [com.onesignal:OneSignal:3.11.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\544c312a4882fd90479a7ec1f4fb8420\AndroidManifest.xml:76:13-69
+		ADDED from [com.onesignal:OneSignal:3.11.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\6e380f12c127faf9aff056cbb709627f\AndroidManifest.xml:76:13-69
 	android:name
-		ADDED from [com.onesignal:OneSignal:3.11.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\544c312a4882fd90479a7ec1f4fb8420\AndroidManifest.xml:75:13-59
+		ADDED from [com.onesignal:OneSignal:3.11.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\6e380f12c127faf9aff056cbb709627f\AndroidManifest.xml:75:13-59
 service#com.onesignal.RestoreKickoffJobService
-ADDED from [com.onesignal:OneSignal:3.11.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\544c312a4882fd90479a7ec1f4fb8420\AndroidManifest.xml:77:9-79:72
+ADDED from [com.onesignal:OneSignal:3.11.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\6e380f12c127faf9aff056cbb709627f\AndroidManifest.xml:77:9-79:72
 	android:permission
-		ADDED from [com.onesignal:OneSignal:3.11.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\544c312a4882fd90479a7ec1f4fb8420\AndroidManifest.xml:79:13-69
+		ADDED from [com.onesignal:OneSignal:3.11.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\6e380f12c127faf9aff056cbb709627f\AndroidManifest.xml:79:13-69
 	android:name
-		ADDED from [com.onesignal:OneSignal:3.11.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\544c312a4882fd90479a7ec1f4fb8420\AndroidManifest.xml:78:13-66
+		ADDED from [com.onesignal:OneSignal:3.11.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\6e380f12c127faf9aff056cbb709627f\AndroidManifest.xml:78:13-66
 service#com.onesignal.SyncService
-ADDED from [com.onesignal:OneSignal:3.11.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\544c312a4882fd90479a7ec1f4fb8420\AndroidManifest.xml:80:9-82:43
+ADDED from [com.onesignal:OneSignal:3.11.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\6e380f12c127faf9aff056cbb709627f\AndroidManifest.xml:80:9-82:43
 	android:stopWithTask
-		ADDED from [com.onesignal:OneSignal:3.11.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\544c312a4882fd90479a7ec1f4fb8420\AndroidManifest.xml:82:13-40
+		ADDED from [com.onesignal:OneSignal:3.11.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\6e380f12c127faf9aff056cbb709627f\AndroidManifest.xml:82:13-40
 	android:name
-		ADDED from [com.onesignal:OneSignal:3.11.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\544c312a4882fd90479a7ec1f4fb8420\AndroidManifest.xml:81:13-53
+		ADDED from [com.onesignal:OneSignal:3.11.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\6e380f12c127faf9aff056cbb709627f\AndroidManifest.xml:81:13-53
 service#com.onesignal.SyncJobService
-ADDED from [com.onesignal:OneSignal:3.11.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\544c312a4882fd90479a7ec1f4fb8420\AndroidManifest.xml:83:9-85:72
+ADDED from [com.onesignal:OneSignal:3.11.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\6e380f12c127faf9aff056cbb709627f\AndroidManifest.xml:83:9-85:72
 	android:permission
-		ADDED from [com.onesignal:OneSignal:3.11.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\544c312a4882fd90479a7ec1f4fb8420\AndroidManifest.xml:85:13-69
+		ADDED from [com.onesignal:OneSignal:3.11.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\6e380f12c127faf9aff056cbb709627f\AndroidManifest.xml:85:13-69
 	android:name
-		ADDED from [com.onesignal:OneSignal:3.11.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\544c312a4882fd90479a7ec1f4fb8420\AndroidManifest.xml:84:13-56
+		ADDED from [com.onesignal:OneSignal:3.11.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\6e380f12c127faf9aff056cbb709627f\AndroidManifest.xml:84:13-56
 activity#com.onesignal.PermissionsActivity
-ADDED from [com.onesignal:OneSignal:3.11.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\544c312a4882fd90479a7ec1f4fb8420\AndroidManifest.xml:87:9-89:75
+ADDED from [com.onesignal:OneSignal:3.11.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\6e380f12c127faf9aff056cbb709627f\AndroidManifest.xml:87:9-89:75
 	android:theme
-		ADDED from [com.onesignal:OneSignal:3.11.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\544c312a4882fd90479a7ec1f4fb8420\AndroidManifest.xml:89:13-72
+		ADDED from [com.onesignal:OneSignal:3.11.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\6e380f12c127faf9aff056cbb709627f\AndroidManifest.xml:89:13-72
 	android:name
-		ADDED from [com.onesignal:OneSignal:3.11.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\544c312a4882fd90479a7ec1f4fb8420\AndroidManifest.xml:88:13-61
+		ADDED from [com.onesignal:OneSignal:3.11.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\6e380f12c127faf9aff056cbb709627f\AndroidManifest.xml:88:13-61
 service#com.onesignal.NotificationRestoreService
-ADDED from [com.onesignal:OneSignal:3.11.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\544c312a4882fd90479a7ec1f4fb8420\AndroidManifest.xml:91:9-76
+ADDED from [com.onesignal:OneSignal:3.11.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\6e380f12c127faf9aff056cbb709627f\AndroidManifest.xml:91:9-76
 	android:name
-		ADDED from [com.onesignal:OneSignal:3.11.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\544c312a4882fd90479a7ec1f4fb8420\AndroidManifest.xml:91:18-73
+		ADDED from [com.onesignal:OneSignal:3.11.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\6e380f12c127faf9aff056cbb709627f\AndroidManifest.xml:91:18-73
 receiver#com.onesignal.BootUpReceiver
-ADDED from [com.onesignal:OneSignal:3.11.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\544c312a4882fd90479a7ec1f4fb8420\AndroidManifest.xml:93:9-98:20
+ADDED from [com.onesignal:OneSignal:3.11.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\6e380f12c127faf9aff056cbb709627f\AndroidManifest.xml:93:9-98:20
 	android:name
-		ADDED from [com.onesignal:OneSignal:3.11.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\544c312a4882fd90479a7ec1f4fb8420\AndroidManifest.xml:93:19-62
+		ADDED from [com.onesignal:OneSignal:3.11.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\6e380f12c127faf9aff056cbb709627f\AndroidManifest.xml:93:19-62
 intent-filter#action:name:android.intent.action.BOOT_COMPLETED+action:name:android.intent.action.QUICKBOOT_POWERON
-ADDED from [com.onesignal:OneSignal:3.11.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\544c312a4882fd90479a7ec1f4fb8420\AndroidManifest.xml:94:13-97:29
+ADDED from [com.onesignal:OneSignal:3.11.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\6e380f12c127faf9aff056cbb709627f\AndroidManifest.xml:94:13-97:29
 action#android.intent.action.BOOT_COMPLETED
-ADDED from [com.onesignal:OneSignal:3.11.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\544c312a4882fd90479a7ec1f4fb8420\AndroidManifest.xml:95:17-79
+ADDED from [com.onesignal:OneSignal:3.11.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\6e380f12c127faf9aff056cbb709627f\AndroidManifest.xml:95:17-79
 	android:name
-		ADDED from [com.onesignal:OneSignal:3.11.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\544c312a4882fd90479a7ec1f4fb8420\AndroidManifest.xml:95:25-76
+		ADDED from [com.onesignal:OneSignal:3.11.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\6e380f12c127faf9aff056cbb709627f\AndroidManifest.xml:95:25-76
 action#android.intent.action.QUICKBOOT_POWERON
-ADDED from [com.onesignal:OneSignal:3.11.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\544c312a4882fd90479a7ec1f4fb8420\AndroidManifest.xml:96:17-82
+ADDED from [com.onesignal:OneSignal:3.11.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\6e380f12c127faf9aff056cbb709627f\AndroidManifest.xml:96:17-82
 	android:name
-		ADDED from [com.onesignal:OneSignal:3.11.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\544c312a4882fd90479a7ec1f4fb8420\AndroidManifest.xml:96:25-79
+		ADDED from [com.onesignal:OneSignal:3.11.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\6e380f12c127faf9aff056cbb709627f\AndroidManifest.xml:96:25-79
 receiver#com.onesignal.UpgradeReceiver
-ADDED from [com.onesignal:OneSignal:3.11.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\544c312a4882fd90479a7ec1f4fb8420\AndroidManifest.xml:99:9-103:20
+ADDED from [com.onesignal:OneSignal:3.11.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\6e380f12c127faf9aff056cbb709627f\AndroidManifest.xml:99:9-103:20
 	android:name
-		ADDED from [com.onesignal:OneSignal:3.11.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\544c312a4882fd90479a7ec1f4fb8420\AndroidManifest.xml:99:19-63
+		ADDED from [com.onesignal:OneSignal:3.11.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\6e380f12c127faf9aff056cbb709627f\AndroidManifest.xml:99:19-63
 intent-filter#action:name:android.intent.action.MY_PACKAGE_REPLACED
-ADDED from [com.onesignal:OneSignal:3.11.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\544c312a4882fd90479a7ec1f4fb8420\AndroidManifest.xml:100:13-102:29
+ADDED from [com.onesignal:OneSignal:3.11.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\6e380f12c127faf9aff056cbb709627f\AndroidManifest.xml:100:13-102:29
 action#android.intent.action.MY_PACKAGE_REPLACED
-ADDED from [com.onesignal:OneSignal:3.11.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\544c312a4882fd90479a7ec1f4fb8420\AndroidManifest.xml:101:17-84
+ADDED from [com.onesignal:OneSignal:3.11.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\6e380f12c127faf9aff056cbb709627f\AndroidManifest.xml:101:17-84
 	android:name
-		ADDED from [com.onesignal:OneSignal:3.11.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\544c312a4882fd90479a7ec1f4fb8420\AndroidManifest.xml:101:25-81
+		ADDED from [com.onesignal:OneSignal:3.11.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\6e380f12c127faf9aff056cbb709627f\AndroidManifest.xml:101:25-81
 service#com.google.firebase.messaging.FirebaseMessagingService
-ADDED from [com.google.firebase:firebase-messaging:17.3.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\3ee4f2eaa6ab5106a770f68484da2881\AndroidManifest.xml:28:9-34:19
+ADDED from [com.google.firebase:firebase-messaging:15.0.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\5d64378c3d824d729b56eb1371904e9e\AndroidManifest.xml:28:9-34:19
 	android:exported
-		ADDED from [com.google.firebase:firebase-messaging:17.3.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\3ee4f2eaa6ab5106a770f68484da2881\AndroidManifest.xml:30:13-36
+		ADDED from [com.google.firebase:firebase-messaging:15.0.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\5d64378c3d824d729b56eb1371904e9e\AndroidManifest.xml:30:13-36
 	android:name
-		ADDED from [com.google.firebase:firebase-messaging:17.3.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\3ee4f2eaa6ab5106a770f68484da2881\AndroidManifest.xml:29:13-82
+		ADDED from [com.google.firebase:firebase-messaging:15.0.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\5d64378c3d824d729b56eb1371904e9e\AndroidManifest.xml:29:13-82
 intent-filter#action:name:com.google.firebase.MESSAGING_EVENT
-ADDED from [com.google.firebase:firebase-messaging:17.3.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\3ee4f2eaa6ab5106a770f68484da2881\AndroidManifest.xml:31:13-33:29
+ADDED from [com.google.firebase:firebase-messaging:15.0.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\5d64378c3d824d729b56eb1371904e9e\AndroidManifest.xml:31:13-33:29
 	android:priority
-		ADDED from [com.google.firebase:firebase-messaging:17.3.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\3ee4f2eaa6ab5106a770f68484da2881\AndroidManifest.xml:31:28-51
+		ADDED from [com.google.firebase:firebase-messaging:15.0.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\5d64378c3d824d729b56eb1371904e9e\AndroidManifest.xml:31:28-51
 action#com.google.firebase.MESSAGING_EVENT
-ADDED from [com.google.firebase:firebase-messaging:17.3.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\3ee4f2eaa6ab5106a770f68484da2881\AndroidManifest.xml:32:17-78
+ADDED from [com.google.firebase:firebase-messaging:15.0.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\5d64378c3d824d729b56eb1371904e9e\AndroidManifest.xml:32:17-78
 	android:name
-		ADDED from [com.google.firebase:firebase-messaging:17.3.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\3ee4f2eaa6ab5106a770f68484da2881\AndroidManifest.xml:32:25-75
+		ADDED from [com.google.firebase:firebase-messaging:15.0.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\5d64378c3d824d729b56eb1371904e9e\AndroidManifest.xml:32:25-75
 service#com.google.firebase.components.ComponentDiscoveryService
-ADDED from [com.google.android.gms:play-services-measurement-api:16.4.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\4d24278a99c0eff09f9087cd122d8cac\AndroidManifest.xml:27:9-33:19
-MERGED from [com.google.firebase:firebase-iid:17.0.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\69f25ce4a2900659c08851f9093d35b9\AndroidManifest.xml:29:9-35:19
-MERGED from [com.google.firebase:firebase-iid:17.0.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\69f25ce4a2900659c08851f9093d35b9\AndroidManifest.xml:29:9-35:19
-	android:exported
-		ADDED from [com.google.android.gms:play-services-measurement-api:16.4.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\4d24278a99c0eff09f9087cd122d8cac\AndroidManifest.xml:29:13-37
+ADDED from [com.google.firebase:firebase-measurement-connector-impl:15.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\0f7868a56fd84a87a7e2f8a6d55a017d\AndroidManifest.xml:27:9-31:19
+MERGED from [com.google.firebase:firebase-iid:15.1.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\5cea42b421b4335d7cce697800657412\AndroidManifest.xml:35:9-39:19
+MERGED from [com.google.firebase:firebase-iid:15.1.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\5cea42b421b4335d7cce697800657412\AndroidManifest.xml:35:9-39:19
 	android:name
-		ADDED from [com.google.android.gms:play-services-measurement-api:16.4.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\4d24278a99c0eff09f9087cd122d8cac\AndroidManifest.xml:28:13-84
+		ADDED from [com.google.firebase:firebase-measurement-connector-impl:15.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\0f7868a56fd84a87a7e2f8a6d55a017d\AndroidManifest.xml:27:18-89
 meta-data#com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar
-ADDED from [com.google.android.gms:play-services-measurement-api:16.4.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\4d24278a99c0eff09f9087cd122d8cac\AndroidManifest.xml:30:13-32:85
+ADDED from [com.google.firebase:firebase-measurement-connector-impl:15.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\0f7868a56fd84a87a7e2f8a6d55a017d\AndroidManifest.xml:28:13-30:85
 	android:value
-		ADDED from [com.google.android.gms:play-services-measurement-api:16.4.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\4d24278a99c0eff09f9087cd122d8cac\AndroidManifest.xml:32:17-82
+		ADDED from [com.google.firebase:firebase-measurement-connector-impl:15.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\0f7868a56fd84a87a7e2f8a6d55a017d\AndroidManifest.xml:30:17-82
 	android:name
-		ADDED from [com.google.android.gms:play-services-measurement-api:16.4.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\4d24278a99c0eff09f9087cd122d8cac\AndroidManifest.xml:31:17-139
-meta-data#com.google.firebase.components:com.google.firebase.iid.Registrar
-ADDED from [com.google.firebase:firebase-iid:17.0.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\69f25ce4a2900659c08851f9093d35b9\AndroidManifest.xml:32:13-34:85
-	android:value
-		ADDED from [com.google.firebase:firebase-iid:17.0.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\69f25ce4a2900659c08851f9093d35b9\AndroidManifest.xml:34:17-82
-	android:name
-		ADDED from [com.google.firebase:firebase-iid:17.0.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\69f25ce4a2900659c08851f9093d35b9\AndroidManifest.xml:33:17-96
-receiver#com.google.firebase.iid.FirebaseInstanceIdReceiver
-ADDED from [com.google.firebase:firebase-iid:17.0.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\69f25ce4a2900659c08851f9093d35b9\AndroidManifest.xml:37:9-44:20
-	android:exported
-		ADDED from [com.google.firebase:firebase-iid:17.0.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\69f25ce4a2900659c08851f9093d35b9\AndroidManifest.xml:39:13-36
-	android:permission
-		ADDED from [com.google.firebase:firebase-iid:17.0.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\69f25ce4a2900659c08851f9093d35b9\AndroidManifest.xml:40:13-73
-	android:name
-		ADDED from [com.google.firebase:firebase-iid:17.0.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\69f25ce4a2900659c08851f9093d35b9\AndroidManifest.xml:38:13-78
-intent-filter#action:name:com.google.android.c2dm.intent.RECEIVE
-ADDED from [com.google.firebase:firebase-iid:17.0.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\69f25ce4a2900659c08851f9093d35b9\AndroidManifest.xml:41:13-43:29
-service#com.google.firebase.iid.FirebaseInstanceIdService
-ADDED from [com.google.firebase:firebase-iid:17.0.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\69f25ce4a2900659c08851f9093d35b9\AndroidManifest.xml:50:9-56:19
-	android:exported
-		ADDED from [com.google.firebase:firebase-iid:17.0.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\69f25ce4a2900659c08851f9093d35b9\AndroidManifest.xml:52:13-36
-	android:name
-		ADDED from [com.google.firebase:firebase-iid:17.0.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\69f25ce4a2900659c08851f9093d35b9\AndroidManifest.xml:51:13-77
-intent-filter#action:name:com.google.firebase.INSTANCE_ID_EVENT
-ADDED from [com.google.firebase:firebase-iid:17.0.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\69f25ce4a2900659c08851f9093d35b9\AndroidManifest.xml:53:13-55:29
-	android:priority
-		ADDED from [com.google.firebase:firebase-iid:17.0.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\69f25ce4a2900659c08851f9093d35b9\AndroidManifest.xml:53:28-51
-action#com.google.firebase.INSTANCE_ID_EVENT
-ADDED from [com.google.firebase:firebase-iid:17.0.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\69f25ce4a2900659c08851f9093d35b9\AndroidManifest.xml:54:17-80
-	android:name
-		ADDED from [com.google.firebase:firebase-iid:17.0.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\69f25ce4a2900659c08851f9093d35b9\AndroidManifest.xml:54:25-77
-activity#com.google.android.gms.common.api.GoogleApiActivity
-ADDED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\b9ac12ca9667ca96e2258a7216967abc\AndroidManifest.xml:23:9-26:75
-	android:exported
-		ADDED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\b9ac12ca9667ca96e2258a7216967abc\AndroidManifest.xml:25:13-37
-	android:theme
-		ADDED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\b9ac12ca9667ca96e2258a7216967abc\AndroidManifest.xml:26:13-72
-	android:name
-		ADDED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\b9ac12ca9667ca96e2258a7216967abc\AndroidManifest.xml:24:13-79
-provider#com.google.firebase.provider.FirebaseInitProvider
-ADDED from [com.google.firebase:firebase-common:16.0.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\23e97738d7045515996e5e84f63d6672\AndroidManifest.xml:10:9-14:39
-	android:authorities
-		ADDED from [com.google.firebase:firebase-common:16.0.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\23e97738d7045515996e5e84f63d6672\AndroidManifest.xml:12:13-72
-	android:exported
-		ADDED from [com.google.firebase:firebase-common:16.0.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\23e97738d7045515996e5e84f63d6672\AndroidManifest.xml:13:13-37
-	android:initOrder
-		ADDED from [com.google.firebase:firebase-common:16.0.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\23e97738d7045515996e5e84f63d6672\AndroidManifest.xml:14:13-36
-	android:name
-		ADDED from [com.google.firebase:firebase-common:16.0.3] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\23e97738d7045515996e5e84f63d6672\AndroidManifest.xml:11:13-77
+		ADDED from [com.google.firebase:firebase-measurement-connector-impl:15.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\0f7868a56fd84a87a7e2f8a6d55a017d\AndroidManifest.xml:29:17-139
 uses-permission#com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
-ADDED from [com.google.android.gms:play-services-measurement:16.4.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\0809a03836c85c14321315eb015ab825\AndroidManifest.xml:26:5-110
-MERGED from [com.google.android.gms:play-services-measurement-impl:16.4.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\3dd2e5de1db11a6e037f453a216698e0\AndroidManifest.xml:26:5-110
-MERGED from [com.google.android.gms:play-services-measurement-impl:16.4.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\3dd2e5de1db11a6e037f453a216698e0\AndroidManifest.xml:26:5-110
+ADDED from [com.google.firebase:firebase-analytics:15.0.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\61876ec19336128d3faa743a3dcf63b3\AndroidManifest.xml:26:5-110
+MERGED from [com.google.firebase:firebase-analytics-impl:15.0.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\7c34f382bfc74c830df1a7c4e5bdf0ca\AndroidManifest.xml:26:5-110
+MERGED from [com.google.firebase:firebase-analytics-impl:15.0.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\7c34f382bfc74c830df1a7c4e5bdf0ca\AndroidManifest.xml:26:5-110
 	android:name
-		ADDED from [com.google.android.gms:play-services-measurement:16.4.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\0809a03836c85c14321315eb015ab825\AndroidManifest.xml:26:22-107
+		ADDED from [com.google.firebase:firebase-analytics:15.0.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\61876ec19336128d3faa743a3dcf63b3\AndroidManifest.xml:26:22-107
 receiver#com.google.android.gms.measurement.AppMeasurementReceiver
-ADDED from [com.google.android.gms:play-services-measurement:16.4.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\0809a03836c85c14321315eb015ab825\AndroidManifest.xml:29:9-33:20
+ADDED from [com.google.firebase:firebase-analytics:15.0.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\61876ec19336128d3faa743a3dcf63b3\AndroidManifest.xml:29:9-33:20
+MERGED from [com.google.firebase:firebase-analytics-impl:15.0.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\7c34f382bfc74c830df1a7c4e5bdf0ca\AndroidManifest.xml:29:9-33:20
+MERGED from [com.google.firebase:firebase-analytics-impl:15.0.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\7c34f382bfc74c830df1a7c4e5bdf0ca\AndroidManifest.xml:29:9-33:20
 	android:enabled
-		ADDED from [com.google.android.gms:play-services-measurement:16.4.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\0809a03836c85c14321315eb015ab825\AndroidManifest.xml:31:13-35
+		ADDED from [com.google.firebase:firebase-analytics:15.0.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\61876ec19336128d3faa743a3dcf63b3\AndroidManifest.xml:31:13-35
 	android:exported
-		ADDED from [com.google.android.gms:play-services-measurement:16.4.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\0809a03836c85c14321315eb015ab825\AndroidManifest.xml:32:13-37
+		ADDED from [com.google.firebase:firebase-analytics:15.0.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\61876ec19336128d3faa743a3dcf63b3\AndroidManifest.xml:32:13-37
 	android:name
-		ADDED from [com.google.android.gms:play-services-measurement:16.4.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\0809a03836c85c14321315eb015ab825\AndroidManifest.xml:30:13-85
+		ADDED from [com.google.firebase:firebase-analytics:15.0.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\61876ec19336128d3faa743a3dcf63b3\AndroidManifest.xml:30:13-85
 receiver#com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver
-ADDED from [com.google.android.gms:play-services-measurement:16.4.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\0809a03836c85c14321315eb015ab825\AndroidManifest.xml:34:9-42:20
-MERGED from [com.google.android.gms:play-services-measurement-impl:16.4.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\3dd2e5de1db11a6e037f453a216698e0\AndroidManifest.xml:29:9-37:20
-MERGED from [com.google.android.gms:play-services-measurement-impl:16.4.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\3dd2e5de1db11a6e037f453a216698e0\AndroidManifest.xml:29:9-37:20
+ADDED from [com.google.firebase:firebase-analytics:15.0.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\61876ec19336128d3faa743a3dcf63b3\AndroidManifest.xml:34:9-42:20
 	android:enabled
-		ADDED from [com.google.android.gms:play-services-measurement:16.4.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\0809a03836c85c14321315eb015ab825\AndroidManifest.xml:36:13-35
+		ADDED from [com.google.firebase:firebase-analytics:15.0.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\61876ec19336128d3faa743a3dcf63b3\AndroidManifest.xml:36:13-35
 	android:exported
-		ADDED from [com.google.android.gms:play-services-measurement:16.4.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\0809a03836c85c14321315eb015ab825\AndroidManifest.xml:37:13-36
+		ADDED from [com.google.firebase:firebase-analytics:15.0.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\61876ec19336128d3faa743a3dcf63b3\AndroidManifest.xml:37:13-36
 	android:permission
-		ADDED from [com.google.android.gms:play-services-measurement:16.4.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\0809a03836c85c14321315eb015ab825\AndroidManifest.xml:38:13-69
+		ADDED from [com.google.firebase:firebase-analytics:15.0.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\61876ec19336128d3faa743a3dcf63b3\AndroidManifest.xml:38:13-69
 	android:name
-		ADDED from [com.google.android.gms:play-services-measurement:16.4.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\0809a03836c85c14321315eb015ab825\AndroidManifest.xml:35:13-100
+		ADDED from [com.google.firebase:firebase-analytics:15.0.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\61876ec19336128d3faa743a3dcf63b3\AndroidManifest.xml:35:13-100
 intent-filter#action:name:com.android.vending.INSTALL_REFERRER
-ADDED from [com.google.android.gms:play-services-measurement:16.4.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\0809a03836c85c14321315eb015ab825\AndroidManifest.xml:39:13-41:29
+ADDED from [com.google.firebase:firebase-analytics:15.0.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\61876ec19336128d3faa743a3dcf63b3\AndroidManifest.xml:39:13-41:29
 action#com.android.vending.INSTALL_REFERRER
-ADDED from [com.google.android.gms:play-services-measurement:16.4.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\0809a03836c85c14321315eb015ab825\AndroidManifest.xml:40:17-79
+ADDED from [com.google.firebase:firebase-analytics:15.0.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\61876ec19336128d3faa743a3dcf63b3\AndroidManifest.xml:40:17-79
 	android:name
-		ADDED from [com.google.android.gms:play-services-measurement:16.4.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\0809a03836c85c14321315eb015ab825\AndroidManifest.xml:40:25-76
+		ADDED from [com.google.firebase:firebase-analytics:15.0.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\61876ec19336128d3faa743a3dcf63b3\AndroidManifest.xml:40:25-76
 service#com.google.android.gms.measurement.AppMeasurementService
-ADDED from [com.google.android.gms:play-services-measurement:16.4.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\0809a03836c85c14321315eb015ab825\AndroidManifest.xml:44:9-47:40
+ADDED from [com.google.firebase:firebase-analytics:15.0.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\61876ec19336128d3faa743a3dcf63b3\AndroidManifest.xml:44:9-47:40
+MERGED from [com.google.firebase:firebase-analytics-impl:15.0.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\7c34f382bfc74c830df1a7c4e5bdf0ca\AndroidManifest.xml:35:9-38:40
+MERGED from [com.google.firebase:firebase-analytics-impl:15.0.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\7c34f382bfc74c830df1a7c4e5bdf0ca\AndroidManifest.xml:35:9-38:40
 	android:enabled
-		ADDED from [com.google.android.gms:play-services-measurement:16.4.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\0809a03836c85c14321315eb015ab825\AndroidManifest.xml:46:13-35
+		ADDED from [com.google.firebase:firebase-analytics:15.0.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\61876ec19336128d3faa743a3dcf63b3\AndroidManifest.xml:46:13-35
 	android:exported
-		ADDED from [com.google.android.gms:play-services-measurement:16.4.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\0809a03836c85c14321315eb015ab825\AndroidManifest.xml:47:13-37
+		ADDED from [com.google.firebase:firebase-analytics:15.0.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\61876ec19336128d3faa743a3dcf63b3\AndroidManifest.xml:47:13-37
 	android:name
-		ADDED from [com.google.android.gms:play-services-measurement:16.4.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\0809a03836c85c14321315eb015ab825\AndroidManifest.xml:45:13-84
+		ADDED from [com.google.firebase:firebase-analytics:15.0.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\61876ec19336128d3faa743a3dcf63b3\AndroidManifest.xml:45:13-84
 service#com.google.android.gms.measurement.AppMeasurementJobService
-ADDED from [com.google.android.gms:play-services-measurement:16.4.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\0809a03836c85c14321315eb015ab825\AndroidManifest.xml:48:9-52:72
+ADDED from [com.google.firebase:firebase-analytics:15.0.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\61876ec19336128d3faa743a3dcf63b3\AndroidManifest.xml:48:9-52:72
 	android:enabled
-		ADDED from [com.google.android.gms:play-services-measurement:16.4.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\0809a03836c85c14321315eb015ab825\AndroidManifest.xml:50:13-35
+		ADDED from [com.google.firebase:firebase-analytics:15.0.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\61876ec19336128d3faa743a3dcf63b3\AndroidManifest.xml:50:13-35
 	android:exported
-		ADDED from [com.google.android.gms:play-services-measurement:16.4.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\0809a03836c85c14321315eb015ab825\AndroidManifest.xml:51:13-37
+		ADDED from [com.google.firebase:firebase-analytics:15.0.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\61876ec19336128d3faa743a3dcf63b3\AndroidManifest.xml:51:13-37
 	android:permission
-		ADDED from [com.google.android.gms:play-services-measurement:16.4.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\0809a03836c85c14321315eb015ab825\AndroidManifest.xml:52:13-69
+		ADDED from [com.google.firebase:firebase-analytics:15.0.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\61876ec19336128d3faa743a3dcf63b3\AndroidManifest.xml:52:13-69
 	android:name
-		ADDED from [com.google.android.gms:play-services-measurement:16.4.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\0809a03836c85c14321315eb015ab825\AndroidManifest.xml:49:13-87
+		ADDED from [com.google.firebase:firebase-analytics:15.0.2] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\61876ec19336128d3faa743a3dcf63b3\AndroidManifest.xml:49:13-87
+meta-data#com.google.firebase.components:com.google.firebase.iid.Registrar
+ADDED from [com.google.firebase:firebase-iid:15.1.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\5cea42b421b4335d7cce697800657412\AndroidManifest.xml:36:13-38:85
+	android:value
+		ADDED from [com.google.firebase:firebase-iid:15.1.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\5cea42b421b4335d7cce697800657412\AndroidManifest.xml:38:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:15.1.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\5cea42b421b4335d7cce697800657412\AndroidManifest.xml:37:17-96
+receiver#com.google.firebase.iid.FirebaseInstanceIdReceiver
+ADDED from [com.google.firebase:firebase-iid:15.1.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\5cea42b421b4335d7cce697800657412\AndroidManifest.xml:41:9-50:20
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:15.1.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\5cea42b421b4335d7cce697800657412\AndroidManifest.xml:43:13-36
+	android:permission
+		ADDED from [com.google.firebase:firebase-iid:15.1.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\5cea42b421b4335d7cce697800657412\AndroidManifest.xml:44:13-73
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:15.1.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\5cea42b421b4335d7cce697800657412\AndroidManifest.xml:42:13-78
+service#com.google.firebase.iid.FirebaseInstanceIdService
+ADDED from [com.google.firebase:firebase-iid:15.1.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\5cea42b421b4335d7cce697800657412\AndroidManifest.xml:56:9-62:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:15.1.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\5cea42b421b4335d7cce697800657412\AndroidManifest.xml:58:13-36
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:15.1.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\5cea42b421b4335d7cce697800657412\AndroidManifest.xml:57:13-77
+intent-filter#action:name:com.google.firebase.INSTANCE_ID_EVENT
+ADDED from [com.google.firebase:firebase-iid:15.1.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\5cea42b421b4335d7cce697800657412\AndroidManifest.xml:59:13-61:29
+	android:priority
+		ADDED from [com.google.firebase:firebase-iid:15.1.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\5cea42b421b4335d7cce697800657412\AndroidManifest.xml:59:28-51
+action#com.google.firebase.INSTANCE_ID_EVENT
+ADDED from [com.google.firebase:firebase-iid:15.1.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\5cea42b421b4335d7cce697800657412\AndroidManifest.xml:60:17-80
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:15.1.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\5cea42b421b4335d7cce697800657412\AndroidManifest.xml:60:25-77
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:15.0.1] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\c7cc73417569e055eb62579f4521942d\AndroidManifest.xml:23:9-26:75
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:15.0.1] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\c7cc73417569e055eb62579f4521942d\AndroidManifest.xml:25:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:15.0.1] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\c7cc73417569e055eb62579f4521942d\AndroidManifest.xml:26:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:15.0.1] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\c7cc73417569e055eb62579f4521942d\AndroidManifest.xml:24:13-79
+provider#com.google.firebase.provider.FirebaseInitProvider
+ADDED from [com.google.firebase:firebase-common:15.0.1] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\c7ea4c92abbaca0dadc169732817a928\AndroidManifest.xml:8:9-12:39
+	android:authorities
+		ADDED from [com.google.firebase:firebase-common:15.0.1] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\c7ea4c92abbaca0dadc169732817a928\AndroidManifest.xml:10:13-72
+	android:exported
+		ADDED from [com.google.firebase:firebase-common:15.0.1] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\c7ea4c92abbaca0dadc169732817a928\AndroidManifest.xml:11:13-37
+	android:initOrder
+		ADDED from [com.google.firebase:firebase-common:15.0.1] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\c7ea4c92abbaca0dadc169732817a928\AndroidManifest.xml:12:13-36
+	android:name
+		ADDED from [com.google.firebase:firebase-common:15.0.1] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\c7ea4c92abbaca0dadc169732817a928\AndroidManifest.xml:9:13-77
+activity#com.google.android.gms.ads.AdActivity
+ADDED from [com.google.android.gms:play-services-ads-lite:15.0.1] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\73ea96eaff4486359c3571593cab69e2\AndroidManifest.xml:29:9-33:64
+	android:exported
+		ADDED from [com.google.android.gms:play-services-ads-lite:15.0.1] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\73ea96eaff4486359c3571593cab69e2\AndroidManifest.xml:32:13-37
+	android:configChanges
+		ADDED from [com.google.android.gms:play-services-ads-lite:15.0.1] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\73ea96eaff4486359c3571593cab69e2\AndroidManifest.xml:31:13-122
+	android:theme
+		ADDED from [com.google.android.gms:play-services-ads-lite:15.0.1] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\73ea96eaff4486359c3571593cab69e2\AndroidManifest.xml:33:13-61
+	android:name
+		ADDED from [com.google.android.gms:play-services-ads-lite:15.0.1] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\73ea96eaff4486359c3571593cab69e2\AndroidManifest.xml:30:13-65
 meta-data#com.google.android.gms.version
-ADDED from [com.google.android.gms:play-services-basement:16.2.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\d4be1079faab5914c0b283e7ca11f588\AndroidManifest.xml:23:9-25:69
+ADDED from [com.google.android.gms:play-services-basement:15.0.1] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\b26a8a009595197460875a681e8d2d13\AndroidManifest.xml:23:9-25:69
 	android:value
-		ADDED from [com.google.android.gms:play-services-basement:16.2.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\d4be1079faab5914c0b283e7ca11f588\AndroidManifest.xml:25:13-66
+		ADDED from [com.google.android.gms:play-services-basement:15.0.1] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\b26a8a009595197460875a681e8d2d13\AndroidManifest.xml:25:13-66
 	android:name
-		ADDED from [com.google.android.gms:play-services-basement:16.2.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\d4be1079faab5914c0b283e7ca11f588\AndroidManifest.xml:24:13-58
+		ADDED from [com.google.android.gms:play-services-basement:15.0.1] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\b26a8a009595197460875a681e8d2d13\AndroidManifest.xml:24:13-58
 meta-data#android.support.VERSION
-ADDED from [com.android.support:support-v4:26.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\e1b062729e50cca9337df132fcb7c258\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:customtabs:26.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\a9f0482b4a62582a93b67326ee7f3c28\AndroidManifest.xml:23:9-25:38
-MERGED from [com.android.support:customtabs:26.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\a9f0482b4a62582a93b67326ee7f3c28\AndroidManifest.xml:23:9-25:38
-MERGED from [com.android.support:cardview-v7:26.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\334d25d2f7eaa082b2e261dd67f3916c\AndroidManifest.xml:23:9-25:38
-MERGED from [com.android.support:cardview-v7:26.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\334d25d2f7eaa082b2e261dd67f3916c\AndroidManifest.xml:23:9-25:38
-MERGED from [com.android.support:support-media-compat:26.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\7f7a0d263092701a4e9245f7c61564a4\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-media-compat:26.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\7f7a0d263092701a4e9245f7c61564a4\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-fragment:26.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\de2729d9a676cf4f60c4c2d6fdcea4f8\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-fragment:26.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\de2729d9a676cf4f60c4c2d6fdcea4f8\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-core-utils:26.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\2f8df773daaa3cda40b5f269a878e7f1\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-core-utils:26.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\2f8df773daaa3cda40b5f269a878e7f1\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-core-ui:26.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\3adbe670a6d4b39ae5e60c0a7cff9655\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-core-ui:26.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\3adbe670a6d4b39ae5e60c0a7cff9655\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-compat:26.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\fa2a26068489df37bb35b0c492e3c5ba\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-compat:26.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\fa2a26068489df37bb35b0c492e3c5ba\AndroidManifest.xml:26:9-28:38
+ADDED from [com.android.support:customtabs:26.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\37f409f13a36948ad1abd6febbc04a0e\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-v4:26.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\e39d950d3331253a1c14d2bc5dea35d7\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-v4:26.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\e39d950d3331253a1c14d2bc5dea35d7\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:cardview-v7:26.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\8457ebd8faa16129268c2d8762589c36\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:cardview-v7:26.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\8457ebd8faa16129268c2d8762589c36\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-media-compat:26.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\1df80bcb3338f430a179e5b59351a07e\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:26.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\1df80bcb3338f430a179e5b59351a07e\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-fragment:26.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\3ce27b93f700d926066d7cea50815277\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-fragment:26.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\3ce27b93f700d926066d7cea50815277\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-utils:26.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\ba5ac5fae5867abb4a58809650416837\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-utils:26.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\ba5ac5fae5867abb4a58809650416837\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-ui:26.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\330e49d878fe93e51cdafbccb4f5ae6f\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-ui:26.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\330e49d878fe93e51cdafbccb4f5ae6f\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-compat:26.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\98615b233e7626d65365d6b0c78e2f65\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-compat:26.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\98615b233e7626d65365d6b0c78e2f65\AndroidManifest.xml:26:9-28:38
 	android:value
-		ADDED from [com.android.support:support-v4:26.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\e1b062729e50cca9337df132fcb7c258\AndroidManifest.xml:28:13-35
+		ADDED from [com.android.support:customtabs:26.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\37f409f13a36948ad1abd6febbc04a0e\AndroidManifest.xml:25:13-35
 	android:name
-		ADDED from [com.android.support:support-v4:26.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\e1b062729e50cca9337df132fcb7c258\AndroidManifest.xml:27:13-51
+		ADDED from [com.android.support:customtabs:26.0.0] C:\Users\Miqueias\.gradle\caches\transforms-2\files-2.1\37f409f13a36948ad1abd6febbc04a0e\AndroidManifest.xml:24:13-51

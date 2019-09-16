@@ -17,9 +17,11 @@
                 <category android:name="com.phonegap.giriasestadosbrasileiros" />
             </intent-filter>
         </receiver>
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-7091486462236476~9915980012"/>
     </application>
     <uses-permission android:name="com.amazon.device.messaging.permission.RECEIVE" />
     <permission android:name="com.phonegap.giriasestadosbrasileiros.permission.RECEIVE_ADM_MESSAGE" android:protectionLevel="signature" />
     <uses-permission android:name="com.phonegap.giriasestadosbrasileiros.permission.RECEIVE_ADM_MESSAGE" />
-    <uses-sdk android:minSdkVersion="16" />
 </manifest>
