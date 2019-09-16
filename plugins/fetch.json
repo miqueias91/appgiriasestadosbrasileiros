@@ -39,14 +39,6 @@
     "is_top_level": true,
     "variables": {}
   },
-  "cordova-plugin-admob-simple": {
-    "source": {
-      "type": "registry",
-      "id": "cordova-plugin-admob-simple@^3.3.8"
-    },
-    "is_top_level": true,
-    "variables": {}
-  },
   "cordova-admob-sdklibs": {
     "source": {
       "type": "registry",

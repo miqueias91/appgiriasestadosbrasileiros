@@ -39,14 +39,6 @@ module.exports = [
     "clobbers": [
       "window.StatusBar"
     ]
-  },
-  {
-    "id": "cordova-plugin-admob-simple.AdMob",
-    "file": "plugins/cordova-plugin-admob-simple/www/AdMob.js",
-    "pluginId": "cordova-plugin-admob-simple",
-    "clobbers": [
-      "window.plugins.AdMob"
-    ]
   }
 ];
 module.exports.metadata = 
@@ -56,9 +48,7 @@ module.exports.metadata =
   "cordova-plugin-whitelist": "1.3.3",
   "onesignal-cordova-plugin": "2.5.2",
   "cordova-plugin-dialogs": "2.0.2",
-  "cordova-plugin-statusbar": "2.1.3",
-  "cordova-admob-sdklibs": "2.1.6",
-  "cordova-plugin-admob-simple": "3.3.8"
+  "cordova-plugin-statusbar": "2.1.3"
 };
 // BOTTOM OF METADATA
 });

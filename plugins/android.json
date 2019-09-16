@@ -21,14 +21,7 @@
     },
     "cordova-plugin-statusbar": {
       "PACKAGE_NAME": "com.phonegap.giriasestadosbrasileiros"
-    },
-    "cordova-plugin-admob-simple": {
-      "PACKAGE_NAME": "com.phonegap.giriasestadosbrasileiros"
     }
   },
-  "dependent_plugins": {
-    "cordova-admob-sdklibs": {
-      "PACKAGE_NAME": "com.phonegap.giriasestadosbrasileiros"
-    }
-  }
+  "dependent_plugins": {}
 }

@@ -27,10 +27,6 @@
             {
               "xml": "<feature name=\"StatusBar\"><param name=\"android-package\" value=\"org.apache.cordova.statusbar.StatusBar\" /><param name=\"onload\" value=\"true\" /></feature>",
               "count": 1
-            },
-            {
-              "xml": "<feature name=\"AdMob\"><param name=\"android-package\" value=\"com.cupertino.cordova.plugin.AdMob\" /><param name=\"onload\" value=\"true\" /></feature>",
-              "count": 1
             }
           ]
         }
@@ -63,22 +59,9 @@
             {
               "xml": "<receiver android:name=\"com.onesignal.ADMMessageHandler$Receiver\" android:permission=\"com.amazon.device.messaging.permission.SEND\"><intent-filter><action android:name=\"com.amazon.device.messaging.intent.REGISTRATION\" /><action android:name=\"com.amazon.device.messaging.intent.RECEIVE\" /><category android:name=\"com.phonegap.giriasestadosbrasileiros\" /></intent-filter></receiver>",
               "count": 1
-            },
-            {
-              "xml": "<activity android:configChanges=\"keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize\" android:name=\"com.google.android.gms.ads.AdActivity\" android:theme=\"@android:style/Theme.Translucent\" />",
-              "count": 1
             }
           ],
-          "/*": [
-            {
-              "xml": "<uses-permission android:name=\"android.permission.INTERNET\" />",
-              "count": 1
-            },
-            {
-              "xml": "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\" />",
-              "count": 1
-            }
-          ]
+          "/*": []
         }
       }
     }
@@ -97,12 +80,6 @@
       "PACKAGE_NAME": "com.phonegap.giriasestadosbrasileiros"
     },
     "cordova-plugin-statusbar": {
-      "PACKAGE_NAME": "com.phonegap.giriasestadosbrasileiros"
-    },
-    "cordova-admob-sdklibs": {
-      "PACKAGE_NAME": "com.phonegap.giriasestadosbrasileiros"
-    },
-    "cordova-plugin-admob-simple": {
       "PACKAGE_NAME": "com.phonegap.giriasestadosbrasileiros"
     }
   },
@@ -147,14 +124,6 @@
       "clobbers": [
         "window.StatusBar"
       ]
-    },
-    {
-      "id": "cordova-plugin-admob-simple.AdMob",
-      "file": "plugins/cordova-plugin-admob-simple/www/AdMob.js",
-      "pluginId": "cordova-plugin-admob-simple",
-      "clobbers": [
-        "window.plugins.AdMob"
-      ]
     }
   ],
   "plugin_metadata": {
@@ -162,8 +131,6 @@
     "cordova-plugin-whitelist": "1.3.3",
     "onesignal-cordova-plugin": "2.5.2",
     "cordova-plugin-dialogs": "2.0.2",
-    "cordova-plugin-statusbar": "2.1.3",
-    "cordova-admob-sdklibs": "2.1.6",
-    "cordova-plugin-admob-simple": "3.3.8"
+    "cordova-plugin-statusbar": "2.1.3"
   }
 }
