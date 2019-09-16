@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Mon Sep 16 13:26:09 BRT 2019
+#Mon Sep 16 13:31:38 BRT 2019
 60.set=ASSET
 52.set=ASSET
 53.base=C\:\\Users\\Miqueias\\appgiriasestadosbrasileiros\\platforms\\android\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\13
