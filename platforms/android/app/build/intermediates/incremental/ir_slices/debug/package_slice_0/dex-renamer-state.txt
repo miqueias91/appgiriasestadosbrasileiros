@@ -1,0 +1,4 @@
+#Mon Sep 16 13:21:56 BRT 2019
+base.0=C\:\\Users\\Miqueias\\appgiriasestadosbrasileiros\\platforms\\android\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+path.0=classes.dex
+renamed.0=classes.dex
