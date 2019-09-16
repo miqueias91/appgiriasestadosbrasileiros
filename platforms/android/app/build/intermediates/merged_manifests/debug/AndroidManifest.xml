@@ -24,15 +24,14 @@
         android:protectionLevel="signature" />
 
     <uses-permission android:name="com.phonegap.giriasestadosbrasileiros.permission.RECEIVE_ADM_MESSAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <!-- Create a unique permission for your app and use it so only your app can receive your OneSignal messages. -->
     <permission
         android:name="com.phonegap.giriasestadosbrasileiros.permission.C2D_MESSAGE"
         android:protectionLevel="signature" />
 
-    <uses-permission android:name="com.phonegap.giriasestadosbrasileiros.permission.C2D_MESSAGE" /> <!-- OneSignal SDK has runtime checks Android version. -->
-    <!-- <uses-sdk tools:overrideLibrary="android.support.customtabs"/> -->
-    <!-- INTERNET and c2dm RECEIVE are basic requirements for push messages through Google's GCM. -->
-    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.phonegap.giriasestadosbrasileiros.permission.C2D_MESSAGE" />
     <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" /> <!-- Required, makes sure notifications are delivered on time. -->
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <!--
@@ -40,7 +39,6 @@
          Vibration settings of the device still apply.
     -->
     <uses-permission android:name="android.permission.VIBRATE" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <!--
  Use to restore notifications the user hasn't interacted with.
          They could be missed notifications if the user reboots their device if this isn't in place.
@@ -110,6 +108,13 @@
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
             android:value="ca-app-pub-7091486462236476~9915980012" />
+
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent" />
+
         <meta-data
             android:name="onesignal_app_id"
             android:value="a03d77a5-4edf-4618-ab1b-020123f9fb22" /> <!-- Deprecated - Pulled from OneSignal dashboard. -->
@@ -240,12 +245,7 @@
             android:name="com.google.firebase.provider.FirebaseInitProvider"
             android:authorities="com.phonegap.giriasestadosbrasileiros.firebaseinitprovider"
             android:exported="false"
-            android:initOrder="100" /> <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
-        <activity
-            android:name="com.google.android.gms.ads.AdActivity"
-            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
-            android:exported="false"
-            android:theme="@android:style/Theme.Translucent" />
+            android:initOrder="100" />
 
         <meta-data
             android:name="com.google.android.gms.version"
