@@ -220,6 +220,7 @@ if (/(android)/i.test(navigator.userAgent)) {  // for android & amazon-fireos
 }
 
 document.addEventListener('deviceready', function() {
+  alert("admob")
   admob.banner.config({
     id: admobid.banner,
     isTesting: true,
