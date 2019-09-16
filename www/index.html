@@ -450,64 +450,24 @@
 <script src="js/jquery.3.3.1.js"></script>
 <script src="lib/onsen/js/onsenui.js"></script>
 <script>
-      var admobid = {}
-      if (/(android)/i.test(navigator.userAgent)) {  // for android & amazon-fireos
+    var admobid = {}
+
+    if (/(android)/i.test(navigator.userAgent)) {  // for android & amazon-fireos
         admobid = {
-          banner: 'ca-app-pub-7091486462236476/4482154427',
-          interstitial: 'ca-app-pub-7091486462236476/8135648345',
+            banner: 'ca-app-pub-7091486462236476/4482154427',
+            interstitial: 'ca-app-pub-7091486462236476/8135648345',
         }
-      } else if (/(ipod|iphone|ipad)/i.test(navigator.userAgent)) {  // for ios
+    } else if (/(ipod|iphone|ipad)/i.test(navigator.userAgent)) {  // for ios
         admobid = {
-          banner: 'ca-app-pub-7091486462236476/4482154427',
-          interstitial: 'ca-app-pub-7091486462236476/8135648345',
+            banner: 'ca-app-pub-7091486462236476/4482154427',
+            interstitial: 'ca-app-pub-7091486462236476/8135648345',
         }
-      }
+    }
 
-     /* document.addEventListener('deviceready', function() {
-        admob.banner.config({
-          id: admobid.banner,
-          isTesting: false,
-          autoShow: true,
-        })
-        admob.banner.prepare()
-
-        admob.interstitial.config({
-          id: admobid.interstitial,
-          isTesting: false,
-          autoShow: false,
-        })
-        admob.interstitial.prepare()
-
-        document.getElementById('showAd').disabled = true
-        document.getElementById('showAd').onclick = function() {
-          admob.interstitial.show()
-        }
-      }, false)*/
-
-      /*document.addEventListener('admob.banner.events.LOAD_FAIL', function(event) {
-        console.log(event)
-      })
-
-      document.addEventListener('admob.interstitial.events.LOAD_FAIL', function(event) {
-        console.log(event)
-      })
-
-      document.addEventListener('admob.interstitial.events.LOAD', function(event) {
-        console.log(event)
-        document.getElementById('showAd').disabled = false
-      })
-
-      document.addEventListener('admob.interstitial.events.CLOSE', function(event) {
-        console.log(event)
-        admob.interstitial.prepare()
-      })*/
-
-
-      document.addEventListener('deviceready', function () {
+    document.addEventListener('deviceready', function () {
         //VRIFICO NA PRIMEIRA VEZ QUE ABRE O APP
         var userId = localStorage.getItem('userId');
         var pushToken = localStorage.getItem('pushToken');
-        alert(userId)
         if(userId && pushToken){
         }
         else{
@@ -528,16 +488,16 @@
           .endInit();
 
         admob.banner.config({
-          id: admobid.banner,
-          isTesting: false,
-          autoShow: true,
+            id: admobid.banner,
+            isTesting: false,
+            autoShow: true,
         })
         admob.banner.prepare()
 
         admob.interstitial.config({
-          id: admobid.interstitial,
-          isTesting: false,
-          autoShow: false,
+            id: admobid.interstitial,
+            isTesting: false,
+            autoShow: false,
         })
         admob.interstitial.prepare()
 
@@ -545,11 +505,9 @@
         document.getElementById('showAd').onclick = function() {
           admob.interstitial.show()
         }
+    }, false);
 
-
-      }, false);
-
-      function getIds() {
+    function getIds() {
         window.plugins.OneSignal.getIds(function(ids) {
           window.localStorage.setItem('userId', ids.userId);
           window.localStorage.setItem('pushToken', ids.pushToken);
@@ -561,9 +519,9 @@
           var pushToken = localStorage.getItem('pushToken');
           cadastraUser();
         });
-      }
+    }
 
-      function cadastraUser() {
+    function cadastraUser() {
         var userId = $("#OneSignalUserId").val();
         var pushToken = $("#OneSignalPushToken").val();
 
@@ -576,7 +534,7 @@
             'pushToken': pushToken,
           },
           error: function(a) {
-            alert(a);
+           // alert(a);
           },
           success: function(valorRetornado) {
             console.log(valorRetornado);
