@@ -24,9 +24,7 @@
     <last-search-timestamp>1567732941564</last-search-timestamp>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="37c72a69-60c8-40b2-9c7a-0113662a80aa" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/index.html" afterDir="false" />
-    </list>
+    <list default="true" id="37c72a69-60c8-40b2-9c7a-0113662a80aa" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +115,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="10" />
     <option name="y" value="20" />
     <option name="width" value="1346" />
