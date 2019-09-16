@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "cordova-android": "^7.0.0",
+    "cordova-plugin-admob-free": "0.27.0",
     "cordova-plugin-statusbar": "^2.1.3"
   }
 }
