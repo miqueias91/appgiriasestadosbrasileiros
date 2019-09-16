@@ -178,5 +178,6 @@
     <orderEntry type="library" scope="TEST" name="Gradle: com.android.support:support-core-ui:26.1.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:support-fragment:26.0.0@aar" level="project" />
     <orderEntry type="module" module-name="CordovaLib" />
+    <orderEntry type="module" module-name="CordovaLib" />
   </component>
 </module>
