@@ -503,11 +503,15 @@
         })
         admob.interstitial.prepare()
 
-        document.getElementById('showAd').disabled = true
-        document.getElementById('showAd').onclick = function() {
+        $( "#showAd" ).click(function() {
             alert('showAd')
+           admob.interstitial.show()
+        });
+
+        /*document.getElementById('showAd').disabled = true
+        document.getElementById('showAd').onclick = function() {
           admob.interstitial.show()
-        }
+        }*/
     }, false);
 
     function getIds() {
