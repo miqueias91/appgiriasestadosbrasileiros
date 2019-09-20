@@ -308,6 +308,7 @@
             fn.showDialog('modal-aguarde');
             app.buscaGiriaEstado(this.data.title);
             this.querySelector('ons-toolbar div.center').textContent = this.data.title;
+            admob.interstitial.show();
           }
         </script>
         <style>
