@@ -58,7 +58,7 @@
         <input type="hidden" id="OneSignalPushToken" value="">
 
         <ons-list id="lista_estados">
-            <ons-list-item class="showAd" onclick="fn.pushPage({'id': 'listaGiriasEstado.html', 'title': 'AC'})">
+            <ons-list-item id="showAd" onclick="fn.pushPage({'id': 'listaGiriasEstado.html', 'title': 'AC'})">
                 <div class="left">
                     <img class="list-item__thumbnail" style="border: 1px solid #1f1f21;border-radius: 6px;" src="./img/bandeiras/bandeira_acre.gif">
                 </div>
@@ -449,7 +449,7 @@
 <script type="text/javascript" src="cordova.js"></script>
 <script src="js/jquery.3.3.1.js"></script>
 <script src="lib/onsen/js/onsenui.js"></script>
-<script>
+<script>      
     var admobid = {}
 
     if (/(android)/i.test(navigator.userAgent)) {  // for android & amazon-fireos
@@ -500,11 +500,6 @@
             autoShow: false,
         })
         admob.interstitial.prepare()
-
-       /* $( "#showAd" ).click(function() {
-            alert('showAd')
-           admob.interstitial.show()
-        });*/
 
         document.getElementsByClassName('showAd').disabled = true
         document.getElementsByClassName('showAd').onclick = function() {
