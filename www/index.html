@@ -308,7 +308,7 @@
             fn.showDialog('modal-aguarde');
             app.buscaGiriaEstado(this.data.title);
             this.querySelector('ons-toolbar div.center').textContent = this.data.title;
-            //admob.interstitial.show();
+            admob.interstitial.show();
           }
         </script>
         <style>
@@ -447,7 +447,7 @@
 
 <!-- JS dependencies (order matters!) -->
 <script type="text/javascript" src="cordova.js"></script>
-<script src="js/jquery.3.3.1.js"></script>
+<script src="js/jquery-3.4.1.min.js"></script>
 <script src="lib/onsen/js/onsenui.js"></script>
 <script>      
     var admobid = {}
@@ -544,19 +544,23 @@
 
         document.addEventListener('admob.banner.events.LOAD_FAIL', function(event) {
         console.log(event)
+        alert('banner_LOAD_FAIL:'+event)
       })
 
       document.addEventListener('admob.interstitial.events.LOAD_FAIL', function(event) {
         console.log(event)
+        alert('interstitial_LOAD_FAIL:'+event)
       })
 
       document.addEventListener('admob.interstitial.events.LOAD', function(event) {
         console.log(event)
+        alert('interstitial_LOAD:'+event)
         document.getElementsByClassName('showAd').disabled = false
       })
 
       document.addEventListener('admob.interstitial.events.CLOSE', function(event) {
         console.log(event)
+        alert('interstitial_CLOSE:'+event)
         admob.interstitial.prepare()
       })
     </script>
