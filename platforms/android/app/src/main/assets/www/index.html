@@ -63,7 +63,7 @@
         <input type="hidden" id="OneSignalPushToken" value="">
 
         <ons-list id="lista_estados">
-            <ons-list-item id="showAd" onclick="fn.pushPage({'id': 'listaGiriasEstado.html', 'title': 'AC'})">
+            <ons-list-item class="showAd" onclick="fn.pushPage({'id': 'listaGiriasEstado.html', 'title': 'AC'})">
                 <div class="left">
                     <img class="list-item__thumbnail" style="border: 1px solid #1f1f21;border-radius: 6px;" src="./img/bandeiras/bandeira_acre.gif">
                 </div>
@@ -460,7 +460,7 @@
 
     document.addEventListener('deviceready', function () {
         //VRIFICO NA PRIMEIRA VEZ QUE ABRE O APP
-        /*var userId = localStorage.getItem('userId');
+        var userId = localStorage.getItem('userId');
         var pushToken = localStorage.getItem('pushToken');
         if(userId && pushToken){
         }
@@ -479,7 +479,7 @@
             );
           })
           .inFocusDisplaying(window.plugins.OneSignal.OSInFocusDisplayOption.Notification)
-          .endInit();*/
+          .endInit();
 
        /* admob.banner.config({
             id: admobid.banner,
@@ -489,26 +489,23 @@
         admob.banner.prepare()*/
         admob.banner.prepare({ id: admobid.banner, isTesting: false, autoShow: true, })
 
-        /*admob.interstitial.config({
+        admob.interstitial.config({
             id: admobid.interstitial,
             isTesting: true,
             autoShow: false,
         })
-        admob.interstitial.prepare()*/
-        admob.interstitial.prepare({ 
-            id: admobid.interstitial, 
-            isTesting: true, 
-            autoShow: false, 
-        })
+        admob.interstitial.prepare()
 
-
-        document.getElementsByClassName('showAd').disabled = true
+        /*document.getElementsByClassName('showAd').disabled = true
         document.getElementsByClassName('showAd').onclick = function() {
-          admob.interstitial.show()
-        }
+            admob.interstitial.show()
+        }*/
+        $('.showAd').click(function() {
+            admob.interstitial.show()
+        });
     }, false);
 
-    /*function getIds() {
+    function getIds() {
         window.plugins.OneSignal.getIds(function(ids) {
             window.localStorage.setItem('userId', ids.userId);
             window.localStorage.setItem('pushToken', ids.pushToken);
@@ -538,25 +535,24 @@
                 console.log(valorRetornado);
             },
         });
-    }*/
+    }
 
     document.addEventListener('admob.banner.events.LOAD_FAIL', function(event) {
-        alert(JSON.stringify(event))
+        //alert(JSON.stringify(event))
     })
 
     document.addEventListener('admob.interstitial.events.LOAD_FAIL', function(event) {
-        alert(JSON.stringify(event))
+        //alert(JSON.stringify(event))
     })
 
     document.addEventListener('admob.interstitial.events.LOAD', function(event) {
-        alert('interstitial.events.LOAD|||'+JSON.stringify(event))
-        document.getElementsByClassName('showAd').disabled = false
+        //alert(JSON.stringify(event))
+        //document.getElementsByClassName('showAd').disabled = false
     })
 
     document.addEventListener('admob.interstitial.events.CLOSE', function(event) {
-        alert(JSON.stringify(event))
-       // admob.interstitial.prepare()
-        admob.interstitial.prepare({ id: admobid.interstitial, isTesting: false, autoShow: false, })
+        //alert(JSON.stringify(event))
+        admob.interstitial.prepare()
     })
 </script>
 <script src="js/index.js"></script>
