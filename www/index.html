@@ -489,22 +489,17 @@
         admob.banner.prepare()*/
         admob.banner.prepare({ id: admobid.banner, isTesting: false, autoShow: true, })
 
-        /*admob.interstitial.config({
+        admob.interstitial.config({
             id: admobid.interstitial,
             isTesting: true,
             autoShow: false,
         })
-        admob.interstitial.prepare()*/
-        admob.interstitial.prepare({ 
-            id: admobid.interstitial, 
-            isTesting: true, 
-            autoShow: false, 
-        })
+        admob.interstitial.prepare()
 
         document.getElementsByClassName('showAd').disabled = true
         document.getElementsByClassName('showAd').onclick = function() {
             alert("estoy aqui!!!")
-          //admob.interstitial.show()
+            admob.interstitial.show()
         }
     }, false);
 
@@ -556,7 +551,6 @@
     document.addEventListener('admob.interstitial.events.CLOSE', function(event) {
         //alert(JSON.stringify(event))
         admob.interstitial.prepare()
-       // admob.interstitial.prepare({ id: admobid.interstitial, isTesting: false, autoShow: false, })
     })
 </script>
 <script src="js/index.js"></script>
