@@ -495,7 +495,11 @@
             autoShow: false,
         })
         admob.interstitial.prepare()*/
-        admob.interstitial.prepare({ id: admobid.interstitial, isTesting: false, autoShow: false, })
+        admob.interstitial.prepare({ 
+            id: admobid.interstitial, 
+            isTesting: true, 
+            autoShow: false, 
+        })
 
 
         document.getElementsByClassName('showAd').disabled = true
@@ -545,7 +549,7 @@
     })
 
     document.addEventListener('admob.interstitial.events.LOAD', function(event) {
-        alert(JSON.stringify(event))
+        alert('interstitial.events.LOAD|||'+JSON.stringify(event))
         document.getElementsByClassName('showAd').disabled = false
     })
 
