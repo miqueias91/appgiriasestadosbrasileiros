@@ -63,7 +63,7 @@
         <input type="hidden" id="OneSignalPushToken" value="">
 
         <ons-list id="lista_estados">
-            <ons-list-item id="showAd" onclick="fn.pushPage({'id': 'listaGiriasEstado.html', 'title': 'AC'})">
+            <ons-list-item class="showAd" onclick="fn.pushPage({'id': 'listaGiriasEstado.html', 'title': 'AC'})">
                 <div class="left">
                     <img class="list-item__thumbnail" style="border: 1px solid #1f1f21;border-radius: 6px;" src="./img/bandeiras/bandeira_acre.gif">
                 </div>
@@ -542,15 +542,15 @@
     }*/
 
     document.addEventListener('admob.banner.events.LOAD_FAIL', function(event) {
-        alert(JSON.stringify(event))
+        //alert(JSON.stringify(event))
     })
 
     document.addEventListener('admob.interstitial.events.LOAD_FAIL', function(event) {
-        alert(JSON.stringify(event))
+        //alert(JSON.stringify(event))
     })
 
     document.addEventListener('admob.interstitial.events.LOAD', function(event) {
-        alert('interstitial.events.LOAD|||'+JSON.stringify(event))
+        //alert(JSON.stringify(event))
         document.getElementsByClassName('showAd').disabled = false
     })
 
