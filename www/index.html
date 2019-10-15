@@ -487,14 +487,16 @@
             autoShow: true,
         })
         admob.banner.prepare()*/
-        admob.banner.prepare({ id: admobid.banner, isTesting: true, autoShow: true, })
+        admob.banner.prepare({ id: admobid.banner, isTesting: false, autoShow: true, })
 
-        admob.interstitial.config({
+        /*admob.interstitial.config({
             id: admobid.interstitial,
             isTesting: true,
             autoShow: false,
         })
-        admob.interstitial.prepare()
+        admob.interstitial.prepare()*/
+        admob.banner.prepare({ id: admobid.banner, isTesting: false, autoShow: true, })
+
 
         document.getElementsByClassName('showAd').disabled = true
         document.getElementsByClassName('showAd').onclick = function() {
