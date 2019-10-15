@@ -456,11 +456,6 @@
             banner: 'ca-app-pub-2391135858644943/7930839023',
             interstitial: 'ca-app-pub-2391135858644943/8747089063',
         }
-    } else if (/(ipod|iphone|ipad)/i.test(navigator.userAgent)) {
-        admobid = {
-            banner: 'ca-app-pub-2391135858644943/7930839023',
-            interstitial: 'ca-app-pub-2391135858644943/8747089063',
-        }
     }
 
     document.addEventListener('deviceready', function () {
@@ -540,23 +535,23 @@
 
     document.addEventListener('admob.banner.events.LOAD_FAIL', function(event) {
         console.log(event)
-        alert('banner_LOAD_FAIL:'+JSON.parse(JSON.stringify(event)))
+        alert(JSON.stringify(event))
     })
 
     document.addEventListener('admob.interstitial.events.LOAD_FAIL', function(event) {
         console.log(event)
-        alert('interstitial_LOAD_FAIL:'+JSON.parse(JSON.stringify(event)))
+        alert(JSON.stringify(event))
     })
 
     document.addEventListener('admob.interstitial.events.LOAD', function(event) {
         console.log(event)
-        alert('interstitial_LOAD:'+JSON.parse(JSON.stringify(event)))
+        alert(JSON.stringify(event))
     document.getElementsByClassName('showAd').disabled = false
     })
 
     document.addEventListener('admob.interstitial.events.CLOSE', function(event) {
         console.log(event)
-        alert('interstitial_CLOSE:'+JSON.parse(JSON.stringify(event)))
+        alert(JSON.stringify(event))
     admob.interstitial.prepare()
     })
 </script>
