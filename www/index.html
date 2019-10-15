@@ -460,7 +460,7 @@
 
     document.addEventListener('deviceready', function () {
         //VRIFICO NA PRIMEIRA VEZ QUE ABRE O APP
-        /*var userId = localStorage.getItem('userId');
+        var userId = localStorage.getItem('userId');
         var pushToken = localStorage.getItem('pushToken');
         if(userId && pushToken){
         }
@@ -479,7 +479,7 @@
             );
           })
           .inFocusDisplaying(window.plugins.OneSignal.OSInFocusDisplayOption.Notification)
-          .endInit();*/
+          .endInit();
 
        /* admob.banner.config({
             id: admobid.banner,
@@ -501,15 +501,14 @@
             autoShow: false, 
         })
 
-
         document.getElementsByClassName('showAd').disabled = true
         document.getElementsByClassName('showAd').onclick = function() {
             alert("estoy aqui!!!")
-          admob.interstitial.show()
+          //admob.interstitial.show()
         }
     }, false);
 
-    /*function getIds() {
+    function getIds() {
         window.plugins.OneSignal.getIds(function(ids) {
             window.localStorage.setItem('userId', ids.userId);
             window.localStorage.setItem('pushToken', ids.pushToken);
@@ -539,7 +538,7 @@
                 console.log(valorRetornado);
             },
         });
-    }*/
+    }
 
     document.addEventListener('admob.banner.events.LOAD_FAIL', function(event) {
         //alert(JSON.stringify(event))
