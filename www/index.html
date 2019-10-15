@@ -489,12 +489,16 @@
         admob.banner.prepare()*/
         admob.banner.prepare({ id: admobid.banner, isTesting: false, autoShow: true, })
 
-        admob.interstitial.config({
+        /*admob.interstitial.config({
+            id: admobid.interstitial,
+            isTesting: true,
+            autoShow: false,
+        })*/
+        admob.interstitial.prepare({
             id: admobid.interstitial,
             isTesting: true,
             autoShow: false,
         })
-        admob.interstitial.prepare()
 
         /*document.getElementsByClassName('showAd').disabled = true
         document.getElementsByClassName('showAd').onclick = function() {
