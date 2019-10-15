@@ -496,11 +496,13 @@
         })
         admob.interstitial.prepare()
 
-        document.getElementsByClassName('showAd').disabled = true
+        /*document.getElementsByClassName('showAd').disabled = true
         document.getElementsByClassName('showAd').onclick = function() {
-            alert("estoy aqui!!!")
             admob.interstitial.show()
-        }
+        }*/
+        $('.showAd').click(function() {
+            alert('hohoho');
+        });
     }, false);
 
     function getIds() {
@@ -545,7 +547,7 @@
 
     document.addEventListener('admob.interstitial.events.LOAD', function(event) {
         //alert(JSON.stringify(event))
-        document.getElementsByClassName('showAd').disabled = false
+        //document.getElementsByClassName('showAd').disabled = false
     })
 
     document.addEventListener('admob.interstitial.events.CLOSE', function(event) {
