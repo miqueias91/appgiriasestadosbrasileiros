@@ -10,6 +10,11 @@
     <link rel="stylesheet" href="lib/onsen/css/onsen-css-components.css" />
     <link rel="stylesheet" href="css/index.css" />
 
+    <!-- JS dependencies (order matters!) -->
+    <script type="text/javascript" src="cordova.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="lib/onsen/js/onsenui.js"></script>
+
     <title>Gírias dos Estados Brasileiros</title>
 </head>
 
@@ -443,12 +448,6 @@
     </ons-page>
 </template>
 
-
-
-<!-- JS dependencies (order matters!) -->
-<script type="text/javascript" src="cordova.js"></script>
-<script src="js/jquery-3.4.1.min.js"></script>
-<script src="lib/onsen/js/onsenui.js"></script>
 <script>      
     var admobid = {}
 
@@ -466,7 +465,7 @@
 
     document.addEventListener('deviceready', function () {
         //VRIFICO NA PRIMEIRA VEZ QUE ABRE O APP
-        var userId = localStorage.getItem('userId');
+        /*var userId = localStorage.getItem('userId');
         var pushToken = localStorage.getItem('pushToken');
         if(userId && pushToken){
         }
@@ -485,7 +484,7 @@
             );
           })
           .inFocusDisplaying(window.plugins.OneSignal.OSInFocusDisplayOption.Notification)
-          .endInit();
+          .endInit();*/
 
         admob.banner.config({
             id: admobid.banner,
@@ -507,63 +506,60 @@
         }
     }, false);
 
-    function getIds() {
+    /*function getIds() {
         window.plugins.OneSignal.getIds(function(ids) {
-          window.localStorage.setItem('userId', ids.userId);
-          window.localStorage.setItem('pushToken', ids.pushToken);
-
-          $("#OneSignalUserId").val(ids.userId);
-          $("#OneSignalPushToken").val(ids.pushToken);
-
-          var userId = localStorage.getItem('userId');
-          var pushToken = localStorage.getItem('pushToken');
-          cadastraUser();
+            window.localStorage.setItem('userId', ids.userId);
+            window.localStorage.setItem('pushToken', ids.pushToken);
+            $("#OneSignalUserId").val(ids.userId);
+            $("#OneSignalPushToken").val(ids.pushToken);
+            var userId = localStorage.getItem('userId');
+            var pushToken = localStorage.getItem('pushToken');
+            cadastraUser();
         });
     }
 
     function cadastraUser() {
         var userId = $("#OneSignalUserId").val();
         var pushToken = $("#OneSignalPushToken").val();
-
         $.ajax({
-          url: "https://miqueiasmcaetano.000webhostapp.com/webservice/giriasestadosbrasileiros/cadastraUser.php",
-          dataType: 'html',
-          type: 'POST',
-          data: {
-            'userId': userId,
-            'pushToken': pushToken,
-          },
-          error: function(a) {
-           // alert(a);
-          },
-          success: function(valorRetornado) {
-            console.log(valorRetornado);
-          },
+            url: "https://miqueiasmcaetano.000webhostapp.com/webservice/giriasestadosbrasileiros/cadastraUser.php",
+            dataType: 'html',
+            type: 'POST',
+            data: {
+                'userId': userId,
+                'pushToken': pushToken,
+            },
+            error: function(a) {
+                // alert(a);
+            },
+            success: function(valorRetornado) {
+                console.log(valorRetornado);
+            },
         });
-      }
+    }*/
 
-        document.addEventListener('admob.banner.events.LOAD_FAIL', function(event) {
+    document.addEventListener('admob.banner.events.LOAD_FAIL', function(event) {
         console.log(event)
-        alert('banner_LOAD_FAIL:'+event)
-      })
+        alert('banner_LOAD_FAIL:'+JSON.parse(JSON.stringify(event)))
+    })
 
-      document.addEventListener('admob.interstitial.events.LOAD_FAIL', function(event) {
+    document.addEventListener('admob.interstitial.events.LOAD_FAIL', function(event) {
         console.log(event)
-        alert('interstitial_LOAD_FAIL:'+event)
-      })
+        alert('interstitial_LOAD_FAIL:'+JSON.parse(JSON.stringify(event)))
+    })
 
-      document.addEventListener('admob.interstitial.events.LOAD', function(event) {
+    document.addEventListener('admob.interstitial.events.LOAD', function(event) {
         console.log(event)
-        alert('interstitial_LOAD:'+event)
-        document.getElementsByClassName('showAd').disabled = false
-      })
+        alert('interstitial_LOAD:'+JSON.parse(JSON.stringify(event)))
+    document.getElementsByClassName('showAd').disabled = false
+    })
 
-      document.addEventListener('admob.interstitial.events.CLOSE', function(event) {
+    document.addEventListener('admob.interstitial.events.CLOSE', function(event) {
         console.log(event)
-        alert('interstitial_CLOSE:'+event)
-        admob.interstitial.prepare()
-      })
-    </script>
+        alert('interstitial_CLOSE:'+JSON.parse(JSON.stringify(event)))
+    admob.interstitial.prepare()
+    })
+</script>
 <script src="js/index.js"></script>
 
 </body>
