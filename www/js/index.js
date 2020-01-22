@@ -88,7 +88,7 @@ var app = {
           var obj = valorRetornado;
           if (obj) {
             for(var i in obj) {
-              $('#conteudo_girias').append("<ons-card class='txt_giria' id='txt_giria"+i+"' marcado='0'><div class='title'>"+obj[i]['giria']+"</div><div class='content'>"+obj[i]['significado']+"</div></ons-card>");
+              $('#conteudo_girias').append("<ons-card class='txt_giria' id='txt_giria"+i+"' marcado='0'><div class='title'>"+obj[i]['giria']+"\n</div><div class='content'>"+obj[i]['significado']+"</div></ons-card>");
             }
 
 

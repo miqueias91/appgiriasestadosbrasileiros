@@ -42,7 +42,6 @@
         <script>
           ons.getScriptPage().addEventListener('prechange', function(event) {
             if (event.target.matches('#appTabbar')) {
-              // event.currentTarget.querySelector('ons-toolbar .center').innerHTML = event.tabItem.getAttribute('label');
               event.currentTarget.querySelector('ons-toolbar .center center').innerHTML = 'Gírias dos Estados Brasileiros';
             }
           });
@@ -286,7 +285,11 @@
                 <ons-icon icon="md-plus"></ons-icon>
             </ons-fab>
         </ons-speed-dial>
-
+        <script>
+            ons.getScriptPage().onInit = function () {
+                admob.interstitial.show();
+            }
+        </script>
         <style>
           .button-margin {
             margin: 6px 0;
@@ -330,11 +333,11 @@
         </ons-speed-dial>
         <script>
           ons.getScriptPage().onInit = function () {
+            admob.interstitial.show();
             //CHAMA DA FUNÇÃO PARA ABRIR MODAL
             fn.showDialog('modal-aguarde');
             app.buscaGiriaEstado(this.data.title);
             this.querySelector('ons-toolbar div.center').textContent = this.data.title;
-            admob.interstitial.show();
 
 
             $( ".copiar" ).click(function() {
@@ -427,6 +430,11 @@
                 onchange="app.onSearchKeyDown(this.value);"
         ></ons-search-input>
         <div id='resultado_girias'></div>
+        <script>
+          ons.getScriptPage().onInit = function () {
+            admob.interstitial.show();
+          }
+        </script>
     </ons-page>
 </template>
 
@@ -435,8 +443,8 @@
         <div id='ultimas_girias'></div>
         <script>
           ons.getScriptPage().onInit = function () {
-            app.ultimasGiriasCadastradas();
             admob.interstitial.show();
+            app.ultimasGiriasCadastradas();
           }
         </script>
     </ons-page>
@@ -509,8 +517,8 @@
         </ons-list>
         <script>
         ons.getScriptPage().onInit = function () {
-          this.querySelector('ons-toolbar div.center').textContent = this.data.title;
             admob.interstitial.show();
+          this.querySelector('ons-toolbar div.center').textContent = this.data.title;
           $( "#cadastrar_giria" ).click(function() {
             if ($( "#giria_input" ).val() === '') {
               ons.notification.alert("Informe o nome da gíria.",{title: 'Ops!'});
@@ -571,24 +579,23 @@
           .inFocusDisplaying(window.plugins.OneSignal.OSInFocusDisplayOption.Notification)
           .endInit();
 
-        admob.banner.config({
-            id: admobid.banner,
-            isTesting: false,
-            autoShow: true,
+        admob.banner.config({ 
+          id: admobid.banner, 
+          isTesting: false, 
+          autoShow: true, 
         })
         admob.banner.prepare()
-        //admob.banner.prepare({ id: admobid.banner, isTesting: false, autoShow: true, })
-
+        
         admob.interstitial.config({
-            id: admobid.interstitial,
-            isTesting: false,
-            autoShow: false,
+          id: admobid.interstitial,
+          isTesting: false,
+          autoShow: false,
         })
         admob.interstitial.prepare()
 
         document.getElementsByClassName('showAd').disabled = true
         document.getElementsByClassName('showAd').onclick = function() {
-            admob.interstitial.show()
+          admob.interstitial.show()
         }
     }, false);
 
