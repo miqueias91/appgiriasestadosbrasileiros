@@ -26,6 +26,13 @@
       "ADMOB_APP_ID": "ca-app-pub-7091486462236476~9915980012",
       "PLAY_SERVICES_VERSION": "11.0.4",
       "PACKAGE_NAME": "com.phonegap.giriasestadosbrasileiros"
+    },
+    "cordova-clipboard": {
+      "PACKAGE_NAME": "com.phonegap.giriasestadosbrasileiros"
+    },
+    "cordova-plugin-x-socialsharing": {
+      "ANDROID_SUPPORT_V4_VERSION": "24.1.1+",
+      "PACKAGE_NAME": "com.phonegap.giriasestadosbrasileiros"
     }
   },
   "dependent_plugins": {
@@ -34,6 +41,9 @@
     },
     "cordova-admob-sdk": {
       "PLAY_SERVICES_VERSION": "11.0.4",
+      "PACKAGE_NAME": "com.phonegap.giriasestadosbrasileiros"
+    },
+    "es6-promise-plugin": {
       "PACKAGE_NAME": "com.phonegap.giriasestadosbrasileiros"
     }
   }

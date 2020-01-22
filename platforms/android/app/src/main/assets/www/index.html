@@ -481,17 +481,17 @@
           .inFocusDisplaying(window.plugins.OneSignal.OSInFocusDisplayOption.Notification)
           .endInit();
 
-       /* admob.banner.config({
+        admob.banner.config({
             id: admobid.banner,
-            isTesting: true,
+            isTesting: false,
             autoShow: true,
         })
-        admob.banner.prepare()*/
-        admob.banner.prepare({ id: admobid.banner, isTesting: false, autoShow: true, })
+        admob.banner.prepare()
+        //admob.banner.prepare({ id: admobid.banner, isTesting: false, autoShow: true, })
 
         admob.interstitial.config({
             id: admobid.interstitial,
-            isTesting: true,
+            isTesting: false,
             autoShow: false,
         })
         admob.interstitial.prepare()

@@ -14,6 +14,7 @@
     <script type="text/javascript" src="cordova.js"></script>
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="lib/onsen/js/onsenui.js"></script>
+    <script type="text/javascript" src="lib/SocialSharing/SocialSharing.js"></script>
 
     <title>Gírias dos Estados Brasileiros</title>
 </head>
@@ -307,6 +308,26 @@
             <div class="center"></div>
         </ons-toolbar>
         <div id='conteudo_girias'></div>
+        <ons-fab class="copiar" position="bottom left" style="display: none;">
+            <ons-icon icon="md-copy"></ons-icon>
+        </ons-fab>
+
+        <ons-speed-dial position="bottom right" direction="up" :open.sync="spdOpen" style="display: none;" class="compartilha">
+            <ons-fab class="compartilhar">
+                <ons-icon icon="md-share"></ons-icon>
+            </ons-fab>
+            <ons-speed-dial-item class="compartilhar_whatsapp">
+                <ons-icon icon="md-whatsapp"></ons-icon>
+            </ons-speed-dial-item>
+
+            <ons-speed-dial-item class="compartilhar_twitter">
+                <ons-icon icon="md-twitter"></ons-icon>
+            </ons-speed-dial-item>
+
+            <ons-speed-dial-item class="compartilhar_instagram">
+                <ons-icon icon="md-instagram"></ons-icon>
+            </ons-speed-dial-item>
+        </ons-speed-dial>
         <script>
           ons.getScriptPage().onInit = function () {
             //CHAMA DA FUNÇÃO PARA ABRIR MODAL
@@ -314,6 +335,73 @@
             app.buscaGiriaEstado(this.data.title);
             this.querySelector('ons-toolbar div.center').textContent = this.data.title;
             admob.interstitial.show();
+
+
+            $( ".copiar" ).click(function() {
+              var text = '';
+              $("[marcado=1]").each(function() {
+                var txt_giria = $(this).text().substr(2);
+                text += txt_giria+'\n\n';
+              });
+              text += 'Gírias dos Estados Brasileiros\nLink: bit.ly/39aKDgV';
+              cordova.plugins.clipboard.copy(text);
+              cordova.plugins.clipboard.paste(function (text) { 
+                ons.notification.toast('Copiado para a área de transferência.', { buttonLabel: 'Ok', timeout: 2000 });
+              });
+              //cordova.plugins.clipboard.clear();
+            });
+
+            $( ".compartilhar_whatsapp" ).click(function() {
+              var text = '';
+              $("[marcado=1]").each(function() {
+                var txt_giria = $(this).text().substr(2);
+                text += txt_giria+'\n\n';
+              });
+
+              text += 'Gírias dos Estados Brasileiros\nLink: bit.ly/39aKDgV';
+              window.plugins.socialsharing.shareViaWhatsApp(
+                text, 
+                null, 
+                null, 
+                function() {
+                  ons.notification.toast('Compartilhado no WhatsApp.', { buttonLabel: 'Ok', timeout: 2000 });
+                }, 
+                function(errormsg){
+                  ons.notification.toast('Não foi possível compartilhar.', { buttonLabel: 'Ok', timeout: 2000 });
+                }
+              )
+            });
+
+            $( ".compartilhar_instagram" ).click(function() {
+              var text = '';
+              $("[marcado=1]").each(function() {
+                var txt_giria = $(this).text().substr(2);
+                text += txt_giria+'\n\n';
+              });
+
+              text += 'Gírias dos Estados Brasileiros\nLink: bit.ly/39aKDgV';
+              window.plugins.socialsharing.shareViaInstagram(
+                text, 
+                null, 
+                function() {
+                  ons.notification.toast('Compartilhado no Instagram.', { buttonLabel: 'Ok', timeout: 2000 });
+                }, 
+                function(errormsg){
+                  ons.notification.toast('Não foi possível compartilhar.', { buttonLabel: 'Ok', timeout: 2000 });
+                }
+              )
+            });
+
+            $( ".compartilhar_twitter" ).click(function() {
+              var text = '';
+              $("[marcado=1]").each(function() {
+                var txt_giria = $(this).text().substr(2);
+                text += txt_giria+'\n\n';
+              });
+
+              text += 'Gírias dos Estados Brasileiros\nLink: bit.ly/39aKDgV';
+              window.plugins.socialsharing.shareViaTwitter(text);
+            });
           }
         </script>
         <style>
@@ -346,6 +434,7 @@
         <div id='ultimas_girias'></div>
         <script>
           ons.getScriptPage().onInit = function () {
+            admob.interstitial.show();
             app.ultimasGiriasCadastradas();
           }
         </script>
@@ -420,7 +509,7 @@
         <script>
         ons.getScriptPage().onInit = function () {
           this.querySelector('ons-toolbar div.center').textContent = this.data.title;
-
+            admob.interstitial.show();
           $( "#cadastrar_giria" ).click(function() {
             if ($( "#giria_input" ).val() === '') {
               ons.notification.alert("Informe o nome da gíria.",{title: 'Ops!'});

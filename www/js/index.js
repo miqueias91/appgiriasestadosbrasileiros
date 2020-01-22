@@ -88,8 +88,40 @@ var app = {
           var obj = valorRetornado;
           if (obj) {
             for(var i in obj) {
-              $('#conteudo_girias').append("<ons-card><div class='title'>"+obj[i]['giria']+"</div><div class='content'>"+obj[i]['significado']+"</div></ons-card>");
+              $('#conteudo_girias').append("<ons-card class='txt_giria' id='txt_giria"+i+"' marcado='0'><div class='title'>"+obj[i]['giria']+"</div><div class='content'>"+obj[i]['significado']+"</div></ons-card>");
             }
+
+
+        $( ".txt_giria" ).click(function() {
+          var marcado = $(this).attr('marcado');
+          var id = $(this).attr('id');          
+
+          if(parseInt(marcado) == 0) {
+            $(this).css("background","#f5f5f5");
+            $(this).attr('marcado',1);
+            $(".copiar").css("display","");
+            $(".compartilha").css("display","");
+          }
+          else{
+            $(this).css("background","#fff");
+            $(this).attr('marcado',0);
+            $(".copiar").css("display","none");
+            $(".compartilha").css("display","none");
+          }
+
+
+                
+        });
+
+
+
+
+
+
+
+
+
+
           }
         }
         },
