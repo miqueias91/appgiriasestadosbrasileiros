@@ -15,7 +15,109 @@
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="lib/onsen/js/onsenui.js"></script>
     <script type="text/javascript" src="lib/SocialSharing/SocialSharing.js"></script>
+    <script>      
+        var admobid = {}
 
+        if (/(android)/i.test(navigator.userAgent)) {
+            admobid = {
+                banner: 'ca-app-pub-7091486462236476/4482154427',
+                interstitial: 'ca-app-pub-7091486462236476/8135648345',
+            }
+        }
+
+        document.addEventListener('deviceready', function () {
+            //VRIFICO NA PRIMEIRA VEZ QUE ABRE O APP
+            var userId = localStorage.getItem('userId');
+            var pushToken = localStorage.getItem('pushToken');
+            if(userId && pushToken){
+            }
+            else{
+              getIds();
+            }
+
+            window.plugins.OneSignal
+              .startInit('a03d77a5-4edf-4618-ab1b-020123f9fb22')
+              .handleNotificationOpened(function(jsonData) {
+                var mensagem = JSON.parse(JSON.stringify(jsonData['notification']['payload']['body']));
+
+                ons.notification.alert(
+                  mensagem,
+                  {title: 'Ola!'}
+                );
+              })
+              .inFocusDisplaying(window.plugins.OneSignal.OSInFocusDisplayOption.Notification)
+              .endInit();
+
+            admob.banner.config({ 
+              id: admobid.banner, 
+              isTesting: false, 
+              autoShow: true, 
+            })
+            admob.banner.prepare()
+            
+            admob.interstitial.config({
+              id: admobid.interstitial,
+              isTesting: false,
+              autoShow: false,
+            })
+            admob.interstitial.prepare()
+
+            document.getElementsByClassName('showAd').disabled = true
+            document.getElementsByClassName('showAd').onclick = function() {
+              admob.interstitial.show()
+            }
+        }, false);
+
+        function getIds() {
+            window.plugins.OneSignal.getIds(function(ids) {
+                window.localStorage.setItem('userId', ids.userId);
+                window.localStorage.setItem('pushToken', ids.pushToken);
+                $("#OneSignalUserId").val(ids.userId);
+                $("#OneSignalPushToken").val(ids.pushToken);
+                var userId = localStorage.getItem('userId');
+                var pushToken = localStorage.getItem('pushToken');
+                cadastraUser();
+            });
+        }
+
+        function cadastraUser() {
+            var userId = $("#OneSignalUserId").val();
+            var pushToken = $("#OneSignalPushToken").val();
+            $.ajax({
+                url: "https://miqueiasmcaetano.000webhostapp.com/webservice/giriasestadosbrasileiros/cadastraUser.php",
+                dataType: 'html',
+                type: 'POST',
+                data: {
+                    'userId': userId,
+                    'pushToken': pushToken,
+                },
+                error: function(a) {
+                    // alert(a);
+                },
+                success: function(valorRetornado) {
+                    console.log(valorRetornado);
+                },
+            });
+        }
+
+        document.addEventListener('admob.banner.events.LOAD_FAIL', function(event) {
+            //alert(JSON.stringify(event))
+        })
+
+        document.addEventListener('admob.interstitial.events.LOAD_FAIL', function(event) {
+            //alert(JSON.stringify(event))
+        })
+
+        document.addEventListener('admob.interstitial.events.LOAD', function(event) {
+            //alert(JSON.stringify(event))
+            document.getElementsByClassName('showAd').disabled = false
+        })
+
+        document.addEventListener('admob.interstitial.events.CLOSE', function(event) {
+            //alert(JSON.stringify(event))
+            admob.interstitial.prepare()
+        })
+    </script>
     <title>Gírias dos Estados Brasileiros</title>
 </head>
 
@@ -333,7 +435,7 @@
         </ons-speed-dial>
         <script>
           ons.getScriptPage().onInit = function () {
-            admob.interstitial.show();
+            //admob.interstitial.show();
             //CHAMA DA FUNÇÃO PARA ABRIR MODAL
             fn.showDialog('modal-aguarde');
             app.buscaGiriaEstado(this.data.title);
@@ -432,7 +534,7 @@
         <div id='resultado_girias'></div>
         <script>
           ons.getScriptPage().onInit = function () {
-            admob.interstitial.show();
+            //admob.interstitial.show();
           }
         </script>
     </ons-page>
@@ -443,7 +545,6 @@
         <div id='ultimas_girias'></div>
         <script>
           ons.getScriptPage().onInit = function () {
-            admob.interstitial.show();
             app.ultimasGiriasCadastradas();
           }
         </script>
@@ -517,7 +618,7 @@
         </ons-list>
         <script>
         ons.getScriptPage().onInit = function () {
-            admob.interstitial.show();
+            //admob.interstitial.show();
           this.querySelector('ons-toolbar div.center').textContent = this.data.title;
           $( "#cadastrar_giria" ).click(function() {
             if ($( "#giria_input" ).val() === '') {
@@ -545,110 +646,6 @@
       </script>
     </ons-page>
 </template>
-
-<script>      
-    var admobid = {}
-
-    if (/(android)/i.test(navigator.userAgent)) {
-        admobid = {
-            banner: 'ca-app-pub-7091486462236476/4482154427',
-            interstitial: 'ca-app-pub-7091486462236476/8135648345',
-        }
-    }
-
-    document.addEventListener('deviceready', function () {
-        //VRIFICO NA PRIMEIRA VEZ QUE ABRE O APP
-        var userId = localStorage.getItem('userId');
-        var pushToken = localStorage.getItem('pushToken');
-        if(userId && pushToken){
-        }
-        else{
-          getIds();
-        }
-
-        window.plugins.OneSignal
-          .startInit('a03d77a5-4edf-4618-ab1b-020123f9fb22')
-          .handleNotificationOpened(function(jsonData) {
-            var mensagem = JSON.parse(JSON.stringify(jsonData['notification']['payload']['body']));
-
-            ons.notification.alert(
-              mensagem,
-              {title: 'Ola!'}
-            );
-          })
-          .inFocusDisplaying(window.plugins.OneSignal.OSInFocusDisplayOption.Notification)
-          .endInit();
-
-        admob.banner.config({ 
-          id: admobid.banner, 
-          isTesting: false, 
-          autoShow: true, 
-        })
-        admob.banner.prepare()
-        
-        admob.interstitial.config({
-          id: admobid.interstitial,
-          isTesting: false,
-          autoShow: false,
-        })
-        admob.interstitial.prepare()
-
-        document.getElementsByClassName('showAd').disabled = true
-        document.getElementsByClassName('showAd').onclick = function() {
-          admob.interstitial.show()
-        }
-    }, false);
-
-    function getIds() {
-        window.plugins.OneSignal.getIds(function(ids) {
-            window.localStorage.setItem('userId', ids.userId);
-            window.localStorage.setItem('pushToken', ids.pushToken);
-            $("#OneSignalUserId").val(ids.userId);
-            $("#OneSignalPushToken").val(ids.pushToken);
-            var userId = localStorage.getItem('userId');
-            var pushToken = localStorage.getItem('pushToken');
-            cadastraUser();
-        });
-    }
-
-    function cadastraUser() {
-        var userId = $("#OneSignalUserId").val();
-        var pushToken = $("#OneSignalPushToken").val();
-        $.ajax({
-            url: "https://miqueiasmcaetano.000webhostapp.com/webservice/giriasestadosbrasileiros/cadastraUser.php",
-            dataType: 'html',
-            type: 'POST',
-            data: {
-                'userId': userId,
-                'pushToken': pushToken,
-            },
-            error: function(a) {
-                // alert(a);
-            },
-            success: function(valorRetornado) {
-                console.log(valorRetornado);
-            },
-        });
-    }
-
-    document.addEventListener('admob.banner.events.LOAD_FAIL', function(event) {
-        //alert(JSON.stringify(event))
-    })
-
-    document.addEventListener('admob.interstitial.events.LOAD_FAIL', function(event) {
-        //alert(JSON.stringify(event))
-    })
-
-    document.addEventListener('admob.interstitial.events.LOAD', function(event) {
-        //alert(JSON.stringify(event))
-        document.getElementsByClassName('showAd').disabled = false
-    })
-
-    document.addEventListener('admob.interstitial.events.CLOSE', function(event) {
-        //alert(JSON.stringify(event))
-        admob.interstitial.prepare()
-    })
-</script>
 <script src="js/index.js"></script>
 
 </body>

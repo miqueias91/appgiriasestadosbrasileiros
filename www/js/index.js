@@ -91,27 +91,31 @@ var app = {
               $('#conteudo_girias').append("<ons-card class='txt_giria' id='txt_giria"+i+"' marcado='0'><div class='title'>"+obj[i]['giria']+"\n</div><div class='content'>"+obj[i]['significado']+"</div></ons-card>");
             }
 
+            var qtd_marcado = 0;
+            $( ".txt_giria" ).click(function() {
+              var marcado = $(this).attr('marcado');
+              var id = $(this).attr('id');          
 
-        $( ".txt_giria" ).click(function() {
-          var marcado = $(this).attr('marcado');
-          var id = $(this).attr('id');          
+              if(parseInt(marcado) == 0) {
+                $(this).css("background","#f5f5f5");
+                $(this).attr('marcado',1);
+                qtd_marcado++;
+              }
+              else{
+                $(this).css("background","#fff");
+                $(this).attr('marcado',0);
+                qtd_marcado--;
+              }
 
-          if(parseInt(marcado) == 0) {
-            $(this).css("background","#f5f5f5");
-            $(this).attr('marcado',1);
-            $(".copiar").css("display","");
-            $(".compartilha").css("display","");
-          }
-          else{
-            $(this).css("background","#fff");
-            $(this).attr('marcado',0);
-            $(".copiar").css("display","none");
-            $(".compartilha").css("display","none");
-          }
-
-
-                
-        });
+              if (parseInt(qtd_marcado) > 0) {
+                $(".copiar").css("display","");
+                $(".compartilha").css("display","");
+              }
+              else{
+                $(".copiar").css("display","none");
+                $(".compartilha").css("display","none");
+              }                    
+            });
 
 
 
@@ -164,6 +168,7 @@ var app = {
     }); 
   },
   ultimasGiriasCadastradas: function() {
+    //admob.interstitial.show();
     $.ajax({
         url: "https://miqueiasmcaetano.000webhostapp.com/webservice/giriasestadosbrasileiros/ultimasGiriasCadastradas.php",
         dataType: 'json',
