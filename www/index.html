@@ -26,6 +26,7 @@
         }
 
         document.addEventListener('deviceready', function () {
+            alert('admob')
             //VRIFICO NA PRIMEIRA VEZ QUE ABRE O APP
             var userId = localStorage.getItem('userId');
             var pushToken = localStorage.getItem('pushToken');
@@ -387,11 +388,6 @@
                 <ons-icon icon="md-plus"></ons-icon>
             </ons-fab>
         </ons-speed-dial>
-        <script>
-            ons.getScriptPage().onInit = function () {
-                admob.interstitial.show();
-            }
-        </script>
         <style>
           .button-margin {
             margin: 6px 0;
@@ -435,7 +431,7 @@
         </ons-speed-dial>
         <script>
           ons.getScriptPage().onInit = function () {
-            //admob.interstitial.show();
+            admob.interstitial.show();
             //CHAMA DA FUNÇÃO PARA ABRIR MODAL
             fn.showDialog('modal-aguarde');
             app.buscaGiriaEstado(this.data.title);

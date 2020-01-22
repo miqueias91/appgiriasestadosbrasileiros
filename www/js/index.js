@@ -44,11 +44,12 @@ var app = {
   // Bind any cordova events here. Common events are:
   // 'pause', 'resume', etc.
   onDeviceReady: function() {
-    
+    alert('deviceready')
     this.receivedEvent('deviceready');  
   },
   // Update DOM on a Received Event
   receivedEvent: function(id) {
+alert('receivedEvent')
     console.log('receivedEvent');
   },
   //FUNÇÃO DE BUSCA
