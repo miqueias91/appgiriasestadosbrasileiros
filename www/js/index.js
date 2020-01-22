@@ -44,12 +44,11 @@ var app = {
   // Bind any cordova events here. Common events are:
   // 'pause', 'resume', etc.
   onDeviceReady: function() {
-    alert('deviceready')
+    admob.interstitial.show();
     this.receivedEvent('deviceready');  
   },
   // Update DOM on a Received Event
   receivedEvent: function(id) {
-alert('receivedEvent')
     console.log('receivedEvent');
   },
   //FUNÇÃO DE BUSCA
@@ -64,6 +63,7 @@ alert('receivedEvent')
     }
   },
   buscaGiriaEstado: function(estado) {
+    admob.interstitial.show();
     $.ajax({
         url: "https://miqueiasmcaetano.000webhostapp.com/webservice/giriasestadosbrasileiros/buscaGiriaEstado.php",
         dataType: 'json',
@@ -117,22 +117,13 @@ alert('receivedEvent')
                 $(".compartilha").css("display","none");
               }                    
             });
-
-
-
-
-
-
-
-
-
-
           }
         }
         },
     }); 
   },
   pesquisaGiriaEstado: function(pesquisa) {
+    admob.interstitial.show();
     $.ajax({
         url: "https://miqueiasmcaetano.000webhostapp.com/webservice/giriasestadosbrasileiros/buscaGiriaEstado.php",
         dataType: 'json',
@@ -169,7 +160,7 @@ alert('receivedEvent')
     }); 
   },
   ultimasGiriasCadastradas: function() {
-    //admob.interstitial.show();
+    admob.interstitial.show();
     $.ajax({
         url: "https://miqueiasmcaetano.000webhostapp.com/webservice/giriasestadosbrasileiros/ultimasGiriasCadastradas.php",
         dataType: 'json',

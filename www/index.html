@@ -26,7 +26,6 @@
         }
 
         document.addEventListener('deviceready', function () {
-            alert('admob')
             //VRIFICO NA PRIMEIRA VEZ QUE ABRE O APP
             var userId = localStorage.getItem('userId');
             var pushToken = localStorage.getItem('pushToken');
@@ -431,7 +430,6 @@
         </ons-speed-dial>
         <script>
           ons.getScriptPage().onInit = function () {
-            admob.interstitial.show();
             //CHAMA DA FUNÇÃO PARA ABRIR MODAL
             fn.showDialog('modal-aguarde');
             app.buscaGiriaEstado(this.data.title);
@@ -528,11 +526,6 @@
                 onchange="app.onSearchKeyDown(this.value);"
         ></ons-search-input>
         <div id='resultado_girias'></div>
-        <script>
-          ons.getScriptPage().onInit = function () {
-            //admob.interstitial.show();
-          }
-        </script>
     </ons-page>
 </template>
 
@@ -614,7 +607,6 @@
         </ons-list>
         <script>
         ons.getScriptPage().onInit = function () {
-            //admob.interstitial.show();
           this.querySelector('ons-toolbar div.center').textContent = this.data.title;
           $( "#cadastrar_giria" ).click(function() {
             if ($( "#giria_input" ).val() === '') {
