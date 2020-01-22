@@ -37,19 +37,16 @@ window.fn.hideDialog = function (id) {
 var app = {
   // Application Constructor
   initialize: function() {
-    console.log('initialize');
     document.addEventListener('deviceready', this.onDeviceReady.bind(this), false);
   },
   // deviceready Event Handler    
   // Bind any cordova events here. Common events are:
   // 'pause', 'resume', etc.
   onDeviceReady: function() {
-    admob.interstitial.show();
     this.receivedEvent('deviceready');  
   },
   // Update DOM on a Received Event
   receivedEvent: function(id) {
-    console.log('receivedEvent');
   },
   //FUNÇÃO DE BUSCA
   onSearchKeyDown: function(id) {
@@ -63,7 +60,7 @@ var app = {
     }
   },
   buscaGiriaEstado: function(estado) {
-    admob.interstitial.show();
+    admob.interstitial.show()
     $.ajax({
         url: "https://miqueiasmcaetano.000webhostapp.com/webservice/giriasestadosbrasileiros/buscaGiriaEstado.php",
         dataType: 'json',
@@ -123,7 +120,7 @@ var app = {
     }); 
   },
   pesquisaGiriaEstado: function(pesquisa) {
-    admob.interstitial.show();
+    admob.interstitial.show()
     $.ajax({
         url: "https://miqueiasmcaetano.000webhostapp.com/webservice/giriasestadosbrasileiros/buscaGiriaEstado.php",
         dataType: 'json',
@@ -160,7 +157,7 @@ var app = {
     }); 
   },
   ultimasGiriasCadastradas: function() {
-    admob.interstitial.show();
+    admob.interstitial.show()
     $.ajax({
         url: "https://miqueiasmcaetano.000webhostapp.com/webservice/giriasestadosbrasileiros/ultimasGiriasCadastradas.php",
         dataType: 'json',
@@ -197,6 +194,7 @@ var app = {
   cadastraGiria: function(giria_input, significado_giria, select_estado){
     var userId = localStorage.getItem('userId');
     var pushToken = localStorage.getItem('pushToken');
+    admob.interstitial.show()
     $.ajax({
         url: "https://miqueiasmcaetano.000webhostapp.com/webservice/giriasestadosbrasileiros/cadastraGiriaEstado.php",
         dataType: 'html',
