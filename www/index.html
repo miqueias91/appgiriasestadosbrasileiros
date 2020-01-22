@@ -340,7 +340,7 @@
             $( ".copiar" ).click(function() {
               var text = '';
               $("[marcado=1]").each(function() {
-                var txt_giria = $(this).text().substr(2);
+                var txt_giria = $(this).text();
                 text += txt_giria+'\n\n';
               });
               text += 'Gírias dos Estados Brasileiros\nLink: bit.ly/39aKDgV';
@@ -354,11 +354,12 @@
             $( ".compartilhar_whatsapp" ).click(function() {
               var text = '';
               $("[marcado=1]").each(function() {
-                var txt_giria = $(this).text().substr(2);
+                var txt_giria = $(this).text();
                 text += txt_giria+'\n\n';
               });
 
               text += 'Gírias dos Estados Brasileiros\nLink: bit.ly/39aKDgV';
+
               window.plugins.socialsharing.shareViaWhatsApp(
                 text, 
                 null, 
@@ -375,7 +376,7 @@
             $( ".compartilhar_instagram" ).click(function() {
               var text = '';
               $("[marcado=1]").each(function() {
-                var txt_giria = $(this).text().substr(2);
+                var txt_giria = $(this).text();
                 text += txt_giria+'\n\n';
               });
 
@@ -395,7 +396,7 @@
             $( ".compartilhar_twitter" ).click(function() {
               var text = '';
               $("[marcado=1]").each(function() {
-                var txt_giria = $(this).text().substr(2);
+                var txt_giria = $(this).text();
                 text += txt_giria+'\n\n';
               });
 
@@ -434,8 +435,8 @@
         <div id='ultimas_girias'></div>
         <script>
           ons.getScriptPage().onInit = function () {
-            admob.interstitial.show();
             app.ultimasGiriasCadastradas();
+            admob.interstitial.show();
           }
         </script>
     </ons-page>
