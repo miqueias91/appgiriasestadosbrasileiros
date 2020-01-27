@@ -62,7 +62,7 @@ var app = {
   buscaGiriaEstado: function(estado) {
     admob.interstitial.show()
     $.ajax({
-        url: "https://miqueiasmcaetano.000webhostapp.com/webservice/giriasestadosbrasileiros/buscaGiriaEstado.php",
+        url: "https://www.innovatesoft.com.br/webservice/giriasestadosbrasileiros/buscaGiriaEstado.php",
         dataType: 'json',
         type: 'GET',
         timeout: parseInt(timeout),
@@ -122,7 +122,7 @@ var app = {
   pesquisaGiriaEstado: function(pesquisa) {
     admob.interstitial.show()
     $.ajax({
-        url: "https://miqueiasmcaetano.000webhostapp.com/webservice/giriasestadosbrasileiros/buscaGiriaEstado.php",
+        url: "https://www.innovatesoft.com.br/webservice/giriasestadosbrasileiros/buscaGiriaEstado.php",
         dataType: 'json',
         type: 'GET',
         timeout: parseInt(timeout),
@@ -159,7 +159,7 @@ var app = {
   ultimasGiriasCadastradas: function() {
     admob.interstitial.show()
     $.ajax({
-        url: "https://miqueiasmcaetano.000webhostapp.com/webservice/giriasestadosbrasileiros/ultimasGiriasCadastradas.php",
+        url: "https://www.innovatesoft.com.br/webservice/giriasestadosbrasileiros/ultimasGiriasCadastradas.php",
         dataType: 'json',
         type: 'GET',
         timeout: parseInt(timeout),
@@ -196,7 +196,7 @@ var app = {
     var pushToken = localStorage.getItem('pushToken');
     admob.interstitial.show()
     $.ajax({
-        url: "https://miqueiasmcaetano.000webhostapp.com/webservice/giriasestadosbrasileiros/cadastraGiriaEstado.php",
+        url: "https://www.innovatesoft.com.br/webservice/giriasestadosbrasileiros/cadastraGiriaEstado.php",
         dataType: 'html',
         type: 'POST',
         timeout: parseInt(timeout),

@@ -64,7 +64,7 @@ var app = {
   },
   buscaGiriaEstado: function(estado) {
     $.ajax({
-        url: "https://miqueiasmcaetano.000webhostapp.com/webservice/giriasestadosbrasileiros/buscaGiriaEstado.php",
+        url: "https://www.innovatesoft.com.br/webservice/giriasestadosbrasileiros/buscaGiriaEstado.php",
         dataType: 'json',
         type: 'GET',
         timeout: parseInt(timeout),
@@ -97,7 +97,7 @@ var app = {
   },
   pesquisaGiriaEstado: function(pesquisa) {
     $.ajax({
-        url: "https://miqueiasmcaetano.000webhostapp.com/webservice/giriasestadosbrasileiros/buscaGiriaEstado.php",
+        url: "https://www.innovatesoft.com.br/webservice/giriasestadosbrasileiros/buscaGiriaEstado.php",
         dataType: 'json',
         type: 'GET',
         timeout: parseInt(timeout),
@@ -133,7 +133,7 @@ var app = {
   },
   ultimasGiriasCadastradas: function() {
     $.ajax({
-        url: "https://miqueiasmcaetano.000webhostapp.com/webservice/giriasestadosbrasileiros/ultimasGiriasCadastradas.php",
+        url: "https://www.innovatesoft.com.br/webservice/giriasestadosbrasileiros/ultimasGiriasCadastradas.php",
         dataType: 'json',
         type: 'GET',
         timeout: parseInt(timeout),
@@ -169,7 +169,7 @@ var app = {
     var userId = localStorage.getItem('userId');
     var pushToken = localStorage.getItem('pushToken');
     $.ajax({
-        url: "https://miqueiasmcaetano.000webhostapp.com/webservice/giriasestadosbrasileiros/cadastraGiriaEstado.php",
+        url: "https://www.innovatesoft.com.br/webservice/giriasestadosbrasileiros/cadastraGiriaEstado.php",
         dataType: 'html',
         type: 'POST',
         timeout: parseInt(timeout),
