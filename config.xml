@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.phonegap.giriasestadosbrasileiros" version="1.0.10" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget id="com.phonegap.giriasestadosbrasileiros" version="1.0.11" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>Gírias dos Estados Brasileiros</name>
     <description>
         App que exibe as gírias dos estados brasileiros.
@@ -24,10 +24,8 @@
     <preference name="StatusBarStyle" value="blacktranslucent" />
     <preference name="phonegap-version" value="cli-8.0.0" />
     <preference name="android-build-tool" value="gradle" />
-
     <preference name="android-minSdkVersion" value="19" />
     <preference name="android-targetSdkVersion" value="28" />
-
     <splash src="./www/img/Default@2x~universal~anyany.png" />
     <splash src="./www/img/Default@2x~universal~comany.png" />
     <splash src="./www/img/Default@2x~universal~comcom.png" />
@@ -52,7 +50,6 @@
     <platform name="android">
         <allow-intent href="market:*" />
     </platform>
-    <engine name="android" spec="^7.0.0" />
     <plugin name="cordova-plugin-admob-free" spec="0.27.0">
         <variable name="ADMOB_APP_ID" value="ca-app-pub-7091486462236476~9915980012" />
     </plugin>

@@ -37,19 +37,16 @@ window.fn.hideDialog = function (id) {
 var app = {
   // Application Constructor
   initialize: function() {
-    console.log('initialize');
     document.addEventListener('deviceready', this.onDeviceReady.bind(this), false);
   },
   // deviceready Event Handler    
   // Bind any cordova events here. Common events are:
   // 'pause', 'resume', etc.
   onDeviceReady: function() {
-    
     this.receivedEvent('deviceready');  
   },
   // Update DOM on a Received Event
   receivedEvent: function(id) {
-    console.log('receivedEvent');
   },
   //FUNÇÃO DE BUSCA
   onSearchKeyDown: function(id) {
@@ -63,6 +60,7 @@ var app = {
     }
   },
   buscaGiriaEstado: function(estado) {
+    admob.interstitial.show()
     $.ajax({
         url: "https://www.innovatesoft.com.br/webservice/giriasestadosbrasileiros/buscaGiriaEstado.php",
         dataType: 'json',
@@ -88,14 +86,41 @@ var app = {
           var obj = valorRetornado;
           if (obj) {
             for(var i in obj) {
-              $('#conteudo_girias').append("<ons-card><div class='title'>"+obj[i]['giria']+"</div><div class='content'>"+obj[i]['significado']+"</div></ons-card>");
+              $('#conteudo_girias').append("<ons-card class='txt_giria' id='txt_giria"+i+"' marcado='0'><div class='title'>"+obj[i]['giria']+"\n</div><div class='content'>"+obj[i]['significado']+"</div></ons-card>");
             }
+
+            var qtd_marcado = 0;
+            $( ".txt_giria" ).click(function() {
+              var marcado = $(this).attr('marcado');
+              var id = $(this).attr('id');          
+
+              if(parseInt(marcado) == 0) {
+                $(this).css("background","#f5f5f5");
+                $(this).attr('marcado',1);
+                qtd_marcado++;
+              }
+              else{
+                $(this).css("background","#fff");
+                $(this).attr('marcado',0);
+                qtd_marcado--;
+              }
+
+              if (parseInt(qtd_marcado) > 0) {
+                $(".copiar").css("display","");
+                $(".compartilha").css("display","");
+              }
+              else{
+                $(".copiar").css("display","none");
+                $(".compartilha").css("display","none");
+              }                    
+            });
           }
         }
         },
     }); 
   },
   pesquisaGiriaEstado: function(pesquisa) {
+    admob.interstitial.show()
     $.ajax({
         url: "https://www.innovatesoft.com.br/webservice/giriasestadosbrasileiros/buscaGiriaEstado.php",
         dataType: 'json',
@@ -132,6 +157,7 @@ var app = {
     }); 
   },
   ultimasGiriasCadastradas: function() {
+    admob.interstitial.show()
     $.ajax({
         url: "https://www.innovatesoft.com.br/webservice/giriasestadosbrasileiros/ultimasGiriasCadastradas.php",
         dataType: 'json',
@@ -168,6 +194,7 @@ var app = {
   cadastraGiria: function(giria_input, significado_giria, select_estado){
     var userId = localStorage.getItem('userId');
     var pushToken = localStorage.getItem('pushToken');
+    admob.interstitial.show()
     $.ajax({
         url: "https://www.innovatesoft.com.br/webservice/giriasestadosbrasileiros/cadastraGiriaEstado.php",
         dataType: 'html',
