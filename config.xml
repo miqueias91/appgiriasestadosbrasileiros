@@ -25,7 +25,7 @@
     <preference name="phonegap-version" value="cli-8.0.0" />
     <preference name="android-build-tool" value="gradle" />
     <preference name="android-minSdkVersion" value="19" />
-    <preference name="android-targetSdkVersion" value="28" />
+    <preference name="android-targetSdkVersion" value="29" />
     <splash src="./www/img/Default@2x~universal~anyany.png" />
     <splash src="./www/img/Default@2x~universal~comany.png" />
     <splash src="./www/img/Default@2x~universal~comcom.png" />
