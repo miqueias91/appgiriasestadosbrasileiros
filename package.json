@@ -3,9 +3,7 @@
   "version": "1.0.11",
   "displayName": "Gírias dos Estados Brasileiros",
   "cordova": {
-    "platforms": [
-      "android"
-    ],
+    "platforms": [],
     "plugins": {
       "cordova-plugin-admob-free": {
         "ADMOB_APP_ID": "ca-app-pub-7091486462236476~9915980012"
@@ -30,7 +28,6 @@
     "es6-promise-plugin": "^4.2.2"
   },
   "devDependencies": {
-    "cordova-android": "^9.0.0",
     "cordova-plugin-dialogs": "~2.0.2",
     "cordova-plugin-whitelist": "1"
   }
